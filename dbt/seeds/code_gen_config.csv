@@ -1,0 +1,2 @@
+generate_flag,source_name,description, database, schema, loader, loaded_at_field
+Y,sfdc_aqb,The application used to manage Alumni Relations,PRD_MATILLION_RAW_DB,SFDC_AFFINAQUEST,Matillion,MATILLION_UPDATED_TIMESTAMP

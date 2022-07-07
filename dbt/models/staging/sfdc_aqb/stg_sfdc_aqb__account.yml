@@ -1,0 +1,620 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__account
+    description: "TBD"
+    columns:
+    - name: account_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: masterrecordid
+      description: tbd
+    - name: name
+      description: tbd
+    - name: type
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: parentid
+      description: tbd
+    - name: billingstreet
+      description: tbd
+    - name: billingcity
+      description: tbd
+    - name: billingstate
+      description: tbd
+    - name: billingpostalcode
+      description: tbd
+    - name: billingcountry
+      description: tbd
+    - name: billinglatitude
+      description: tbd
+    - name: billinglongitude
+      description: tbd
+    - name: billinggeocodeaccuracy
+      description: tbd
+    - name: shippingstreet
+      description: tbd
+    - name: shippingcity
+      description: tbd
+    - name: shippingstate
+      description: tbd
+    - name: shippingpostalcode
+      description: tbd
+    - name: shippingcountry
+      description: tbd
+    - name: shippinglatitude
+      description: tbd
+    - name: shippinglongitude
+      description: tbd
+    - name: shippinggeocodeaccuracy
+      description: tbd
+    - name: phone
+      description: tbd
+    - name: fax
+      description: tbd
+    - name: accountnumber
+      description: tbd
+    - name: website
+      description: tbd
+    - name: photourl
+      description: tbd
+    - name: sic
+      description: tbd
+    - name: industry
+      description: tbd
+    - name: annualrevenue
+      description: tbd
+    - name: numberofemployees
+      description: tbd
+    - name: ownership
+      description: tbd
+    - name: tickersymbol
+      description: tbd
+    - name: description
+      description: tbd
+    - name: rating
+      description: tbd
+    - name: site
+      description: tbd
+    - name: ownerid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: jigsaw
+      description: tbd
+    - name: jigsawcompanyid
+      description: tbd
+    - name: accountsource
+      description: tbd
+    - name: sicdesc
+      description: tbd
+    - name: aqb__accountcount__c
+      description: tbd
+    - name: aqb__accountdefaultaddresschangeflags__c
+      description: tbd
+    - name: aqb__accountdefaultaddressdistrict__c
+      description: tbd
+    - name: aqb__accountdefaultaddresslocality__c
+      description: tbd
+    - name: aqb__accountdefaultaddressregion__c
+      description: tbd
+    - name: aqb__accountdefaultaddress__c
+      description: tbd
+    - name: aqb__accountdefaultcarrierroute__c
+      description: tbd
+    - name: aqb__accountdefaultcertifiedcityname__c
+      description: tbd
+    - name: aqb__accountdefaultcertifiedstreetname__c
+      description: tbd
+    - name: aqb__accountdefaultcity__c
+      description: tbd
+    - name: aqb__accountdefaultcountryid__c
+      description: tbd
+    - name: aqb__accountdefaultcountry__c
+      description: tbd
+    - name: aqb__accountdefaultcountynumber__c
+      description: tbd
+    - name: aqb__accountdefaultcounty__c
+      description: tbd
+    - name: aqb__accountdefaultdpcd__c
+      description: tbd
+    - name: aqb__accountdefaultdpvflag__c
+      description: tbd
+    - name: aqb__accountdefaultdpv__c
+      description: tbd
+    - name: aqb__accountdefaultdeliverypoint1__c
+      description: tbd
+    - name: aqb__accountdefaultdeliverypointvalidation__c
+      description: tbd
+    - name: aqb__accountdefaultfipsstatecode__c
+      description: tbd
+    - name: aqb__accountdefaultflag__c
+      description: tbd
+    - name: aqb__accountdefaultlongitude__c
+      description: tbd
+    - name: aqb__accountdefaultnote__c
+      description: tbd
+    - name: aqb__accountdefaultphone__c
+      description: tbd
+    - name: aqb__accountdefaultrdi__c
+      description: tbd
+    - name: aqb__accountdefaultstateid__c
+      description: tbd
+    - name: aqb__accountdefaultstateprovince__c
+      description: tbd
+    - name: aqb__accountdefaultstatus__c
+      description: tbd
+    - name: aqb__accountdefaultstreet__c
+      description: tbd
+    - name: aqb__accountdefaulttype__c
+      description: tbd
+    - name: aqb__accountdefaultverificationflag__c
+      description: tbd
+    - name: aqb__accountdefaultzipcode__c
+      description: tbd
+    - name: aqb__accountdefautcertifiedstateabbreviation__c
+      description: tbd
+    - name: aqb__accountdefautvalidationdate__c
+      description: tbd
+    - name: aqb__accountexternalid__c
+      description: tbd
+    - name: aqb__accountgrouping__c
+      description: tbd
+    - name: aqb__accountmailingstreetlineone__c
+      description: tbd
+    - name: aqb__accountmailingstreetlinethree__c
+      description: tbd
+    - name: aqb__accountmailingstreetlinetwo__c
+      description: tbd
+    - name: aqb__accountnameoverride__c
+      description: tbd
+    - name: aqb__accountpermanentaddresslinethree__c
+      description: tbd
+    - name: aqb__accountsource__c
+      description: tbd
+    - name: aqb__accountstatus__c
+      description: tbd
+    - name: aqb__accounttype__c
+      description: tbd
+    - name: aqb__accuntdefaultlatitude__c
+      description: tbd
+    - name: aqb__alert__c
+      description: tbd
+    - name: aqb__billingaddresscarrierroute__c
+      description: tbd
+    - name: aqb__billingaddresscertifiedcityname__c
+      description: tbd
+    - name: aqb__billingaddresscertifiedstateabbreviation__c
+      description: tbd
+    - name: aqb__billingaddresscertifiedstreetname__c
+      description: tbd
+    - name: aqb__billingaddresscertifiedzipcode__c
+      description: tbd
+    - name: aqb__billingaddresschangeflags__c
+      description: tbd
+    - name: aqb__billingaddresscountryid__c
+      description: tbd
+    - name: aqb__billingaddresscountynumber__c
+      description: tbd
+    - name: aqb__billingaddresscounty__c
+      description: tbd
+    - name: aqb__billingaddressdpcd__c
+      description: tbd
+    - name: aqb__billingaddressdpvflag__c
+      description: tbd
+    - name: aqb__billingaddressdpv__c
+      description: tbd
+    - name: aqb__billingaddressdeliverypoint1__c
+      description: tbd
+    - name: aqb__billingaddressdeliverypointvaliadtion__c
+      description: tbd
+    - name: aqb__billingaddressflag__c
+      description: tbd
+    - name: aqb__billingaddresslatitude__c
+      description: tbd
+    - name: aqb__billingaddresslongitude__c
+      description: tbd
+    - name: aqb__billingaddressrdi__c
+      description: tbd
+    - name: aqb__billingaddressstatefipscode__c
+      description: tbd
+    - name: aqb__billingaddressstateid__c
+      description: tbd
+    - name: aqb__billingaddresstype__c
+      description: tbd
+    - name: aqb__billingaddressvalidationdate__c
+      description: tbd
+    - name: aqb__billingaddressverificationflag__c
+      description: tbd
+    - name: aqb__billingdistrict__c
+      description: tbd
+    - name: aqb__billinglocality__c
+      description: tbd
+    - name: aqb__billingmailinglists__c
+      description: tbd
+    - name: aqb__billingnote__c
+      description: tbd
+    - name: aqb__billingregion__c
+      description: tbd
+    - name: aqb__billingstatus__c
+      description: tbd
+    - name: aqb__billingtimezone__c
+      description: tbd
+    - name: aqb__caecategory__c
+      description: tbd
+    - name: aqb__capacity__c
+      description: tbd
+    - name: aqb__communicationsmanaged__c
+      description: tbd
+    - name: aqb__consecutiveyearsgiven__c
+      description: tbd
+    - name: aqb__contactinvolvementrating__c
+      description: tbd
+    - name: aqb__customerpriority__c
+      description: tbd
+    - name: aqb__defaultacknowledgementtype__c
+      description: tbd
+    - name: aqb__defaultanonymitylevel__c
+      description: tbd
+    - name: aqb__defaultcampaignappeal__c
+      description: tbd
+    - name: aqb__defaultgiftamount__c
+      description: tbd
+    - name: aqb__defaultgiftdescription__c
+      description: tbd
+    - name: aqb__defaultgiftdistribution__c
+      description: tbd
+    - name: aqb__districtalternate__c
+      description: tbd
+    - name: aqb__districtisoverridden__c
+      description: tbd
+    - name: aqb__district__c
+      description: tbd
+    - name: aqb__divisionunit__c
+      description: tbd
+    - name: aqb__donotarchive__c
+      description: tbd
+    - name: aqb__donotcontact__c
+      description: tbd
+    - name: aqb__donotsolicit__c
+      description: tbd
+    - name: aqb__doublethedonationid__c
+      description: tbd
+    - name: aqb__einnumber__c
+      description: tbd
+    - name: aqb__email__c
+      description: tbd
+    - name: aqb__firstgiftpledgeamount__c
+      description: tbd
+    - name: aqb__firstgiftpledgebalance__c
+      description: tbd
+    - name: aqb__firstgiftpledgedate__c
+      description: tbd
+    - name: aqb__firstgiftpledgefundraisingcampaign__c
+      description: tbd
+    - name: aqb__firstgiftpledge__c
+      description: tbd
+    - name: aqb__giftsareanonymous__c
+      description: tbd
+    - name: aqb__giving_interests__c
+      description: tbd
+    - name: aqb__greetingoverride__c
+      description: tbd
+    - name: aqb__greeting__c
+      description: tbd
+    - name: aqb__institutionalarea1alternate__c
+      description: tbd
+    - name: aqb__institutionalarea1isoverridden__c
+      description: tbd
+    - name: aqb__institutionalarea1__c
+      description: tbd
+    - name: aqb__institutionalarea2alternate__c
+      description: tbd
+    - name: aqb__institutionalarea2isoverridden__c
+      description: tbd
+    - name: aqb__institutionalarea2__c
+      description: tbd
+    - name: aqb__institutionalarea3alternate__c
+      description: tbd
+    - name: aqb__institutionalarea3isoverridden__c
+      description: tbd
+    - name: aqb__institutionalarea3__c
+      description: tbd
+    - name: aqb__institutionalarea4alternate__c
+      description: tbd
+    - name: aqb__institutionalarea4isoverridden__c
+      description: tbd
+    - name: aqb__institutionalarea4__c
+      description: tbd
+    - name: aqb__internalacctmailstreetone__c
+      description: tbd
+    - name: aqb__internalacctmailstreettwo__c
+      description: tbd
+    - name: aqb__internalpermmailaddstreetone__c
+      description: tbd
+    - name: aqb__internalpermmailaddstreettwo__c
+      description: tbd
+    - name: aqb__involvementscore__c
+      description: tbd
+    - name: aqb__involvement__c
+      description: tbd
+    - name: aqb__kpichart1__c
+      description: tbd
+    - name: aqb__kpichart2__c
+      description: tbd
+    - name: aqb__kpichart3__c
+      description: tbd
+    - name: aqb__kpichart4__c
+      description: tbd
+    - name: aqb__kpichartsize__c
+      description: tbd
+    - name: aqb__largestgiftpledge__c
+      description: tbd
+    - name: aqb__linkedaddress__c
+      description: tbd
+    - name: aqb__mailingaddressresidentindicator__c
+      description: tbd
+    - name: aqb__mailingnamelinetwooverride__c
+      description: tbd
+    - name: aqb__mailingnamelinetwo__c
+      description: tbd
+    - name: aqb__mailingnameoverride__c
+      description: tbd
+    - name: aqb__mailingname__c
+      description: tbd
+    - name: aqb__matchesgifts__c
+      description: tbd
+    - name: aqb__mostrecentgiftamount__c
+      description: tbd
+    - name: aqb__mostrecentgiftdate__c
+      description: tbd
+    - name: aqb__mostrecentgiftfundraisingcampaign__c
+      description: tbd
+    - name: aqb__mostrecentgiftpledgebalance__c
+      description: tbd
+    - name: aqb__mostrecentgiftpledge__c
+      description: tbd
+    - name: aqb__mostrecentpaymentfundraisingcampaign__c
+      description: tbd
+    - name: aqb__mostrecentpledgepaymentamount__c
+      description: tbd
+    - name: aqb__mostrecentpledgepaymentcampaignappeal__c
+      description: tbd
+    - name: aqb__mostrecentpledgepaymentdate__c
+      description: tbd
+    - name: aqb__mostrecentpledgepaymentdesignation__c
+      description: tbd
+    - name: aqb__mostrecentpledgepaymentrecordtype__c
+      description: tbd
+    - name: aqb__mostrecentpledgepayment__c
+      description: tbd
+    - name: aqb__nextactivitydate__c
+      description: tbd
+    - name: aqb__nextactivity__c
+      description: tbd
+    - name: aqb__numberoflocations__c
+      description: tbd
+    - name: aqb__oldestpledgepaymentduedate__c
+      description: tbd
+    - name: aqb__overallaccountratingdate__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__permanentaddresscertifiedzipcode__c
+      description: tbd
+    - name: aqb__permanentaddresscountyid__c
+      description: tbd
+    - name: aqb__permanentaddressresidentialinidicator__c
+      description: tbd
+    - name: aqb__permanentaddressstreetlineone__c
+      description: tbd
+    - name: aqb__permanentaddressstreetlinetwo__c
+      description: tbd
+    - name: aqb__pledgestatus__c
+      description: tbd
+    - name: aqb__primarycontact__c
+      description: tbd
+    - name: aqb__prospectmanager__c
+      description: tbd
+    - name: aqb__prospectstatusdate__c
+      description: tbd
+    - name: aqb__prospectstatus__c
+      description: tbd
+    - name: aqb__rfm__c
+      description: tbd
+    - name: aqb__readiness__c
+      description: tbd
+    - name: aqb__recordtypedevelopername__c
+      description: tbd
+    - name: aqb__regionalternate__c
+      description: tbd
+    - name: aqb__regionisoverridden__c
+      description: tbd
+    - name: aqb__region__c
+      description: tbd
+    - name: aqb__rejectquidproquos__c
+      description: tbd
+    - name: aqb__slaexpirationdate__c
+      description: tbd
+    - name: aqb__slaserialnumber__c
+      description: tbd
+    - name: aqb__sla__c
+      description: tbd
+    - name: aqb__seasonalstartdate__c
+      description: tbd
+    - name: aqb__seasonalstopdate__c
+      description: tbd
+    - name: aqb__secondarycontact__c
+      description: tbd
+    - name: aqb__secondarytypes__c
+      description: tbd
+    - name: aqb__setup__c
+      description: tbd
+    - name: aqb__sharewithcommunity__c
+      description: tbd
+    - name: aqb__shippingaddresscarrierroute__c
+      description: tbd
+    - name: aqb__shippingaddresscertifiedcityname__c
+      description: tbd
+    - name: aqb__shippingaddresscertifiedstateabbr__c
+      description: tbd
+    - name: aqb__shippingaddresscertifiedstreetname__c
+      description: tbd
+    - name: aqb__shippingaddresscertifiedzipcode__c
+      description: tbd
+    - name: aqb__shippingaddresschangeflags__c
+      description: tbd
+    - name: aqb__shippingaddresscountryid__c
+      description: tbd
+    - name: aqb__shippingaddresscountynumber__c
+      description: tbd
+    - name: aqb__shippingaddresscounty__c
+      description: tbd
+    - name: aqb__shippingaddressdpcd__c
+      description: tbd
+    - name: aqb__shippingaddressdpvflag__c
+      description: tbd
+    - name: aqb__shippingaddressdpv__c
+      description: tbd
+    - name: aqb__shippingaddressdeliverypoint1__c
+      description: tbd
+    - name: aqb__shippingaddressdeliverypointvalidation__c
+      description: tbd
+    - name: aqb__shippingaddressfipsstatecode__c
+      description: tbd
+    - name: aqb__shippingaddressflag__c
+      description: tbd
+    - name: aqb__shippingaddresslatitude__c
+      description: tbd
+    - name: aqb__shippingaddresslongitude__c
+      description: tbd
+    - name: aqb__shippingaddressrdi__c
+      description: tbd
+    - name: aqb__shippingaddressstateid__c
+      description: tbd
+    - name: aqb__shippingaddressvalidationdate__c
+      description: tbd
+    - name: aqb__shippingaddressverificationflag__c
+      description: tbd
+    - name: aqb__shippingnote__c
+      description: tbd
+    - name: aqb__shippingsstatus__c
+      description: tbd
+    - name: aqb__staffliason__c
+      description: tbd
+    - name: aqb__supplieridnumber__c
+      description: tbd
+    - name: aqb__totalgiftpledges__c
+      description: tbd
+    - name: aqb__totalpledgebalance__c
+      description: tbd
+    - name: aqb__totalyearsgiven__c
+      description: tbd
+    - name: aqb__openopps__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqc_loyalty_club__c
+      description: tbd
+    - name: aqc_fy_2019_af_giving__c
+      description: tbd
+    - name: aqc_fy_2019_giving__c
+      description: tbd
+    - name: aqc_fy_2020_af_giving__c
+      description: tbd
+    - name: aqc_fy_2020_giving__c
+      description: tbd
+    - name: aqc_fy_2021_af_giving__c
+      description: tbd
+    - name: aqc_fy_2021_giving__c
+      description: tbd
+    - name: aqc_pre_fy19_af_giving__c
+      description: tbd
+    - name: aqc_pre_fy19_giving__c
+      description: tbd
+    - name: aqb__largestgiftpledgedate__c
+      description: tbd
+    - name: aqb__largestgiftpledgeid__c
+      description: tbd
+    - name: aqb__mostrecenttransactionamount__c
+      description: tbd
+    - name: aqb__mostrecenttransactioncampaignappeal__c
+      description: tbd
+    - name: aqb__mostrecenttransactiondate__c
+      description: tbd
+    - name: aqb__mostrecenttransactiondesignation__c
+      description: tbd
+    - name: aqb__mostrecenttransactionfundraisingcampaign__c
+      description: tbd
+    - name: aqb__mostrecenttransactionrecordtype__c
+      description: tbd
+    - name: aqb__mostrecenttransaction__c
+      description: tbd
+    - name: aqb__wealthestimatedate_aq__c
+      description: tbd
+    - name: aqb__wealthestimate_aq__c
+      description: tbd
+    - name: aqc_fy_2019_gift_count__c
+      description: tbd
+    - name: aqc_fy_2020_gift_count__c
+      description: tbd
+    - name: aqc_fy_2021_gift_count__c
+      description: tbd
+    - name: aqc_pre_fy19_gift_count__c
+      description: tbd
+    - name: aqcv_count_of_open_opportunities__c
+      description: tbd
+    - name: vu_fy_2022_gift_count__c
+      description: tbd
+    - name: vu_fy_2022_giving__c
+      description: tbd
+    - name: vu_most_recent_gift_date__c
+      description: tbd
+    - name: vu_most_recent_gift_fiscal_year__c
+      description: tbd
+    - name: aqb__fee1exception_aq__c
+      description: tbd
+    - name: aqb__fee1exemptreason_aq__c
+      description: tbd
+    - name: aqb__fee1exempt_aq__c
+      description: tbd
+    - name: aqb__fee1sourceaccount_aq__c
+      description: tbd
+    - name: aqb__fee1_aq__c
+      description: tbd
+    - name: aqb__fee2exception_aq__c
+      description: tbd
+    - name: aqb__fee2exemptreason_aq__c
+      description: tbd
+    - name: aqb__fee2exempt_aq__c
+      description: tbd
+    - name: aqb__fee2sourceaccount_aq__c
+      description: tbd
+    - name: aqb__fee2_aq__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

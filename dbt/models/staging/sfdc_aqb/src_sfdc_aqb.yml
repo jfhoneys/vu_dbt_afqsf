@@ -1,0 +1,201 @@
+version: 2
+
+sources:
+  - name: sfdc_aqb
+    description: The application used to manage Alumni Relations
+    database: prd_matillion_raw_db
+    schema: sfdc_affinaquest
+    loader: Matillion
+    loaded_at_field: MATILLION_UPDATED_TIMESTAMP
+    freshness:
+      warn_after:
+        count: 12
+        period: hour 
+      error_after:
+        count: 24
+        period: hour
+    tables:
+      - name: account
+        description: tbd 
+      - name: aqb__accolade__c
+        description: tbd 
+      - name: aqb__accountnames__c
+        description: tbd 
+      - name: aqb__acknowledgement__c
+        description: tbd 
+      - name: aqb__activityreport__c
+        description: tbd 
+      - name: aqb__activityreportparticipant__c
+        description: tbd 
+      - name: aqb__affiliation__c
+        description: tbd 
+      - name: aqb__alert__c
+        description: tbd 
+      - name: aqb__alternateid__c
+        description: tbd 
+      - name: aqb__aqaddress__c
+        description: tbd 
+      - name: aqb__arcontactparticipants__c
+        description: tbd 
+      - name: aqb__areaofstudy__c
+        description: tbd 
+      - name: aqb__award__c
+        description: tbd 
+      - name: aqb__awardrecipients__c
+        description: tbd 
+      - name: aqb__batch__c
+        description: tbd 
+      - name: aqb__batch_item__c
+        description: tbd 
+      - name: aqb__batchitemaccountmatch__c
+        description: tbd 
+      - name: aqb__batchitemactivity__c
+        description: tbd 
+      - name: aqb__batchitemautomatedsoftcredit__c
+        description: tbd 
+      - name: aqb__batchitemextra__c
+        description: tbd 
+      - name: aqb__batchitemrecognition__c
+        description: tbd 
+      - name: aqb__batchitemsoftcreditpayment__c
+        description: tbd 
+      - name: aqb__batchitemtransaction__c
+        description: tbd 
+      - name: aqb__batchitemtribute__c
+        description: tbd 
+      - name: aqb__batchitemtributenotification__c
+        description: tbd 
+      - name: aqb__campaignfund__c
+        description: tbd 
+      - name: aqb__education__c
+        description: tbd 
+      - name: aqb__employment__c
+        description: tbd 
+      - name: aqb__event__c
+        description: tbd 
+      - name: aqb__eventguest__c
+        description: tbd 
+      - name: aqb__financial_asset__c
+        description: tbd 
+      - name: aqb__financials__c
+        description: tbd 
+      - name: aqb__gift__c
+        description: tbd 
+      - name: aqb__giftcredit__c
+        description: tbd 
+      - name: aqb__gifttootherorganizations__c
+        description: tbd 
+      - name: aqb__goal__c
+        description: tbd 
+      - name: aqb__institutionalsuffix__c
+        description: tbd 
+      - name: aqb__interest__c
+        description: tbd 
+      - name: aqb__inventory__c
+        description: tbd 
+      - name: aqb__keycontact__c
+        description: tbd 
+      - name: aqb__ll_accoladename__c
+        description: tbd 
+      - name: aqb__ll_areaofstudy__c
+        description: tbd 
+      - name: aqb__llaccountrole__c
+        description: tbd 
+      - name: aqb__llchartofaccounts__c
+        description: tbd 
+      - name: aqb__llcontactrole__c
+        description: tbd 
+      - name: aqb__lleducationalinstitution__c
+        description: tbd 
+      - name: aqb__llinteresttype__c
+        description: tbd 
+      - name: aqb__llpostalcodes__c
+        description: tbd 
+      - name: aqb__llsalutation__c
+        description: tbd 
+      - name: aqb__llstudentinteresttype__c
+        description: tbd 
+      - name: aqb__matchlink__c
+        description: tbd 
+      - name: aqb__matchpotential1__c
+        description: tbd 
+      - name: aqb__media_reference__c
+        description: tbd 
+      - name: aqb__namedefinitionsaccounts__c
+        description: tbd 
+      - name: aqb__namedefinitionscontacts__c
+        description: tbd 
+      - name: aqb__names__c
+        description: tbd 
+      - name: aqb__notesandcomments__c
+        description: tbd 
+      - name: aqb__opportunitycomponent__c
+        description: tbd 
+      - name: aqb__pledgediscountandallowance__c
+        description: tbd 
+      - name: aqb__pmteam__c
+        description: tbd 
+      - name: aqb__quidproquo__c
+        description: tbd 
+      - name: aqb__rating__c
+        description: tbd 
+      - name: aqb__recurringgift__c
+        description: tbd 
+      - name: aqb__registration__c
+        description: tbd 
+      - name: aqb__relationshipaccount__c
+        description: tbd 
+      - name: aqb__relationshipcontact__c
+        description: tbd 
+      - name: aqb__research_reference__c
+        description: tbd 
+      - name: aqb__screening__c
+        description: tbd 
+      - name: aqb__stagetrack__c
+        description: tbd 
+      - name: aqb__stewardshipplan__c
+        description: tbd 
+      - name: aqb__studentinterest__c
+        description: tbd 
+      - name: aqb__summariesdefinition__c
+        description: tbd 
+      - name: aqb__summary__c
+        description: tbd 
+      - name: aqb__thankyoutoken__c
+        description: tbd 
+      - name: aqb__transaction__c
+        description: tbd 
+      - name: aqb__tribute__c
+        description: tbd 
+      - name: aqb__tributenotification__c
+        description: tbd 
+      - name: aqb__usergoal__c
+        description: tbd 
+      - name: aqb__volunteerposition__c
+        description: tbd 
+      - name: campaign
+        description: tbd 
+      - name: campaignmember
+        description: tbd 
+      - name: case
+        description: tbd 
+      - name: casecomment
+        description: tbd 
+      - name: contact
+        description: tbd 
+      - name: event
+        description: tbd 
+      - name: lead
+        description: tbd 
+      - name: opportunity
+        description: tbd 
+      - name: opportunityteammember
+        description: tbd 
+      - name: profile
+        description: tbd 
+      - name: recordtype
+        description: tbd 
+      - name: task
+        description: tbd 
+      - name: user
+        description: tbd  

@@ -1,0 +1,600 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__contact
+    description: "TBD"
+    columns:
+    - name: contact_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: masterrecordid
+      description: tbd
+    - name: accountid
+      description: tbd
+    - name: lastname
+      description: tbd
+    - name: firstname
+      description: tbd
+    - name: salutation
+      description: tbd
+    - name: middlename
+      description: tbd
+    - name: suffix
+      description: tbd
+    - name: name
+      description: tbd
+    - name: otherstreet
+      description: tbd
+    - name: othercity
+      description: tbd
+    - name: otherstate
+      description: tbd
+    - name: otherpostalcode
+      description: tbd
+    - name: othercountry
+      description: tbd
+    - name: otherlatitude
+      description: tbd
+    - name: otherlongitude
+      description: tbd
+    - name: othergeocodeaccuracy
+      description: tbd
+    - name: mailingstreet
+      description: tbd
+    - name: mailingcity
+      description: tbd
+    - name: mailingstate
+      description: tbd
+    - name: mailingpostalcode
+      description: tbd
+    - name: mailingcountry
+      description: tbd
+    - name: mailinglatitude
+      description: tbd
+    - name: mailinglongitude
+      description: tbd
+    - name: mailinggeocodeaccuracy
+      description: tbd
+    - name: phone
+      description: tbd
+    - name: fax
+      description: tbd
+    - name: mobilephone
+      description: tbd
+    - name: homephone
+      description: tbd
+    - name: otherphone
+      description: tbd
+    - name: assistantphone
+      description: tbd
+    - name: reportstoid
+      description: tbd
+    - name: email
+      description: tbd
+    - name: title
+      description: tbd
+    - name: department
+      description: tbd
+    - name: assistantname
+      description: tbd
+    - name: leadsource
+      description: tbd
+    - name: birthdate
+      description: tbd
+    - name: description
+      description: tbd
+    - name: ownerid
+      description: tbd
+    - name: hasoptedoutofemail
+      description: tbd
+    - name: hasoptedoutoffax
+      description: tbd
+    - name: donotcall
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: lastcurequestdate
+      description: tbd
+    - name: lastcuupdatedate
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: emailbouncedreason
+      description: tbd
+    - name: emailbounceddate
+      description: tbd
+    - name: isemailbounced
+      description: tbd
+    - name: photourl
+      description: tbd
+    - name: jigsaw
+      description: tbd
+    - name: jigsawcontactid
+      description: tbd
+    - name: individualid
+      description: tbd
+    - name: aqb__anlink__c
+      description: tbd
+    - name: aqb__aname__c
+      description: tbd
+    - name: aqb__accessibilitypreferences__c
+      description: tbd
+    - name: aqb__accountcapacity__c
+      description: tbd
+    - name: aqb__accountmailingaddresstype__c
+      description: tbd
+    - name: aqb__accountmailingaddress__c
+      description: tbd
+    - name: aqb__accountmailingcity__c
+      description: tbd
+    - name: aqb__accountmailingcountry__c
+      description: tbd
+    - name: aqb__accountmailingcounty__c
+      description: tbd
+    - name: aqb__accountmailinglocality__c
+      description: tbd
+    - name: aqb__accountmailingnote__c
+      description: tbd
+    - name: aqb__accountmailingpostalcode__c
+      description: tbd
+    - name: aqb__accountmailingstate__c
+      description: tbd
+    - name: aqb__accountmailingstatus__c
+      description: tbd
+    - name: aqb__accountmailingstreet__c
+      description: tbd
+    - name: aqb__accountphone__c
+      description: tbd
+    - name: aqb__accountreadiness__c
+      description: tbd
+    - name: aqb__additionalinstitutionalsuffix__c
+      description: tbd
+    - name: aqb__addresschangeflags__c
+      description: tbd
+    - name: aqb__addressinusetext__c
+      description: tbd
+    - name: aqb__addressinusetype__c
+      description: tbd
+    - name: aqb__age__c
+      description: tbd
+    - name: aqb__alert__c
+      description: tbd
+    - name: aqb__automatedalternatename__c
+      description: tbd
+    - name: aqb__automatedcommunityname__c
+      description: tbd
+    - name: aqb__automateddefaultaddresssalutation__c
+      description: tbd
+    - name: aqb__automateddefaultgreetingsalutation__c
+      description: tbd
+    - name: aqb__automatedformalname__c
+      description: tbd
+    - name: aqb__automatedpreferredname__c
+      description: tbd
+    - name: aqb__awardgiftcredit__c
+      description: tbd
+    - name: aqb__businessaddresscity__c
+      description: tbd
+    - name: aqb__businessaddresscountry__c
+      description: tbd
+    - name: aqb__businessaddresslocality__c
+      description: tbd
+    - name: aqb__businessaddressnote__c
+      description: tbd
+    - name: aqb__businessaddresspostalcode__c
+      description: tbd
+    - name: aqb__businessaddressstatepro__c
+      description: tbd
+    - name: aqb__businessaddressstatus__c
+      description: tbd
+    - name: aqb__businessaddressstreet__c
+      description: tbd
+    - name: aqb__businessaddresstype__c
+      description: tbd
+    - name: aqb__businessaddress__c
+      description: tbd
+    - name: aqb__businessemail__c
+      description: tbd
+    - name: aqb__businessphone__c
+      description: tbd
+    - name: aqb__caecategory__c
+      description: tbd
+    - name: aqb__cnlink__c
+      description: tbd
+    - name: aqb__cname__c
+      description: tbd
+    - name: aqb__carrierroute__c
+      description: tbd
+    - name: aqb__causedeath__c
+      description: tbd
+    - name: aqb__certifiedcityname__c
+      description: tbd
+    - name: aqb__certifiedstateabbreviation__c
+      description: tbd
+    - name: aqb__certifiedstreetname__c
+      description: tbd
+    - name: aqb__certifiedzipcode__c
+      description: tbd
+    - name: aqb__cityofdeath__c
+      description: tbd
+    - name: aqb__comments__c
+      description: tbd
+    - name: aqb__communitypassword__c
+      description: tbd
+    - name: aqb__contactanonymousoption__c
+      description: tbd
+    - name: aqb__contactcount__c
+      description: tbd
+    - name: aqb__contactexternalid__c
+      description: tbd
+    - name: aqb__contactgrouping__c
+      description: tbd
+    - name: aqb__contactmailingaddressstreetlineone__c
+      description: tbd
+    - name: aqb__contactmailingaddressstreetlinethre__c
+      description: tbd
+    - name: aqb__contactmailingaddressstreetlinetwo__c
+      description: tbd
+    - name: aqb__contactpicture__c
+      description: tbd
+    - name: aqb__contactsource__c
+      description: tbd
+    - name: aqb__contact_mailing_address__c
+      description: tbd
+    - name: aqb__corroborateddeathdate__c
+      description: tbd
+    - name: aqb__countryid__c
+      description: tbd
+    - name: aqb__countryofdeath__c
+      description: tbd
+    - name: aqb__countynumber__c
+      description: tbd
+    - name: aqb__county__c
+      description: tbd
+    - name: aqb__dateobituaryattached__c
+      description: tbd
+    - name: aqb__dateofdeathnotification__c
+      description: tbd
+    - name: aqb__dateofdeathprecision__c
+      description: tbd
+    - name: aqb__dateofdeath__c
+      description: tbd
+    - name: aqb__deathcorroboratedby__c
+      description: tbd
+    - name: aqb__deceased__c
+      description: tbd
+    - name: aqb__defaultaddresssal__c
+      description: tbd
+    - name: aqb__defaultgreetingsal__c
+      description: tbd
+    - name: aqb__degreeyear__c
+      description: tbd
+    - name: aqb__degree_level__c
+      description: tbd
+    - name: aqb__degree__c
+      description: tbd
+    - name: aqb__deliverypoint1__c
+      description: tbd
+    - name: aqb__deliverypointcheckdigit__c
+      description: tbd
+    - name: aqb__deliverypointvalidationflag__c
+      description: tbd
+    - name: aqb__deliverypointvalidation__c
+      description: tbd
+    - name: aqb__directoryincludesendemaillink__c
+      description: tbd
+    - name: aqb__directorypublishaddress__c
+      description: tbd
+    - name: aqb__directorypublishcoredata__c
+      description: tbd
+    - name: aqb__directorypublisheducation__c
+      description: tbd
+    - name: aqb__directorypublishemail__c
+      description: tbd
+    - name: aqb__directorypublishemployment__c
+      description: tbd
+    - name: aqb__directorypublishinterests__c
+      description: tbd
+    - name: aqb__directorypublishphone__c
+      description: tbd
+    - name: aqb__districtalternate__c
+      description: tbd
+    - name: aqb__districtisoverridden__c
+      description: tbd
+    - name: aqb__district__c
+      description: tbd
+    - name: aqb__donotarchive__c
+      description: tbd
+    - name: aqb__donotcontact__c
+      description: tbd
+    - name: aqb__donotsolicit__c
+      description: tbd
+    - name: aqb__educationlink__c
+      description: tbd
+    - name: aqb__emailnotes__c
+      description: tbd
+    - name: aqb__emailpreference__c
+      description: tbd
+    - name: aqb__employername__c
+      description: tbd
+    - name: aqb__engagementscoreexperiential__c
+      description: tbd
+    - name: aqb__engagementscorephilanthropic__c
+      description: tbd
+    - name: aqb__engagementscorevolunteer__c
+      description: tbd
+    - name: aqb__engagmentscorecommunication__c
+      description: tbd
+    - name: aqb__ethnicity__c
+      description: tbd
+    - name: aqb__fipsstatecode__c
+      description: tbd
+    - name: aqb__fnlink__c
+      description: tbd
+    - name: aqb__fname__c
+      description: tbd
+    - name: aqb__flag__c
+      description: tbd
+    - name: aqb__foodpreferences__c
+      description: tbd
+    - name: aqb__full_name__c
+      description: tbd
+    - name: aqb__gender__c
+      description: tbd
+    - name: aqb__greeting__c
+      description: tbd
+    - name: aqb__institution__c
+      description: tbd
+    - name: aqb__institutionalarea1alternate__c
+      description: tbd
+    - name: aqb__institutionalarea1isoverridden__c
+      description: tbd
+    - name: aqb__institutionalarea1__c
+      description: tbd
+    - name: aqb__institutionalarea2alternate__c
+      description: tbd
+    - name: aqb__institutionalarea2isoverridden__c
+      description: tbd
+    - name: aqb__institutionalarea2__c
+      description: tbd
+    - name: aqb__institutionalarea3alternate__c
+      description: tbd
+    - name: aqb__institutionalarea3isoverridden__c
+      description: tbd
+    - name: aqb__institutionalarea3__c
+      description: tbd
+    - name: aqb__institutionalarea4alternate__c
+      description: tbd
+    - name: aqb__institutionalarea4isoverridden__c
+      description: tbd
+    - name: aqb__institutionalarea4__c
+      description: tbd
+    - name: aqb__institutionalsuffixoverride__c
+      description: tbd
+    - name: aqb__institutionalsuffix__c
+      description: tbd
+    - name: aqb__internalcontactmailingstreetone__c
+      description: tbd
+    - name: aqb__internalcontactmailingstreettwo__c
+      description: tbd
+    - name: aqb__involvementrating__c
+      description: tbd
+    - name: aqb__involvementscore__c
+      description: tbd
+    - name: aqb__isprimarycontact__c
+      description: tbd
+    - name: aqb__issecondarycontact__c
+      description: tbd
+    - name: aqb__languages__c
+      description: tbd
+    - name: aqb__lastactivitydate__c
+      description: tbd
+    - name: aqb__latitude__c
+      description: tbd
+    - name: aqb__legacycontactidnumber__c
+      description: tbd
+    - name: aqb__linkedaddress__c
+      description: tbd
+    - name: aqb__locationofdeath__c
+      description: tbd
+    - name: aqb__longitude__c
+      description: tbd
+    - name: aqb__maidenname__c
+      description: tbd
+    - name: aqb__mailingaddresstype__c
+      description: tbd
+    - name: aqb__mailingdistrict__c
+      description: tbd
+    - name: aqb__mailinglists__c
+      description: tbd
+    - name: aqb__mailinglocality__c
+      description: tbd
+    - name: aqb__mailingnote__c
+      description: tbd
+    - name: aqb__mailingregion__c
+      description: tbd
+    - name: aqb__mailingstatus__c
+      description: tbd
+    - name: aqb__mailingstreetlinefour__c
+      description: tbd
+    - name: aqb__mailingstreetlineone__c
+      description: tbd
+    - name: aqb__mailingstreetlinethree__c
+      description: tbd
+    - name: aqb__mailingstreetlinetwo__c
+      description: tbd
+    - name: aqb__mailingtimezone__c
+      description: tbd
+    - name: aqb__maritalstatus__c
+      description: tbd
+    - name: aqb__mobilework__c
+      description: tbd
+    - name: aqb__mostrecenteventattendancelink__c
+      description: tbd
+    - name: aqb__mostrecenteventattended__c
+      description: tbd
+    - name: aqb__most_recent_event_attendance_date__c
+      description: tbd
+    - name: aqb__most_recent_event_registration_date__c
+      description: tbd
+    - name: aqb__most_recent_event_registration_link__c
+      description: tbd
+    - name: aqb__most_recent_event_registration__c
+      description: tbd
+    - name: aqb__name__c
+      description: tbd
+    - name: aqb__nextactivitydate__c
+      description: tbd
+    - name: aqb__nextactivity__c
+      description: tbd
+    - name: aqb__nickname__c
+      description: tbd
+    - name: aqb__notifiedby__c
+      description: tbd
+    - name: aqb__number_of_events_attended__c
+      description: tbd
+    - name: aqb__obituaryattached__c
+      description: tbd
+    - name: aqb__obituarylink__c
+      description: tbd
+    - name: aqb__otheremail__c
+      description: tbd
+    - name: aqb__otherpreferences__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__pnamelink__c
+      description: tbd
+    - name: aqb__pname__c
+      description: tbd
+    - name: aqb__personalemail__c
+      description: tbd
+    - name: aqb__phonenotes__c
+      description: tbd
+    - name: aqb__phonepreference__c
+      description: tbd
+    - name: aqb__placeofbirth__c
+      description: tbd
+    - name: aqb__preferredyear__c
+      description: tbd
+    - name: aqb__presentation_preferences__c
+      description: tbd
+    - name: aqb__primaryemploymentlink__c
+      description: tbd
+    - name: aqb__primaryemploymenttitle__c
+      description: tbd
+    - name: aqb__primarygiftrecognitioncredit_percent__c
+      description: tbd
+    - name: aqb__pronoun__c
+      description: tbd
+    - name: aqb__rfm__c
+      description: tbd
+    - name: aqb__regionalternate__c
+      description: tbd
+    - name: aqb__regionisoverridden__c
+      description: tbd
+    - name: aqb__region__c
+      description: tbd
+    - name: aqb__relationship__c
+      description: tbd
+    - name: aqb__residentialdeliveryindicator__c
+      description: tbd
+    - name: aqb__revertaddressinusetype__c
+      description: tbd
+    - name: aqb__salutationlink__c
+      description: tbd
+    - name: aqb__schoolemail__c
+      description: tbd
+    - name: aqb__school__c
+      description: tbd
+    - name: aqb__secondarygiftrecognitioncreditpercent__c
+      description: tbd
+    - name: aqb__secondarytype__c
+      description: tbd
+    - name: aqb__setup__c
+      description: tbd
+    - name: aqb__signator__c
+      description: tbd
+    - name: aqb__stateid__c
+      description: tbd
+    - name: aqb__stateprovinceofdeath__c
+      description: tbd
+    - name: aqb__suffix__c
+      description: tbd
+    - name: aqb__totalaccountopenopportunities__c
+      description: tbd
+    - name: aqb__totalengagementscore__c
+      description: tbd
+    - name: aqb__total_number_of_event_registrations__c
+      description: tbd
+    - name: aqb__total_of_all_registration_fees__c
+      description: tbd
+    - name: aqb__type__c
+      description: tbd
+    - name: aqb__useaccountaddressonimport__c
+      description: tbd
+    - name: aqb__vsealumnidegreecategory__c
+      description: tbd
+    - name: aqb__validationdate__c
+      description: tbd
+    - name: aqb__verificationflag__c
+      description: tbd
+    - name: aqc_multipleethnicity__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqc_partial_birth_date__c
+      description: tbd
+    - name: aqb__engagementscorecategory__c
+      description: tbd
+    - name: aqb__engagementscoreoverride__c
+      description: tbd
+    - name: aqb__engagementscore__c
+      description: tbd
+    - name: aqb__professionalsuffix__c
+      description: tbd
+    - name: aqc_contact_id_text__c
+      description: tbd
+    - name: aqc_power_of_one__c
+      description: tbd
+    - name: vud_sort_name__c
+      description: tbd
+    - name: vud_contact_external_id__c
+      description: tbd
+    - name: et4ae5__hasoptedoutofmobile__c
+      description: tbd
+    - name: et4ae5__mobile_country_code__c
+      description: tbd
+    - name: vu_account_total__c
+      description: tbd
+    - name: email_unsubscribe_reason__c
+      description: tbd
+    - name: aqb__dummytext_aq__c
+      description: tbd
+    - name: test_email_groups__c
+      description: tbd
+    - name: id_full_characters__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

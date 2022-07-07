@@ -1,0 +1,108 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__education__c
+    description: "TBD"
+    columns:
+    - name: aqb__education__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__areasofstudy__c
+      description: tbd
+    - name: aqb__campus__c
+      description: tbd
+    - name: aqb__certificationdescription__c
+      description: tbd
+    - name: aqb__certification__c
+      description: tbd
+    - name: aqb__conferringentity__c
+      description: tbd
+    - name: aqb__contactid__c
+      description: tbd
+    - name: aqb__dateissued__c
+      description: tbd
+    - name: aqb__degreediploma__c
+      description: tbd
+    - name: aqb__degreelevel__c
+      description: tbd
+    - name: aqb__department__c
+      description: tbd
+    - name: aqb__entryclassyear__c
+      description: tbd
+    - name: aqb__expirationdate__c
+      description: tbd
+    - name: aqb__firstyearofattendance__c
+      description: tbd
+    - name: aqb__graduationyear__c
+      description: tbd
+    - name: aqb__graduation_month__c
+      description: tbd
+    - name: aqb__granting_school__c
+      description: tbd
+    - name: aqb__honorarydegree__c
+      description: tbd
+    - name: aqb__institution__c
+      description: tbd
+    - name: aqb__institutionalunit__c
+      description: tbd
+    - name: aqb__isprimarydegree__c
+      description: tbd
+    - name: aqb__lastyearofattendance__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__preferredyear__c
+      description: tbd
+    - name: aqb__school__c
+      description: tbd
+    - name: aqb__source__c
+      description: tbd
+    - name: aqb__specialty__c
+      description: tbd
+    - name: aqb__status__c
+      description: tbd
+    - name: aqb__subspecialtycategory__c
+      description: tbd
+    - name: aqb__subspecialty__c
+      description: tbd
+    - name: aqb__type__c
+      description: tbd
+    - name: aqb__studentstatus__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: vu_gold_start_year__c
+      description: tbd
+    - name: vu_gold_end_year__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 
