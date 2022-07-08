@@ -16,4 +16,3 @@ where acct.ISDELETED = 0 and cnct.isdeleted = 0
 )
 
 select * from contacts_test_tbl
-;
