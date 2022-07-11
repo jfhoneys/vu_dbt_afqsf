@@ -1,0 +1,110 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__giftcredit__c
+    description: "TBD"
+    columns:
+    - name: aqb__giftcredit__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__alert__c
+      description: tbd
+    - name: aqb__anonymous__c
+      description: tbd
+    - name: aqb__campaignfund__c
+      description: tbd
+    - name: aqb__contactid__c
+      description: tbd
+    - name: aqb__creditedopportunity__c
+      description: tbd
+    - name: aqb__donoraccount__c
+      description: tbd
+    - name: aqb__giftdate__c
+      description: tbd
+    - name: aqb__giftdescription__c
+      description: tbd
+    - name: aqb__giftid__c
+      description: tbd
+    - name: aqb__gift_recognition_credit_count__c
+      description: tbd
+    - name: aqb__isprocessed__c
+      description: tbd
+    - name: aqb__matched__c
+      description: tbd
+    - name: aqb__matchinggiftpaymentsdue__c
+      description: tbd
+    - name: aqb__matchinggiftpaymentsmade__c
+      description: tbd
+    - name: aqb__nextpledgeduedate__c
+      description: tbd
+    - name: aqb__numberofgiftcreditsawarded__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__payments__c
+      description: tbd
+    - name: aqb__pledgebalanceconditional__c
+      description: tbd
+    - name: aqb__pledgebalancetotal__c
+      description: tbd
+    - name: aqb__pledgebalanceunconditional__c
+      description: tbd
+    - name: aqb__primarygiftcreditamount__c
+      description: tbd
+    - name: aqb__primarygiftrecognitioncreditpercent__c
+      description: tbd
+    - name: aqb__proportionalgiftcredit__c
+      description: tbd
+    - name: aqb__restrictedtotal__c
+      description: tbd
+    - name: aqb__secondarygiftcreditamount__c
+      description: tbd
+    - name: aqb__secondarygiftrecognitioncreditpercent__c
+      description: tbd
+    - name: aqb__signator__c
+      description: tbd
+    - name: aqb__statusabr__c
+      description: tbd
+    - name: aqb__status__c
+      description: tbd
+    - name: aqb__totalrecognitioncredit__c
+      description: tbd
+    - name: aqb__unrestrictedtotal__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqb__engagementscorecategory__c
+      description: tbd
+    - name: aqb__engagementscoreoverride__c
+      description: tbd
+    - name: aqb__engagementscore__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

@@ -1,0 +1,64 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__usergoal__c
+    description: "TBD"
+    columns:
+    - name: aqb__usergoal__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__classification__c
+      description: tbd
+    - name: aqb__goalcount__c
+      description: tbd
+    - name: aqb__goalcurrencyamount__c
+      description: tbd
+    - name: aqb__goal__c
+      description: tbd
+    - name: aqb__interval__c
+      description: tbd
+    - name: aqb__lastgoalintervaldate__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__resultcount__c
+      description: tbd
+    - name: aqb__resultcurrencyamount__c
+      description: tbd
+    - name: aqb__resultdate__c
+      description: tbd
+    - name: aqb__user__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

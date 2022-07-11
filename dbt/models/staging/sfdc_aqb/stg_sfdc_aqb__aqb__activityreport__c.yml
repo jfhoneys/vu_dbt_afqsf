@@ -1,0 +1,110 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__activityreport__c
+    description: "TBD"
+    columns:
+    - name: aqb__activityreport__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__activitydatetime__c
+      description: tbd
+    - name: aqb__activitydate__c
+      description: tbd
+    - name: aqb__activitysummary__c
+      description: tbd
+    - name: aqb__calldisposition__c
+      description: tbd
+    - name: aqb__calldurationinseconds__c
+      description: tbd
+    - name: aqb__callobject__c
+      description: tbd
+    - name: aqb__confidentialcomment__c
+      description: tbd
+    - name: aqb__date__c
+      description: tbd
+    - name: aqb__description__c
+      description: tbd
+    - name: aqb__durationinminutes__c
+      description: tbd
+    - name: aqb__enddatetime__c
+      description: tbd
+    - name: aqb__essentialmove__c
+      description: tbd
+    - name: aqb__followup__c
+      description: tbd
+    - name: aqb__isalldayevent__c
+      description: tbd
+    - name: aqb__isprivate__c
+      description: tbd
+    - name: aqb__isvisibleinselfservice__c
+      description: tbd
+    - name: aqb__location__c
+      description: tbd
+    - name: aqb__objective__c
+      description: tbd
+    - name: aqb__opportunity__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__priority__c
+      description: tbd
+    - name: aqb__purpose__c
+      description: tbd
+    - name: aqb__reportstatus__c
+      description: tbd
+    - name: aqb__reportsummary__c
+      description: tbd
+    - name: aqb__result__c
+      description: tbd
+    - name: aqb__startdatetime__c
+      description: tbd
+    - name: aqb__status__c
+      description: tbd
+    - name: aqb__stewardship__c
+      description: tbd
+    - name: aqb__subjectaq__c
+      description: tbd
+    - name: aqb__subject__c
+      description: tbd
+    - name: aqb__type__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: event__c
+      description: tbd
+    - name: vu_outcome__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

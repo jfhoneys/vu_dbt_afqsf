@@ -1,0 +1,64 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__gifttootherorganizations__c
+    description: "TBD"
+    columns:
+    - name: aqb__gifttootherorganizations__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__amountofgift__c
+      description: tbd
+    - name: aqb__contact__c
+      description: tbd
+    - name: aqb__dateofgift__c
+      description: tbd
+    - name: aqb__description__c
+      description: tbd
+    - name: aqb__designationofgift__c
+      description: tbd
+    - name: aqb__evaluation_date__c
+      description: tbd
+    - name: aqb__lastverifiedby__c
+      description: tbd
+    - name: aqb__lastverifiedon__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__recipientorganizationlocation__c
+      description: tbd
+    - name: aqb__recipientorganization__c
+      description: tbd
+    - name: aqb__source__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

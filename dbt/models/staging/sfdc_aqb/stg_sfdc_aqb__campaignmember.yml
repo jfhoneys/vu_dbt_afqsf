@@ -1,0 +1,188 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__campaignmember
+    description: "TBD"
+    columns:
+    - name: campaignmember_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: campaignid
+      description: tbd
+    - name: leadid
+      description: tbd
+    - name: contactid
+      description: tbd
+    - name: accountid
+      description: tbd
+    - name: status
+      description: tbd
+    - name: hasresponded
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: firstrespondeddate
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: salutation
+      description: tbd
+    - name: name
+      description: tbd
+    - name: firstname
+      description: tbd
+    - name: lastname
+      description: tbd
+    - name: title
+      description: tbd
+    - name: street
+      description: tbd
+    - name: city
+      description: tbd
+    - name: state
+      description: tbd
+    - name: postalcode
+      description: tbd
+    - name: country
+      description: tbd
+    - name: email
+      description: tbd
+    - name: phone
+      description: tbd
+    - name: fax
+      description: tbd
+    - name: mobilephone
+      description: tbd
+    - name: description
+      description: tbd
+    - name: donotcall
+      description: tbd
+    - name: hasoptedoutofemail
+      description: tbd
+    - name: hasoptedoutoffax
+      description: tbd
+    - name: leadsource
+      description: tbd
+    - name: companyoraccount
+      description: tbd
+    - name: type
+      description: tbd
+    - name: leadorcontactid
+      description: tbd
+    - name: leadorcontactownerid
+      description: tbd
+    - name: aqb__accountmember__c
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__active__c
+      description: tbd
+    - name: aqb__address__c
+      description: tbd
+    - name: aqb__affinaquestexternaladd__c
+      description: tbd
+    - name: aqb__alternatechannel__c
+      description: tbd
+    - name: aqb__campaignrecordtypeid__c
+      description: tbd
+    - name: aqb__city__c
+      description: tbd
+    - name: aqb__communicationaccount__c
+      description: tbd
+    - name: aqb__communicationalternatechannel__c
+      description: tbd
+    - name: aqb__communicationcontact__c
+      description: tbd
+    - name: aqb__communicationschannel__c
+      description: tbd
+    - name: aqb__contact__c
+      description: tbd
+    - name: aqb__country__c
+      description: tbd
+    - name: aqb__delete__c
+      description: tbd
+    - name: aqb__email__c
+      description: tbd
+    - name: aqb__facebook__c
+      description: tbd
+    - name: aqb__firstgift__c
+      description: tbd
+    - name: aqb__firsttransactiondate__c
+      description: tbd
+    - name: aqb__firsttransaction__c
+      description: tbd
+    - name: aqb__greeting__c
+      description: tbd
+    - name: aqb__instagram__c
+      description: tbd
+    - name: aqb__mailingname__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__phonenumber__c
+      description: tbd
+    - name: aqb__postalcode__c
+      description: tbd
+    - name: aqb__preferenceaccount__c
+      description: tbd
+    - name: aqb__preferencealternatechannel__c
+      description: tbd
+    - name: aqb__preferencecontact__c
+      description: tbd
+    - name: aqb__preferredchannel__c
+      description: tbd
+    - name: aqb__sms__c
+      description: tbd
+    - name: aqb__startdate__c
+      description: tbd
+    - name: aqb__stateid__c
+      description: tbd
+    - name: aqb__stateprovince__c
+      description: tbd
+    - name: aqb__stopdate__c
+      description: tbd
+    - name: aqb__streetlineone__c
+      description: tbd
+    - name: aqb__streetlinethree__c
+      description: tbd
+    - name: aqb__streetlinetwo__c
+      description: tbd
+    - name: aqb__targetlisttype__c
+      description: tbd
+    - name: aqb__targetlist_type__c
+      description: tbd
+    - name: aqb__twitter__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqb__engagementscorecategory__c
+      description: tbd
+    - name: aqb__engagementscoreoverride__c
+      description: tbd
+    - name: aqb__engagementscore__c
+      description: tbd
+    - name: et4ae5__activity__c
+      description: tbd
+    - name: vu_fiscal_years_active__c
+      description: tbd
+    - name: vu_most_recent_gift_date__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

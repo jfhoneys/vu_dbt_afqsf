@@ -1,0 +1,250 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__aqaddress__c
+    description: "TBD"
+    columns:
+    - name: aqb__aqaddress__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: aqb__accountexternalidlinkfield__c
+      description: tbd
+    - name: aqb__accountexternalid__c
+      description: tbd
+    - name: aqb__accountprefaddlink__c
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__addresschangeflags__c
+      description: tbd
+    - name: aqb__address__c
+      description: tbd
+    - name: aqb__carrierroute__c
+      description: tbd
+    - name: aqb__censustract__c
+      description: tbd
+    - name: aqb__certifiedcityname__c
+      description: tbd
+    - name: aqb__certifiedstateabbreviation__c
+      description: tbd
+    - name: aqb__certifiedstreetname__c
+      description: tbd
+    - name: aqb__certifiedzipcode__c
+      description: tbd
+    - name: aqb__changesource__c
+      description: tbd
+    - name: aqb__channeladdress__c
+      description: tbd
+    - name: aqb__city__c
+      description: tbd
+    - name: aqb__congressionaldistrict__c
+      description: tbd
+    - name: aqb__contactexternalidlinkfield__c
+      description: tbd
+    - name: aqb__contactexternalid__c
+      description: tbd
+    - name: aqb__contactprefaddlink__c
+      description: tbd
+    - name: aqb__contact__c
+      description: tbd
+    - name: aqb__countryid__c
+      description: tbd
+    - name: aqb__country__c
+      description: tbd
+    - name: aqb__countynumber__c
+      description: tbd
+    - name: aqb__county__c
+      description: tbd
+    - name: aqb__dpcheckdigit__c
+      description: tbd
+    - name: aqb__dpv__c
+      description: tbd
+    - name: aqb__deliverypoint1__c
+      description: tbd
+    - name: aqb__deliverypointcheckdigit__c
+      description: tbd
+    - name: aqb__deliverypointvalidationflag__c
+      description: tbd
+    - name: aqb__deliverypointvalidation__c
+      description: tbd
+    - name: aqb__deliverypoint__c
+      description: tbd
+    - name: aqb__district__c
+      description: tbd
+    - name: aqb__donotarchive__c
+      description: tbd
+    - name: aqb__email__c
+      description: tbd
+    - name: aqb__employmentexternalid__c
+      description: tbd
+    - name: aqb__employmentlink__c
+      description: tbd
+    - name: aqb__fipsstatecode__c
+      description: tbd
+    - name: aqb__facebook__c
+      description: tbd
+    - name: aqb__fax__c
+      description: tbd
+    - name: aqb__first_use__c
+      description: tbd
+    - name: aqb__flag__c
+      description: tbd
+    - name: aqb__instagram__c
+      description: tbd
+    - name: aqb__internalstreetlineone__c
+      description: tbd
+    - name: aqb__internalstreetlinetwo__c
+      description: tbd
+    - name: aqb__internetaddress__c
+      description: tbd
+    - name: aqb__isactiveaddress__c
+      description: tbd
+    - name: aqb__isactive__c
+      description: tbd
+    - name: aqb__iscurrentactiveaddress__c
+      description: tbd
+    - name: aqb__last_use__c
+      description: tbd
+    - name: aqb__latitude__c
+      description: tbd
+    - name: aqb__linkedinurl__c
+      description: tbd
+    - name: aqb__linkedto__c
+      description: tbd
+    - name: aqb__locality__c
+      description: tbd
+    - name: aqb__longitude__c
+      description: tbd
+    - name: aqb__mailinglists__c
+      description: tbd
+    - name: aqb__note__c
+      description: tbd
+    - name: aqb__origintype__c
+      description: tbd
+    - name: aqb__originalsource__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__phone__c
+      description: tbd
+    - name: aqb__postalcode__c
+      description: tbd
+    - name: aqb__postcodecountry__c
+      description: tbd
+    - name: aqb__postcodestateorprovince__c
+      description: tbd
+    - name: aqb__prefaddrlinkerror__c
+      description: tbd
+    - name: aqb__preferredstartday__c
+      description: tbd
+    - name: aqb__preferredstartmonth__c
+      description: tbd
+    - name: aqb__region__c
+      description: tbd
+    - name: aqb__residentialdeliveryindicator__c
+      description: tbd
+    - name: aqb__sms__c
+      description: tbd
+    - name: aqb__seasonalstartyear__c
+      description: tbd
+    - name: aqb__seasonalstopdate__c
+      description: tbd
+    - name: aqb__seasonalstopday__c
+      description: tbd
+    - name: aqb__seasonalstopmonth__c
+      description: tbd
+    - name: aqb__seasonalstopyear__c
+      description: tbd
+    - name: aqb__skype__c
+      description: tbd
+    - name: aqb__snapchat__c
+      description: tbd
+    - name: aqb__source__c
+      description: tbd
+    - name: aqb__startdate__c
+      description: tbd
+    - name: aqb__stateid__c
+      description: tbd
+    - name: aqb__stateprovince__c
+      description: tbd
+    - name: aqb__status__c
+      description: tbd
+    - name: aqb__streetlinefour__c
+      description: tbd
+    - name: aqb__streetlineone__c
+      description: tbd
+    - name: aqb__streetlineonex__c
+      description: tbd
+    - name: aqb__streetlinethree__c
+      description: tbd
+    - name: aqb__streetlinethreex__c
+      description: tbd
+    - name: aqb__streetlinetwo__c
+      description: tbd
+    - name: aqb__streetlinetwox__c
+      description: tbd
+    - name: aqb__street__c
+      description: tbd
+    - name: aqb__timezone__c
+      description: tbd
+    - name: aqb__twitch__c
+      description: tbd
+    - name: aqb__twitter__c
+      description: tbd
+    - name: aqb__type__c
+      description: tbd
+    - name: aqb__unlisted__c
+      description: tbd
+    - name: aqb__useasaccountmailingaddress__c
+      description: tbd
+    - name: aqb__useascontactbusinessaddress__c
+      description: tbd
+    - name: aqb__useascontactmailingaddress__c
+      description: tbd
+    - name: aqb__uses__c
+      description: tbd
+    - name: aqb__validationdate__c
+      description: tbd
+    - name: aqb__verificationdate__c
+      description: tbd
+    - name: aqb__verificationflag__c
+      description: tbd
+    - name: aqb__we_chat__c
+      description: tbd
+    - name: aqb__youtubechannel__c
+      description: tbd
+    - name: aqb__countryiso2__c
+      description: tbd
+    - name: aqb__countryiso3__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqb__primarychannellocation__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

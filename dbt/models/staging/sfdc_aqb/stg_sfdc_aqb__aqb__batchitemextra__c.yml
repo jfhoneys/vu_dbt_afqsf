@@ -1,0 +1,82 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__batchitemextra__c
+    description: "TBD"
+    columns:
+    - name: aqb__batchitemextra__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: aqb__batchitem__c
+      description: tbd
+    - name: aqb__acknowledgement__c
+      description: tbd
+    - name: aqb__amount__c
+      description: tbd
+    - name: aqb__campaignappeal__c
+      description: tbd
+    - name: aqb__conditionalpledge__c
+      description: tbd
+    - name: aqb__creditedyearoverridedate__c
+      description: tbd
+    - name: aqb__currencyexchangerate__c
+      description: tbd
+    - name: aqb__currencyunits__c
+      description: tbd
+    - name: aqb__currency__c
+      description: tbd
+    - name: aqb__datedue__c
+      description: tbd
+    - name: aqb__date__c
+      description: tbd
+    - name: aqb__description__c
+      description: tbd
+    - name: aqb__designation__c
+      description: tbd
+    - name: aqb__frequency__c
+      description: tbd
+    - name: aqb__method__c
+      description: tbd
+    - name: aqb__numberofpayments__c
+      description: tbd
+    - name: aqb__paymentnumber__c
+      description: tbd
+    - name: aqb__pledgeenddate__c
+      description: tbd
+    - name: aqb__pledgeinterval__c
+      description: tbd
+    - name: aqb__pledgescheduletype__c
+      description: tbd
+    - name: aqb__pledgestartdate__c
+      description: tbd
+    - name: aqb__pledgestipulation__c
+      description: tbd
+    - name: aqb__reference__c
+      description: tbd
+    - name: aqb__sendpledgereminder__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

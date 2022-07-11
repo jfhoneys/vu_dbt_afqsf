@@ -1,0 +1,600 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__profile
+    description: "TBD"
+    columns:
+    - name: profile_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: name
+      description: tbd
+    - name: permissionsemailsingle
+      description: tbd
+    - name: permissionsemailmass
+      description: tbd
+    - name: permissionsedittask
+      description: tbd
+    - name: permissionseditevent
+      description: tbd
+    - name: permissionsexportreport
+      description: tbd
+    - name: permissionsimportpersonal
+      description: tbd
+    - name: permissionsdataexport
+      description: tbd
+    - name: permissionsmanageusers
+      description: tbd
+    - name: permissionseditpublicfilters
+      description: tbd
+    - name: permissionseditpublictemplates
+      description: tbd
+    - name: permissionsmodifyalldata
+      description: tbd
+    - name: permissionsmanagecases
+      description: tbd
+    - name: permissionsmassinlineedit
+      description: tbd
+    - name: permissionseditknowledge
+      description: tbd
+    - name: permissionsmanageknowledge
+      description: tbd
+    - name: permissionsmanagesolutions
+      description: tbd
+    - name: permissionscustomizeapplication
+      description: tbd
+    - name: permissionseditreadonlyfields
+      description: tbd
+    - name: permissionsrunreports
+      description: tbd
+    - name: permissionsviewsetup
+      description: tbd
+    - name: permissionstransferanyentity
+      description: tbd
+    - name: permissionsnewreportbuilder
+      description: tbd
+    - name: permissionsactivatecontract
+      description: tbd
+    - name: permissionsactivateorder
+      description: tbd
+    - name: permissionsimportleads
+      description: tbd
+    - name: permissionsmanageleads
+      description: tbd
+    - name: permissionstransferanylead
+      description: tbd
+    - name: permissionsviewalldata
+      description: tbd
+    - name: permissionseditpublicdocuments
+      description: tbd
+    - name: permissionsviewencrypteddata
+      description: tbd
+    - name: permissionseditbrandtemplates
+      description: tbd
+    - name: permissionsedithtmltemplates
+      description: tbd
+    - name: permissionschatterinternaluser
+      description: tbd
+    - name: permissionsmanagetranslation
+      description: tbd
+    - name: permissionsmanageencryptionkeys
+      description: tbd
+    - name: permissionsdeleteactivatedcontract
+      description: tbd
+    - name: permissionschatterinviteexternalusers
+      description: tbd
+    - name: permissionssendsitrequests
+      description: tbd
+    - name: permissionsoverrideforecasts
+      description: tbd
+    - name: permissionsviewallforecasts
+      description: tbd
+    - name: permissionsapiuseronly
+      description: tbd
+    - name: permissionsmanageremoteaccess
+      description: tbd
+    - name: permissionscanusenewdashboardbuilder
+      description: tbd
+    - name: permissionsmanagecategories
+      description: tbd
+    - name: permissionsconvertleads
+      description: tbd
+    - name: permissionspasswordneverexpires
+      description: tbd
+    - name: permissionsuseteamreassignwizards
+      description: tbd
+    - name: permissionseditactivatedorders
+      description: tbd
+    - name: permissionsinstallmultiforce
+      description: tbd
+    - name: permissionspublishmultiforce
+      description: tbd
+    - name: permissionschatterowngroups
+      description: tbd
+    - name: permissionseditopplineitemunitprice
+      description: tbd
+    - name: permissionscreatemultiforce
+      description: tbd
+    - name: permissionsbulkapiharddelete
+      description: tbd
+    - name: permissionsinboundmigrationtoolsuser
+      description: tbd
+    - name: permissionssolutionimport
+      description: tbd
+    - name: permissionsmanagecallcenters
+      description: tbd
+    - name: permissionsmanagesynonyms
+      description: tbd
+    - name: permissionsoutboundmigrationtoolsuser
+      description: tbd
+    - name: permissionsviewcontent
+      description: tbd
+    - name: permissionsmanageemailclientconfig
+      description: tbd
+    - name: permissionsenablenotifications
+      description: tbd
+    - name: permissionsisssoenabled
+      description: tbd
+    - name: permissionsmanagedataintegrations
+      description: tbd
+    - name: permissionsdistributefromperswksp
+      description: tbd
+    - name: permissionsviewdatacategories
+      description: tbd
+    - name: permissionsmanagedatacategories
+      description: tbd
+    - name: permissionsauthorapex
+      description: tbd
+    - name: permissionsmanagemobile
+      description: tbd
+    - name: permissionsapienabled
+      description: tbd
+    - name: permissionsmanagecustomreporttypes
+      description: tbd
+    - name: permissionseditcasecomments
+      description: tbd
+    - name: permissionstransferanycase
+      description: tbd
+    - name: permissionscontentadministrator
+      description: tbd
+    - name: permissionscreateworkspaces
+      description: tbd
+    - name: permissionsmanagecontentpermissions
+      description: tbd
+    - name: permissionsmanagecontentproperties
+      description: tbd
+    - name: permissionsmanagecontenttypes
+      description: tbd
+    - name: permissionsschedulejob
+      description: tbd
+    - name: permissionsmanageexchangeconfig
+      description: tbd
+    - name: permissionsmanageanalyticsnapshots
+      description: tbd
+    - name: permissionsschedulereports
+      description: tbd
+    - name: permissionsmanagebusinesshourholidays
+      description: tbd
+    - name: permissionsmanagedynamicdashboards
+      description: tbd
+    - name: permissionscustomsidebaronallpages
+      description: tbd
+    - name: permissionsmanageinteraction
+      description: tbd
+    - name: permissionsviewmyteamsdashboards
+      description: tbd
+    - name: permissionsmoderatechatter
+      description: tbd
+    - name: permissionsresetpasswords
+      description: tbd
+    - name: permissionsflowuflrequired
+      description: tbd
+    - name: permissionscaninsertfeedsystemfields
+      description: tbd
+    - name: permissionsactivitiesaccess
+      description: tbd
+    - name: permissionsmanageknowledgeimportexport
+      description: tbd
+    - name: permissionsemailtemplatemanagement
+      description: tbd
+    - name: permissionsemailadministration
+      description: tbd
+    - name: permissionsmanagechattermessages
+      description: tbd
+    - name: permissionsallowemailic
+      description: tbd
+    - name: permissionschatterfilelink
+      description: tbd
+    - name: permissionsforcetwofactor
+      description: tbd
+    - name: permissionsvieweventlogfiles
+      description: tbd
+    - name: permissionsmanagenetworks
+      description: tbd
+    - name: permissionsviewcaseinteraction
+      description: tbd
+    - name: permissionsmanageauthproviders
+      description: tbd
+    - name: permissionsrunflow
+      description: tbd
+    - name: permissionsmanagequotas
+      description: tbd
+    - name: permissionscreatecustomizedashboards
+      description: tbd
+    - name: permissionscreatedashboardfolders
+      description: tbd
+    - name: permissionsviewpublicdashboards
+      description: tbd
+    - name: permissionsmanagedashbdsinpubfolders
+      description: tbd
+    - name: permissionscreatecustomizereports
+      description: tbd
+    - name: permissionscreatereportfolders
+      description: tbd
+    - name: permissionsviewpublicreports
+      description: tbd
+    - name: permissionsmanagereportsinpubfolders
+      description: tbd
+    - name: permissionseditmydashboards
+      description: tbd
+    - name: permissionseditmyreports
+      description: tbd
+    - name: permissionsdeletefieldhistoryarchive
+      description: tbd
+    - name: permissionsviewallusers
+      description: tbd
+    - name: permissionsallowuniversalsearch
+      description: tbd
+    - name: permissionsconnectorgtoenvironmenthub
+      description: tbd
+    - name: permissionscreatecustomizefilters
+      description: tbd
+    - name: permissionscontenthubuser
+      description: tbd
+    - name: permissionsgovernnetworks
+      description: tbd
+    - name: permissionssalesconsole
+      description: tbd
+    - name: permissionstwofactorapi
+      description: tbd
+    - name: permissionsdeletetopics
+      description: tbd
+    - name: permissionsedittopics
+      description: tbd
+    - name: permissionscreatetopics
+      description: tbd
+    - name: permissionsassigntopics
+      description: tbd
+    - name: permissionsidentityenabled
+      description: tbd
+    - name: permissionsidentityconnect
+      description: tbd
+    - name: permissionsallowviewknowledge
+      description: tbd
+    - name: permissionscontentworkspaces
+      description: tbd
+    - name: permissionscreateworkbadgedefinition
+      description: tbd
+    - name: permissionsmanagesearchpromotionrules
+      description: tbd
+    - name: permissionscustommobileappsaccess
+      description: tbd
+    - name: permissionsviewhelplink
+      description: tbd
+    - name: permissionsmanageprofilespermissionsets
+      description: tbd
+    - name: permissionsassignpermissionsets
+      description: tbd
+    - name: permissionsmanageroles
+      description: tbd
+    - name: permissionsmanageipaddresses
+      description: tbd
+    - name: permissionsmanagesharing
+      description: tbd
+    - name: permissionsmanageinternalusers
+      description: tbd
+    - name: permissionsmanagepasswordpolicies
+      description: tbd
+    - name: permissionsmanageloginaccesspolicies
+      description: tbd
+    - name: permissionsviewplatformevents
+      description: tbd
+    - name: permissionsmanagecustompermissions
+      description: tbd
+    - name: permissionscanverifycomment
+      description: tbd
+    - name: permissionsmanageunlistedgroups
+      description: tbd
+    - name: permissionsstdautomaticactivitycapture
+      description: tbd
+    - name: permissionsmanagetwofactor
+      description: tbd
+    - name: permissionsdebugapex
+      description: tbd
+    - name: permissionslightningexperienceuser
+      description: tbd
+    - name: permissionsviewdataleakageevents
+      description: tbd
+    - name: permissionsconfigcustomrecs
+      description: tbd
+    - name: permissionssubmitmacrosallowed
+      description: tbd
+    - name: permissionsbulkmacrosallowed
+      description: tbd
+    - name: permissionsshareinternalarticles
+      description: tbd
+    - name: permissionsmanagesessionpermissionsets
+      description: tbd
+    - name: permissionssendannouncementemails
+      description: tbd
+    - name: permissionschattereditownpost
+      description: tbd
+    - name: permissionschattereditownrecordpost
+      description: tbd
+    - name: permissionscreateauditfields
+      description: tbd
+    - name: permissionsupdatewithinactiveowner
+      description: tbd
+    - name: permissionsmanagesandboxes
+      description: tbd
+    - name: permissionsautomaticactivitycapture
+      description: tbd
+    - name: permissionsimportcustomobjects
+      description: tbd
+    - name: permissionssalesforceiqinbox
+      description: tbd
+    - name: permissionsdelegatedtwofactor
+      description: tbd
+    - name: permissionschattercomposeuicodesnippet
+      description: tbd
+    - name: permissionsselectfilesfromsalesforce
+      description: tbd
+    - name: permissionsmoderatenetworkusers
+      description: tbd
+    - name: permissionsmergetopics
+      description: tbd
+    - name: permissionsviewforecastingpredictive
+      description: tbd
+    - name: permissionssubscribetolightningreports
+      description: tbd
+    - name: permissionsmanagepvtrptsanddashbds
+      description: tbd
+    - name: permissionsallowlightninglogin
+      description: tbd
+    - name: permissionsleadscoreuser
+      description: tbd
+    - name: permissionscampaigninfluence2
+      description: tbd
+    - name: permissionsviewdataassessment
+      description: tbd
+    - name: permissionsremovedirectmessagemembers
+      description: tbd
+    - name: permissionscanapprovefeedpost
+      description: tbd
+    - name: permissionsadddirectmessagemembers
+      description: tbd
+    - name: permissionsallowvieweditconvertedleads
+      description: tbd
+    - name: permissionssocialinsightslogoadmin
+      description: tbd
+    - name: permissionsshowcompanynameasuserbadge
+      description: tbd
+    - name: permissionsaccesscmc
+      description: tbd
+    - name: permissionsviewhealthcheck
+      description: tbd
+    - name: permissionsmanagehealthcheck
+      description: tbd
+    - name: permissionsopportunityiquser
+      description: tbd
+    - name: permissionsaccountiquser
+      description: tbd
+    - name: permissionspackaging2
+      description: tbd
+    - name: permissionsautomateddataentry
+      description: tbd
+    - name: permissionsmanagecertificates
+      description: tbd
+    - name: permissionscreatereportinlightning
+      description: tbd
+    - name: permissionspreventclassicexperience
+      description: tbd
+    - name: permissionshidereadbylist
+      description: tbd
+    - name: permissionsopportunityscoreuser
+      description: tbd
+    - name: permissionsusesmartdatadiscovery
+      description: tbd
+    - name: permissionsgetsmartdatadiscovery
+      description: tbd
+    - name: permissionscreateupdatesdddataset
+      description: tbd
+    - name: permissionscreateupdatesddstory
+      description: tbd
+    - name: permissionsmanagesmartdatadiscovery
+      description: tbd
+    - name: permissionssharesmartdatadiscoverystory
+      description: tbd
+    - name: permissionsmanagesmartdatadiscoverymodel
+      description: tbd
+    - name: permissionsdeletefieldhistory
+      description: tbd
+    - name: permissionslistemailsend
+      description: tbd
+    - name: permissionsfeedpinning
+      description: tbd
+    - name: permissionschangedashboardcolors
+      description: tbd
+    - name: permissionsmanagerecommendationstrategies
+      description: tbd
+    - name: permissionsmanagepropositions
+      description: tbd
+    - name: permissionscloseconversations
+      description: tbd
+    - name: permissionssubscribereportrolesgrps
+      description: tbd
+    - name: permissionssubscribedashboardrolesgrps
+      description: tbd
+    - name: permissionsuseweblink
+      description: tbd
+    - name: permissionshasunlimitednbaexecutions
+      description: tbd
+    - name: permissionsviewonlyembeddedappuser
+      description: tbd
+    - name: permissionssendexternalemailavailable
+      description: tbd
+    - name: permissionsviewallactivities
+      description: tbd
+    - name: permissionssubscribereporttootherusers
+      description: tbd
+    - name: permissionslightningconsoleallowedforuser
+      description: tbd
+    - name: permissionssubscribereportsrunasuser
+      description: tbd
+    - name: permissionssubscribetolightningdashboards
+      description: tbd
+    - name: permissionssubscribedashboardtootherusers
+      description: tbd
+    - name: permissionscreateltngtempinpub
+      description: tbd
+    - name: permissionstransactionalemailsend
+      description: tbd
+    - name: permissionsviewprivatestaticresources
+      description: tbd
+    - name: permissionscreateltngtempfolder
+      description: tbd
+    - name: permissionsapexrestservices
+      description: tbd
+    - name: permissionsgiverecognitionbadge
+      description: tbd
+    - name: permissionsusemysearch
+      description: tbd
+    - name: permissionsltngpromoreserved01userperm
+      description: tbd
+    - name: permissionsmanagesubscriptions
+      description: tbd
+    - name: permissionsmanagesurveys
+      description: tbd
+    - name: permissionsuseassistantdialog
+      description: tbd
+    - name: permissionsusequerysuggestions
+      description: tbd
+    - name: permissionsrecordvisibilityapi
+      description: tbd
+    - name: permissionsviewroles
+      description: tbd
+    - name: permissionssmartdatadiscoveryforcommunity
+      description: tbd
+    - name: permissionsstoryondswithpredicate
+      description: tbd
+    - name: permissionslmoutboundmessaginguserperm
+      description: tbd
+    - name: permissionsmodifydataclassification
+      description: tbd
+    - name: permissionsprivacydataaccess
+      description: tbd
+    - name: permissionsqueryallfiles
+      description: tbd
+    - name: permissionsmodifymetadata
+      description: tbd
+    - name: permissionsmanagecms
+      description: tbd
+    - name: permissionssandboxtestingincommunityapp
+      description: tbd
+    - name: permissionscaneditprompts
+      description: tbd
+    - name: permissionsviewuserpii
+      description: tbd
+    - name: permissionsmanagehubconnections
+      description: tbd
+    - name: permissionsb2bmarketinganalyticsuser
+      description: tbd
+    - name: permissionstracexdsqueries
+      description: tbd
+    - name: permissionssceviewalldata
+      description: tbd
+    - name: permissionsviewallcustomsettings
+      description: tbd
+    - name: permissionsviewallforeignkeynames
+      description: tbd
+    - name: permissionsheadlesscmsaccess
+      description: tbd
+    - name: permissionslmendmessagingsessionuserperm
+      description: tbd
+    - name: permissionsconsentapiupdate
+      description: tbd
+    - name: permissionsaccesscontentbuilder
+      description: tbd
+    - name: permissionsaccountswitcheruser
+      description: tbd
+    - name: permissionsviewanomalyevents
+      description: tbd
+    - name: permissionsmanagec360aconnections
+      description: tbd
+    - name: permissionsmanagereleaseupdates
+      description: tbd
+    - name: permissionsviewallprofiles
+      description: tbd
+    - name: permissionsskipidentityconfirmation
+      description: tbd
+    - name: permissionssendcustomnotifications
+      description: tbd
+    - name: permissionspackaging2delete
+      description: tbd
+    - name: permissionsviewrestrictionandscopingrules
+      description: tbd
+    - name: permissionsbotmanagebots
+      description: tbd
+    - name: permissionsbotmanagebotstrainingdata
+      description: tbd
+    - name: permissionsmanagetrustmeasures
+      description: tbd
+    - name: permissionsviewtrustmeasures
+      description: tbd
+    - name: permissionsisotopectocuser
+      description: tbd
+    - name: permissionshasunlimitederbscoringrequests
+      description: tbd
+    - name: permissionsisotopeaccess
+      description: tbd
+    - name: permissionsisotopelex
+      description: tbd
+    - name: permissionsmanageexternalconnections
+      description: tbd
+    - name: permissionsaiviewinsightobjects
+      description: tbd
+    - name: permissionsaicreateinsightobjects
+      description: tbd
+    - name: permissionsnativewebviewscrolling
+      description: tbd
+    - name: userlicenseid
+      description: tbd
+    - name: usertype
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: isssoenabled
+      description: tbd
+    - name: description
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

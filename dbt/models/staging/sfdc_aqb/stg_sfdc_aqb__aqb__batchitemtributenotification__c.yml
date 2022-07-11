@@ -1,0 +1,56 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__batchitemtributenotification__c
+    description: "TBD"
+    columns:
+    - name: aqb__batchitemtributenotification__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: aqb__batchitemtribute__c
+      description: tbd
+    - name: aqb__addressline1__c
+      description: tbd
+    - name: aqb__addressline2__c
+      description: tbd
+    - name: aqb__addressline3__c
+      description: tbd
+    - name: aqb__city__c
+      description: tbd
+    - name: aqb__contact__c
+      description: tbd
+    - name: aqb__country__c
+      description: tbd
+    - name: aqb__fullname__c
+      description: tbd
+    - name: aqb__greeting__c
+      description: tbd
+    - name: aqb__stateprovince__c
+      description: tbd
+    - name: aqb__zippostalcode__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

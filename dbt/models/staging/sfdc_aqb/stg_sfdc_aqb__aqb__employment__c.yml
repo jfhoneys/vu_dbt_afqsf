@@ -1,0 +1,100 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__employment__c
+    description: "TBD"
+    columns:
+    - name: aqb__employment__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: aqb__assistant_s_email__c
+      description: tbd
+    - name: aqb__assistant_s_name__c
+      description: tbd
+    - name: aqb__assistant_s_phone__c
+      description: tbd
+    - name: aqb__businessphone__c
+      description: tbd
+    - name: aqb__contactid__c
+      description: tbd
+    - name: aqb__corporate_phone__c
+      description: tbd
+    - name: aqb__donotarchive__c
+      description: tbd
+    - name: aqb__earnings__c
+      description: tbd
+    - name: aqb__employernamedisplay__c
+      description: tbd
+    - name: aqb__employername__c
+      description: tbd
+    - name: aqb__employmentcomment__c
+      description: tbd
+    - name: aqb__employmentexternalid__c
+      description: tbd
+    - name: aqb__enddate__c
+      description: tbd
+    - name: aqb__ended__c
+      description: tbd
+    - name: aqb__fax_number__c
+      description: tbd
+    - name: aqb__industry__c
+      description: tbd
+    - name: aqb__isprimaryemployer__c
+      description: tbd
+    - name: aqb__level__c
+      description: tbd
+    - name: aqb__linkedaddress__c
+      description: tbd
+    - name: aqb__linkedemployer__c
+      description: tbd
+    - name: aqb__occupation__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__primaryemployment__c
+      description: tbd
+    - name: aqb__source__c
+      description: tbd
+    - name: aqb__startdate__c
+      description: tbd
+    - name: aqb__started__c
+      description: tbd
+    - name: aqb__status__c
+      description: tbd
+    - name: aqb__title__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqb__engagementscorecategory__c
+      description: tbd
+    - name: aqb__engagementscoreoverride__c
+      description: tbd
+    - name: aqb__engagementscore__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

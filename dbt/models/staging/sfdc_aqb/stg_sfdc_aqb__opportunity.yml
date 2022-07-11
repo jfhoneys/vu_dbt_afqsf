@@ -1,0 +1,274 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__opportunity
+    description: "TBD"
+    columns:
+    - name: opportunity_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: accountid
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: isprivate
+      description: tbd
+    - name: name
+      description: tbd
+    - name: description
+      description: tbd
+    - name: stagename
+      description: tbd
+    - name: amount
+      description: tbd
+    - name: probability
+      description: tbd
+    - name: expectedrevenue
+      description: tbd
+    - name: totalopportunityquantity
+      description: tbd
+    - name: closedate
+      description: tbd
+    - name: type
+      description: tbd
+    - name: nextstep
+      description: tbd
+    - name: leadsource
+      description: tbd
+    - name: isclosed
+      description: tbd
+    - name: iswon
+      description: tbd
+    - name: forecastcategory
+      description: tbd
+    - name: forecastcategoryname
+      description: tbd
+    - name: campaignid
+      description: tbd
+    - name: hasopportunitylineitem
+      description: tbd
+    - name: pricebook2id
+      description: tbd
+    - name: ownerid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: fiscalquarter
+      description: tbd
+    - name: fiscalyear
+      description: tbd
+    - name: fiscal
+      description: tbd
+    - name: contactid
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: syncedquoteid
+      description: tbd
+    - name: contractid
+      description: tbd
+    - name: hasopenactivity
+      description: tbd
+    - name: hasoverduetask
+      description: tbd
+    - name: lastamountchangedhistoryid
+      description: tbd
+    - name: lastclosedatechangedhistoryid
+      description: tbd
+    - name: budget_confirmed__c
+      description: tbd
+    - name: discovery_completed__c
+      description: tbd
+    - name: roi_analysis_completed__c
+      description: tbd
+    - name: aqb__accountrating__c
+      description: tbd
+    - name: loss_reason__c
+      description: tbd
+    - name: aqb__alert__c
+      description: tbd
+    - name: aqb__anonymous__c
+      description: tbd
+    - name: aqb__campaignfund__c
+      description: tbd
+    - name: aqb__capacity__c
+      description: tbd
+    - name: aqb__capitalgain__c
+      description: tbd
+    - name: aqb__charitablededuction__c
+      description: tbd
+    - name: aqb__comment__c
+      description: tbd
+    - name: aqb__costbasis__c
+      description: tbd
+    - name: aqb__currentstagetracklink__c
+      description: tbd
+    - name: aqb__dateproposalsubmitted__c
+      description: tbd
+    - name: aqb__daysincurentstage__c
+      description: tbd
+    - name: aqb__deadline__c
+      description: tbd
+    - name: aqb__determinationdate__c
+      description: tbd
+    - name: aqb__donotcontact__c
+      description: tbd
+    - name: aqb__earlieststartdate__c
+      description: tbd
+    - name: aqb__finishyear__c
+      description: tbd
+    - name: aqb__firstpaymentdate__c
+      description: tbd
+    - name: aqb__fundingcomplete__c
+      description: tbd
+    - name: aqb__fundraisingcampaign__c
+      description: tbd
+    - name: aqb__giftamount__c
+      description: tbd
+    - name: aqb__giftdate__c
+      description: tbd
+    - name: aqb__giftsubtype__c
+      description: tbd
+    - name: aqb__goalamount__c
+      description: tbd
+    - name: aqb__goalyear__c
+      description: tbd
+    - name: aqb__goal_type__c
+      description: tbd
+    - name: aqb__irsdiscouintrate__c
+      description: tbd
+    - name: aqb__includeinstageaverage__c
+      description: tbd
+    - name: aqb__initialnetpresentvalue__c
+      description: tbd
+    - name: aqb__institutionalunit__c
+      description: tbd
+    - name: aqb__instrument__c
+      description: tbd
+    - name: aqb__kpichart1__c
+      description: tbd
+    - name: aqb__kpichart2__c
+      description: tbd
+    - name: aqb__kpichartsize__c
+      description: tbd
+    - name: aqb__lastactivityformula__c
+      description: tbd
+    - name: aqb__lateststartdate__c
+      description: tbd
+    - name: aqb__marketvaluedate__c
+      description: tbd
+    - name: aqb__marketvalue__c
+      description: tbd
+    - name: aqb__maturitydate__c
+      description: tbd
+    - name: aqb__monthstopayment__c
+      description: tbd
+    - name: aqb__nextactivitydate__c
+      description: tbd
+    - name: aqb__nextactivity__c
+      description: tbd
+    - name: aqb__omi__c
+      description: tbd
+    - name: aqb__opportunityexternalid__c
+      description: tbd
+    - name: aqb__opportunitymanagementindex__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__readiness__c
+      description: tbd
+    - name: aqb__remainder__c
+      description: tbd
+    - name: aqb__revocable__c
+      description: tbd
+    - name: aqb__stagedate__c
+      description: tbd
+    - name: aqb__strategy__c
+      description: tbd
+    - name: aqb__taxamount__c
+      description: tbd
+    - name: aqb__totalassetamount__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: total_funded_amount__c
+      description: tbd
+    - name: aqc_businessplanprospect__c
+      description: tbd
+    - name: aqc_loss_reason__c
+      description: tbd
+    - name: vu_opportunity_owner_name__c
+      description: tbd
+    - name: aqc_fiscal_year_top_propsect__c
+      description: tbd
+    - name: activity_report_identification__c
+      description: tbd
+    - name: activity_report_qualification__c
+      description: tbd
+    - name: activity_report_verbal_proposal__c
+      description: tbd
+    - name: affinity_rating__c
+      description: tbd
+    - name: anticipated_ask_amount__c
+      description: tbd
+    - name: anticipated_ask_date__c
+      description: tbd
+    - name: ask_amount__c
+      description: tbd
+    - name: ask_date__c
+      description: tbd
+    - name: closing_comments__c
+      description: tbd
+    - name: funding_type__c
+      description: tbd
+    - name: reason__c
+      description: tbd
+    - name: research_needed__c
+      description: tbd
+    - name: verbal_commitment__c
+      description: tbd
+    - name: volunteer_indicator__c
+      description: tbd
+    - name: aqb__fee1exception_aq__c
+      description: tbd
+    - name: aqb__fee1exemptreason_aq__c
+      description: tbd
+    - name: aqb__fee1exempt_aq__c
+      description: tbd
+    - name: aqb__fee1sourceaccount_aq__c
+      description: tbd
+    - name: aqb__fee1_aq__c
+      description: tbd
+    - name: aqb__fee2exception_aq__c
+      description: tbd
+    - name: aqb__fee2exemptreason_aq__c
+      description: tbd
+    - name: aqb__fee2exempt_aq__c
+      description: tbd
+    - name: aqb__fee2sourceaccount_aq__c
+      description: tbd
+    - name: aqb__fee2_aq__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

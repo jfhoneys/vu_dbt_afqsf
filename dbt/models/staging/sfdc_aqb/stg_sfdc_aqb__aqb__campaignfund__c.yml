@@ -1,0 +1,120 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__campaignfund__c
+    description: "TBD"
+    columns:
+    - name: aqb__campaignfund__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__alert__c
+      description: tbd
+    - name: aqb__all_fundraising_campaigns__c
+      description: tbd
+    - name: aqb__business_unit__c
+      description: tbd
+    - name: aqb__campaignfundexternalid__c
+      description: tbd
+    - name: aqb__description__c
+      description: tbd
+    - name: aqb__donorgoal__c
+      description: tbd
+    - name: aqb__enddate__c
+      description: tbd
+    - name: aqb__fundbudget__c
+      description: tbd
+    - name: aqb__includeinannualfunddashboard__c
+      description: tbd
+    - name: aqb__institutionalunit__c
+      description: tbd
+    - name: aqb__isactive__c
+      description: tbd
+    - name: aqb__kpichart1__c
+      description: tbd
+    - name: aqb__kpichart2__c
+      description: tbd
+    - name: aqb__kpichart3__c
+      description: tbd
+    - name: aqb__kpichart4__c
+      description: tbd
+    - name: aqb__kpichart5__c
+      description: tbd
+    - name: aqb__kpichart6__c
+      description: tbd
+    - name: aqb__kpichartsize__c
+      description: tbd
+    - name: aqb__master_fundraising_campaign__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__percentcomplete__c
+      description: tbd
+    - name: aqb__percentofrevenuegoalattained__c
+      description: tbd
+    - name: aqb__responserategoal__c
+      description: tbd
+    - name: aqb__revenuecalculation__c
+      description: tbd
+    - name: aqb__revenuegoal__c
+      description: tbd
+    - name: aqb__startdate__c
+      description: tbd
+    - name: aqb__status__c
+      description: tbd
+    - name: aqb__totalcommitments__c
+      description: tbd
+    - name: aqb__totalexpenses__c
+      description: tbd
+    - name: aqb__totalrevenue__c
+      description: tbd
+    - name: aqb__campaignbudgets__c
+      description: tbd
+    - name: aqb__campaignexpenses__c
+      description: tbd
+    - name: aqb__conditionalpledgebalance__c
+      description: tbd
+    - name: aqb__fundexpenses__c
+      description: tbd
+    - name: aqb__matchinggiftpaymentsdue__c
+      description: tbd
+    - name: aqb__matchinggiftpaymentsmade__c
+      description: tbd
+    - name: aqb__payments__c
+      description: tbd
+    - name: aqb__unconditionalpledgebalance__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

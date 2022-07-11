@@ -1,0 +1,92 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__names__c
+    description: "TBD"
+    columns:
+    - name: aqb__names__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__comments__c
+      description: tbd
+    - name: aqb__contactid__c
+      description: tbd
+    - name: aqb__firstname__c
+      description: tbd
+    - name: aqb__fullname__c
+      description: tbd
+    - name: aqb__greetingoverride__c
+      description: tbd
+    - name: aqb__greeting__c
+      description: tbd
+    - name: aqb__lastname__c
+      description: tbd
+    - name: aqb__middlename__c
+      description: tbd
+    - name: aqb__namegroupingoverride__c
+      description: tbd
+    - name: aqb__namegrouping__c
+      description: tbd
+    - name: aqb__nameoverride__c
+      description: tbd
+    - name: aqb__nametype__c
+      description: tbd
+    - name: aqb__name__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__salutationlookupoverride__c
+      description: tbd
+    - name: aqb__salutationlookup__c
+      description: tbd
+    - name: aqb__salutation__c
+      description: tbd
+    - name: aqb__source__c
+      description: tbd
+    - name: aqb__suffix__c
+      description: tbd
+    - name: aqb__title__c
+      description: tbd
+    - name: aqb__type__c
+      description: tbd
+    - name: aqb__useasalternatename__c
+      description: tbd
+    - name: aqb__useascommunityname__c
+      description: tbd
+    - name: aqb__useasformalname__c
+      description: tbd
+    - name: aqb__useaspreferredname__c
+      description: tbd
+    - name: aqb__uses__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

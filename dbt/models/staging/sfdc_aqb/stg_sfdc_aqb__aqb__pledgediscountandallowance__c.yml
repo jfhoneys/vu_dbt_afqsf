@@ -1,0 +1,60 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__pledgediscountandallowance__c
+    description: "TBD"
+    columns:
+    - name: aqb__pledgediscountandallowance__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: setupownerid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: aqb__balancedueage0__c
+      description: tbd
+    - name: aqb__balancedueage10__c
+      description: tbd
+    - name: aqb__balancedueage1__c
+      description: tbd
+    - name: aqb__balancedueage2__c
+      description: tbd
+    - name: aqb__balancedueage3__c
+      description: tbd
+    - name: aqb__balancedueage4__c
+      description: tbd
+    - name: aqb__balancedueage5__c
+      description: tbd
+    - name: aqb__balancedueage6__c
+      description: tbd
+    - name: aqb__balancedueage7__c
+      description: tbd
+    - name: aqb__balancedueage8__c
+      description: tbd
+    - name: aqb__balancedueage9__c
+      description: tbd
+    - name: aqb__currentfyyearpledgediscountrate__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

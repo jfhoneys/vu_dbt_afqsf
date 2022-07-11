@@ -1,0 +1,438 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__user
+    description: "TBD"
+    columns:
+    - name: user_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: username
+      description: tbd
+    - name: lastname
+      description: tbd
+    - name: firstname
+      description: tbd
+    - name: middlename
+      description: tbd
+    - name: suffix
+      description: tbd
+    - name: name
+      description: tbd
+    - name: companyname
+      description: tbd
+    - name: division
+      description: tbd
+    - name: department
+      description: tbd
+    - name: title
+      description: tbd
+    - name: street
+      description: tbd
+    - name: city
+      description: tbd
+    - name: state
+      description: tbd
+    - name: postalcode
+      description: tbd
+    - name: country
+      description: tbd
+    - name: latitude
+      description: tbd
+    - name: longitude
+      description: tbd
+    - name: geocodeaccuracy
+      description: tbd
+    - name: email
+      description: tbd
+    - name: emailpreferencesautobcc
+      description: tbd
+    - name: emailpreferencesautobccstayintouch
+      description: tbd
+    - name: emailpreferencesstayintouchreminder
+      description: tbd
+    - name: senderemail
+      description: tbd
+    - name: sendername
+      description: tbd
+    - name: signature
+      description: tbd
+    - name: stayintouchsubject
+      description: tbd
+    - name: stayintouchsignature
+      description: tbd
+    - name: stayintouchnote
+      description: tbd
+    - name: phone
+      description: tbd
+    - name: fax
+      description: tbd
+    - name: mobilephone
+      description: tbd
+    - name: alias
+      description: tbd
+    - name: communitynickname
+      description: tbd
+    - name: badgetext
+      description: tbd
+    - name: isactive
+      description: tbd
+    - name: timezonesidkey
+      description: tbd
+    - name: userroleid
+      description: tbd
+    - name: localesidkey
+      description: tbd
+    - name: receivesinfoemails
+      description: tbd
+    - name: receivesadmininfoemails
+      description: tbd
+    - name: emailencodingkey
+      description: tbd
+    - name: profileid
+      description: tbd
+    - name: usertype
+      description: tbd
+    - name: languagelocalekey
+      description: tbd
+    - name: employeenumber
+      description: tbd
+    - name: delegatedapproverid
+      description: tbd
+    - name: managerid
+      description: tbd
+    - name: lastlogindate
+      description: tbd
+    - name: lastpasswordchangedate
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: numberoffailedlogins
+      description: tbd
+    - name: offlinetrialexpirationdate
+      description: tbd
+    - name: offlinepdatrialexpirationdate
+      description: tbd
+    - name: userpermissionsmarketinguser
+      description: tbd
+    - name: userpermissionsofflineuser
+      description: tbd
+    - name: userpermissionsavantgouser
+      description: tbd
+    - name: userpermissionscallcenterautologin
+      description: tbd
+    - name: userpermissionssfcontentuser
+      description: tbd
+    - name: userpermissionsknowledgeuser
+      description: tbd
+    - name: userpermissionsinteractionuser
+      description: tbd
+    - name: userpermissionssupportuser
+      description: tbd
+    - name: forecastenabled
+      description: tbd
+    - name: userpreferencesactivityreminderspopup
+      description: tbd
+    - name: userpreferenceseventreminderscheckboxdefault
+      description: tbd
+    - name: userpreferencestaskreminderscheckboxdefault
+      description: tbd
+    - name: userpreferencesremindersoundoff
+      description: tbd
+    - name: userpreferencesdisableallfeedsemail
+      description: tbd
+    - name: userpreferencesdisablefollowersemail
+      description: tbd
+    - name: userpreferencesdisableprofilepostemail
+      description: tbd
+    - name: userpreferencesdisablechangecommentemail
+      description: tbd
+    - name: userpreferencesdisablelatercommentemail
+      description: tbd
+    - name: userpreferencesdisprofpostcommentemail
+      description: tbd
+    - name: userpreferencesapexpagesdevelopermode
+      description: tbd
+    - name: userpreferencesreceivenonotificationsasapprover
+      description: tbd
+    - name: userpreferencesreceivenotificationsasdelegatedapprover
+      description: tbd
+    - name: userpreferenceshidecsngetchattermobiletask
+      description: tbd
+    - name: userpreferencesdisablementionspostemail
+      description: tbd
+    - name: userpreferencesdismentionscommentemail
+      description: tbd
+    - name: userpreferenceshidecsndesktoptask
+      description: tbd
+    - name: userpreferenceshidechatteronboardingsplash
+      description: tbd
+    - name: userpreferenceshidesecondchatteronboardingsplash
+      description: tbd
+    - name: userpreferencesdiscommentafterlikeemail
+      description: tbd
+    - name: userpreferencesdisablelikeemail
+      description: tbd
+    - name: userpreferencessortfeedbycomment
+      description: tbd
+    - name: userpreferencesdisablemessageemail
+      description: tbd
+    - name: userpreferenceshidelegacyretirementmodal
+      description: tbd
+    - name: userpreferencesdisablebookmarkemail
+      description: tbd
+    - name: userpreferencesdisablesharepostemail
+      description: tbd
+    - name: userpreferencesenableautosubforfeeds
+      description: tbd
+    - name: userpreferencesdisablefilesharenotificationsforapi
+      description: tbd
+    - name: userpreferencesshowtitletoexternalusers
+      description: tbd
+    - name: userpreferencesshowmanagertoexternalusers
+      description: tbd
+    - name: userpreferencesshowemailtoexternalusers
+      description: tbd
+    - name: userpreferencesshowworkphonetoexternalusers
+      description: tbd
+    - name: userpreferencesshowmobilephonetoexternalusers
+      description: tbd
+    - name: userpreferencesshowfaxtoexternalusers
+      description: tbd
+    - name: userpreferencesshowstreetaddresstoexternalusers
+      description: tbd
+    - name: userpreferencesshowcitytoexternalusers
+      description: tbd
+    - name: userpreferencesshowstatetoexternalusers
+      description: tbd
+    - name: userpreferencesshowpostalcodetoexternalusers
+      description: tbd
+    - name: userpreferencesshowcountrytoexternalusers
+      description: tbd
+    - name: userpreferencesshowprofilepictoguestusers
+      description: tbd
+    - name: userpreferencesshowtitletoguestusers
+      description: tbd
+    - name: userpreferencesshowcitytoguestusers
+      description: tbd
+    - name: userpreferencesshowstatetoguestusers
+      description: tbd
+    - name: userpreferencesshowpostalcodetoguestusers
+      description: tbd
+    - name: userpreferencesshowcountrytoguestusers
+      description: tbd
+    - name: userpreferenceshideinvoicesredirectconfirmation
+      description: tbd
+    - name: userpreferenceshidestatementsredirectconfirmation
+      description: tbd
+    - name: userpreferenceshides1browserui
+      description: tbd
+    - name: userpreferencesdisableendorsementemail
+      description: tbd
+    - name: userpreferencespathassistantcollapsed
+      description: tbd
+    - name: userpreferencescachediagnostics
+      description: tbd
+    - name: userpreferencesshowemailtoguestusers
+      description: tbd
+    - name: userpreferencesshowmanagertoguestusers
+      description: tbd
+    - name: userpreferencesshowworkphonetoguestusers
+      description: tbd
+    - name: userpreferencesshowmobilephonetoguestusers
+      description: tbd
+    - name: userpreferencesshowfaxtoguestusers
+      description: tbd
+    - name: userpreferencesshowstreetaddresstoguestusers
+      description: tbd
+    - name: userpreferenceslightningexperiencepreferred
+      description: tbd
+    - name: userpreferencespreviewlightning
+      description: tbd
+    - name: userpreferenceshideenduseronboardingassistantmodal
+      description: tbd
+    - name: userpreferenceshidelightningmigrationmodal
+      description: tbd
+    - name: userpreferenceshidesfxwelcomemat
+      description: tbd
+    - name: userpreferenceshidebiggerphotocallout
+      description: tbd
+    - name: userpreferencesglobalnavbarwtshown
+      description: tbd
+    - name: userpreferencesglobalnavgridmenuwtshown
+      description: tbd
+    - name: userpreferencescreatelexappswtshown
+      description: tbd
+    - name: userpreferencesfavoriteswtshown
+      description: tbd
+    - name: userpreferencesrecordhomesectioncollapsewtshown
+      description: tbd
+    - name: userpreferencesrecordhomereservedwtshown
+      description: tbd
+    - name: userpreferencesfavoritesshowtopfavorites
+      description: tbd
+    - name: userpreferencesexcludemailappattachments
+      description: tbd
+    - name: userpreferencessuppresstasksfxreminders
+      description: tbd
+    - name: userpreferencessuppresseventsfxreminders
+      description: tbd
+    - name: userpreferencespreviewcustomtheme
+      description: tbd
+    - name: userpreferenceshascelebrationbadge
+      description: tbd
+    - name: userpreferencesuserdebugmodepref
+      description: tbd
+    - name: userpreferencessrhoverrideactivities
+      description: tbd
+    - name: userpreferencesnewlightningreportrunpageenabled
+      description: tbd
+    - name: userpreferencesnativeemailclient
+      description: tbd
+    - name: userpreferenceshidebrowseproductredirectconfirmation
+      description: tbd
+    - name: contactid
+      description: tbd
+    - name: accountid
+      description: tbd
+    - name: callcenterid
+      description: tbd
+    - name: extension
+      description: tbd
+    - name: federationidentifier
+      description: tbd
+    - name: aboutme
+      description: tbd
+    - name: fullphotourl
+      description: tbd
+    - name: smallphotourl
+      description: tbd
+    - name: isextindicatorvisible
+      description: tbd
+    - name: outofofficemessage
+      description: tbd
+    - name: mediumphotourl
+      description: tbd
+    - name: digestfrequency
+      description: tbd
+    - name: defaultgroupnotificationfrequency
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: bannerphotourl
+      description: tbd
+    - name: smallbannerphotourl
+      description: tbd
+    - name: mediumbannerphotourl
+      description: tbd
+    - name: isprofilephotoactive
+      description: tbd
+    - name: individualid
+      description: tbd
+    - name: aqb__accountdelete__c
+      description: tbd
+    - name: aqb__accountinsert__c
+      description: tbd
+    - name: aqb__accountupdate__c
+      description: tbd
+    - name: aqb__addressdelete__c
+      description: tbd
+    - name: aqb__addressinsert__c
+      description: tbd
+    - name: aqb__addressupdate__c
+      description: tbd
+    - name: aqb__changeverificationqueue__c
+      description: tbd
+    - name: aqb__contactdelete__c
+      description: tbd
+    - name: aqb__contactinsert__c
+      description: tbd
+    - name: aqb__contactupdate__c
+      description: tbd
+    - name: aqb__employmentdelete__c
+      description: tbd
+    - name: aqb__employmentinsert__c
+      description: tbd
+    - name: aqb__employmentupdate__c
+      description: tbd
+    - name: aqb__prospect_management_groups__c
+      description: tbd
+    - name: aqb__unit__c
+      description: tbd
+    - name: aqb__usertype__c
+      description: tbd
+    - name: aqb__opportunityteammember__c
+      description: tbd
+    - name: aqb__prospectgroup__c
+      description: tbd
+    - name: aqb__team__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqcv_userid__c
+      description: tbd
+    - name: aqcv_username__c
+      description: tbd
+    - name: aqb__alertsassigned__c
+      description: tbd
+    - name: aqb__alertsunassigned__c
+      description: tbd
+    - name: aqb__closecorrectionsbatch__c
+      description: tbd
+    - name: aqb__closeduesbatch__c
+      description: tbd
+    - name: aqb__closegiftbatch__c
+      description: tbd
+    - name: aqb__correctionsbatchentry__c
+      description: tbd
+    - name: aqb__duesbatchentry__c
+      description: tbd
+    - name: aqb__engagementscoringruleentry__c
+      description: tbd
+    - name: aqb__giftbatchentry__c
+      description: tbd
+    - name: aqb__portfolioalerts__c
+      description: tbd
+    - name: aqb__summarydefinitionentry__c
+      description: tbd
+    - name: aqc_useridcopy__c
+      description: tbd
+    - name: udi__c
+      description: tbd
+    - name: vu_non_dar__c
+      description: tbd
+    - name: et4ae5__default_et_page__c
+      description: tbd
+    - name: et4ae5__default_mid__c
+      description: tbd
+    - name: et4ae5__exacttargetforappexchangeadmin__c
+      description: tbd
+    - name: et4ae5__exacttargetforappexchangeuser__c
+      description: tbd
+    - name: et4ae5__exacttargetusername__c
+      description: tbd
+    - name: et4ae5__exacttarget_oauth_token__c
+      description: tbd
+    - name: et4ae5__validexacttargetadmin__c
+      description: tbd
+    - name: et4ae5__validexacttargetuser__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

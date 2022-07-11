@@ -1,0 +1,78 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__namedefinitionscontacts__c
+    description: "TBD"
+    columns:
+    - name: aqb__namedefinitionscontacts__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__enclosemaidenname__c
+      description: tbd
+    - name: aqb__enclosenickname__c
+      description: tbd
+    - name: aqb__greetingsalutation__c
+      description: tbd
+    - name: aqb__notes__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__usefirst__c
+      description: tbd
+    - name: aqb__useforthealternatename__c
+      description: tbd
+    - name: aqb__useforthecommunityname__c
+      description: tbd
+    - name: aqb__useforthedefaultaddresssalutation__c
+      description: tbd
+    - name: aqb__useforthedefaultgreetingsalutation__c
+      description: tbd
+    - name: aqb__usefortheformalname__c
+      description: tbd
+    - name: aqb__useforthepreferredname__c
+      description: tbd
+    - name: aqb__useinstitutionalsuffix__c
+      description: tbd
+    - name: aqb__uselast__c
+      description: tbd
+    - name: aqb__usemaiden__c
+      description: tbd
+    - name: aqb__usemiddle__c
+      description: tbd
+    - name: aqb__usenickname__c
+      description: tbd
+    - name: aqb__usesalutation__c
+      description: tbd
+    - name: aqb__usesuffix__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

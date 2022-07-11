@@ -1,0 +1,398 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__transaction__c
+    description: "TBD"
+    columns:
+    - name: aqb__transaction__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__gift__c
+      description: tbd
+    - name: aqb__achbank__c
+      description: tbd
+    - name: aqb__achlastfour__c
+      description: tbd
+    - name: aqb__accountselected__c
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__acknowledgement__c
+      description: tbd
+    - name: aqb__affinaquest2dialogreference__c
+      description: tbd
+    - name: aqb__alert__c
+      description: tbd
+    - name: aqb__amount__c
+      description: tbd
+    - name: aqb__anonymous__c
+      description: tbd
+    - name: aqb__appraiseraddress__c
+      description: tbd
+    - name: aqb__appraisername__c
+      description: tbd
+    - name: aqb__auctionitem__c
+      description: tbd
+    - name: aqb__balance__c
+      description: tbd
+    - name: aqb__batch__c
+      description: tbd
+    - name: aqb__bypassgiftrecognitionlogic__c
+      description: tbd
+    - name: aqb__caecategory__c
+      description: tbd
+    - name: aqb__campaignappealclone__c
+      description: tbd
+    - name: aqb__campaignappealid__c
+      description: tbd
+    - name: aqb__campaignfund__c
+      description: tbd
+    - name: aqb__card__c
+      description: tbd
+    - name: aqb__category__c
+      description: tbd
+    - name: aqb__chartofaccounts__c
+      description: tbd
+    - name: aqb__checknumbertext__c
+      description: tbd
+    - name: aqb__checknumber__c
+      description: tbd
+    - name: aqb__conditionalpledge__c
+      description: tbd
+    - name: aqb__count1__c
+      description: tbd
+    - name: aqb__creditcardnumber__c
+      description: tbd
+    - name: aqb__creditflag__c
+      description: tbd
+    - name: aqb__creditedopportunity__c
+      description: tbd
+    - name: aqb__creditedyearoverridedate__c
+      description: tbd
+    - name: aqb__creditedyear__c
+      description: tbd
+    - name: aqb__currencyexchangerate__c
+      description: tbd
+    - name: aqb__currencytype__c
+      description: tbd
+    - name: aqb__currencyunits__c
+      description: tbd
+    - name: aqb__currency__c
+      description: tbd
+    - name: aqb__dailyhigh__c
+      description: tbd
+    - name: aqb__dailylow__c
+      description: tbd
+    - name: aqb__dailymean__c
+      description: tbd
+    - name: aqb__datedue__c
+      description: tbd
+    - name: aqb__date__c
+      description: tbd
+    - name: aqb__dateofendofpriorquarter__c
+      description: tbd
+    - name: aqb__dateoftransfer__c
+      description: tbd
+    - name: aqb__daysold__c
+      description: tbd
+    - name: aqb__debitaccount__c
+      description: tbd
+    - name: aqb__description__c
+      description: tbd
+    - name: aqb__designationaccountclassificationtext__c
+      description: tbd
+    - name: aqb__designationaccountendowmentuse__c
+      description: tbd
+    - name: aqb__designationaccountextramuralathletics__c
+      description: tbd
+    - name: aqb__designationaccountnametext__c
+      description: tbd
+    - name: aqb__designationaccountnumbertext__c
+      description: tbd
+    - name: aqb__designationaccountnumberusetext__c
+      description: tbd
+    - name: aqb__designationaccountusecategorytext__c
+      description: tbd
+    - name: aqb__do_not_push_to_accounting__c
+      description: tbd
+    - name: aqb__documentedlegaldate__c
+      description: tbd
+    - name: aqb__donordate__c
+      description: tbd
+    - name: aqb__donorfacingdescription__c
+      description: tbd
+    - name: aqb__expirationmonth__c
+      description: tbd
+    - name: aqb__expirationyear__c
+      description: tbd
+    - name: aqb__externalreferencenumber__c
+      description: tbd
+    - name: aqb__fydate__c
+      description: tbd
+    - name: aqb__fymonth__c
+      description: tbd
+    - name: aqb__fee1exception__c
+      description: tbd
+    - name: aqb__fee1exemptreason__c
+      description: tbd
+    - name: aqb__fee1exempt__c
+      description: tbd
+    - name: aqb__fee1sourceaccount__c
+      description: tbd
+    - name: aqb__fee1__c
+      description: tbd
+    - name: aqb__fee2exception__c
+      description: tbd
+    - name: aqb__fee2exemptreason__c
+      description: tbd
+    - name: aqb__fee2exempt__c
+      description: tbd
+    - name: aqb__fee2sourceaccount__c
+      description: tbd
+    - name: aqb__fee2__c
+      description: tbd
+    - name: aqb__financialsystemdate__c
+      description: tbd
+    - name: aqb__firstcampaigntransaction__c
+      description: tbd
+    - name: aqb__firstfundtransaction__c
+      description: tbd
+    - name: aqb__fiscalmonth__c
+      description: tbd
+    - name: aqb__fiscalyear__c
+      description: tbd
+    - name: aqb__fundraisingcampaignforgifttext__c
+      description: tbd
+    - name: aqb__fundraisingcampaignforgift__c
+      description: tbd
+    - name: aqb__giftexternalid__c
+      description: tbd
+    - name: aqb__giftrecordtype__c
+      description: tbd
+    - name: aqb__hours__c
+      description: tbd
+    - name: aqb__iradistribution__c
+      description: tbd
+    - name: aqb__initialnetpresentvalue__c
+      description: tbd
+    - name: aqb__instrument__c
+      description: tbd
+    - name: aqb__interestrate__c
+      description: tbd
+    - name: aqb__last4digitsoncard__c
+      description: tbd
+    - name: aqb__last4digitsofcard__c
+      description: tbd
+    - name: aqb__link_test__c
+      description: tbd
+    - name: aqb__matchlink__c
+      description: tbd
+    - name: aqb__matchedgiftexternalid__c
+      description: tbd
+    - name: aqb__matched__c
+      description: tbd
+    - name: aqb__matchinggiftformula__c
+      description: tbd
+    - name: aqb__matchinggift__c
+      description: tbd
+    - name: aqb__maturitydate__c
+      description: tbd
+    - name: aqb__method__c
+      description: tbd
+    - name: aqb__month__c
+      description: tbd
+    - name: aqb__movingtonewaccount__c
+      description: tbd
+    - name: aqb__nameoncard__c
+      description: tbd
+    - name: aqb__nondeductible__c
+      description: tbd
+    - name: aqb__numberofshares__c
+      description: tbd
+    - name: aqb__originatingbatchitemtransaction__c
+      description: tbd
+    - name: aqb__originatinggift__c
+      description: tbd
+    - name: aqb__originatingtransaction__c
+      description: tbd
+    - name: aqb__origins__c
+      description: tbd
+    - name: aqb__pageepq__c
+      description: tbd
+    - name: aqb__paymentisdue__c
+      description: tbd
+    - name: aqb__paymentnumber__c
+      description: tbd
+    - name: aqb__payment_amount_due__c
+      description: tbd
+    - name: aqb__pledgeallowanceamt__c
+      description: tbd
+    - name: aqb__pledgeallowancepriorquarteramount__c
+      description: tbd
+    - name: aqb__pledgediscountratedefault__c
+      description: tbd
+    - name: aqb__pledgediscountrateeffective__c
+      description: tbd
+    - name: aqb__pledgediscountrateoverride__c
+      description: tbd
+    - name: aqb__pledgediscountrateriskpremium__c
+      description: tbd
+    - name: aqb__pledgenpvamount__c
+      description: tbd
+    - name: aqb__pledgenpvprioquarteramount__c
+      description: tbd
+    - name: aqb__pledgepaid__c
+      description: tbd
+    - name: aqb__pledgepaymentlink__c
+      description: tbd
+    - name: aqb__pledgepaymentpointertodebit__c
+      description: tbd
+    - name: aqb__pledgepaymentstatus__c
+      description: tbd
+    - name: aqb__pledgepayment__c
+      description: tbd
+    - name: aqb__pledgestatusamount__c
+      description: tbd
+    - name: aqb__pledgestipulation__c
+      description: tbd
+    - name: aqb__pledgewriteoffnotation__c
+      description: tbd
+    - name: aqb__pledge_age__c
+      description: tbd
+    - name: aqb__posted__c
+      description: tbd
+    - name: aqb__processsoftcredits__c
+      description: tbd
+    - name: aqb__propertycategory__c
+      description: tbd
+    - name: aqb__proportionalgiftcredit__c
+      description: tbd
+    - name: aqb__rate__c
+      description: tbd
+    - name: aqb__receipt__c
+      description: tbd
+    - name: aqb__receiptingrejected__c
+      description: tbd
+    - name: aqb__recurringgift__c
+      description: tbd
+    - name: aqb__reference__c
+      description: tbd
+    - name: aqb__restricted__c
+      description: tbd
+    - name: aqb__restriction_code_override__c
+      description: tbd
+    - name: aqb__revocable__c
+      description: tbd
+    - name: aqb__riskpremiumnote__c
+      description: tbd
+    - name: aqb__sendpledgereminder__c
+      description: tbd
+    - name: aqb__service_type__c
+      description: tbd
+    - name: aqb__signator__c
+      description: tbd
+    - name: aqb__softcreditgiftlink__c
+      description: tbd
+    - name: aqb__solicitationcreditcontact__c
+      description: tbd
+    - name: aqb__solicitationcredituser__c
+      description: tbd
+    - name: aqb__solicitation__c
+      description: tbd
+    - name: aqb__status__c
+      description: tbd
+    - name: aqb__taxamount__c
+      description: tbd
+    - name: aqb__testlink__c
+      description: tbd
+    - name: aqb__thirdpartypayment__c
+      description: tbd
+    - name: aqb__thirdpartypayoff__c
+      description: tbd
+    - name: aqb__tickersymbol__c
+      description: tbd
+    - name: aqb__totalassetamount__c
+      description: tbd
+    - name: aqb__transactionexternalid__c
+      description: tbd
+    - name: aqb__transactionnumber__c
+      description: tbd
+    - name: aqb__typeofpledge__c
+      description: tbd
+    - name: aqb__type__c
+      description: tbd
+    - name: aqb__vid__c
+      description: tbd
+    - name: aqb__vsedeferredgift__c
+      description: tbd
+    - name: aqb__vseextramuralathletics__c
+      description: tbd
+    - name: aqb__vseusecategory__c
+      description: tbd
+    - name: aqb__vseuse__c
+      description: tbd
+    - name: aqb__voidnote__c
+      description: tbd
+    - name: aqb__voidokflag__c
+      description: tbd
+    - name: aqb__voidedtransaction__c
+      description: tbd
+    - name: aqb__voided__c
+      description: tbd
+    - name: aqb__writeoff__c
+      description: tbd
+    - name: aqb__year__c
+      description: tbd
+    - name: aqb__voidnotation__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqc_fiscal_month__c
+      description: tbd
+    - name: aqb__owner_unit__c
+      description: tbd
+    - name: aqc_fiscalmonth__c
+      description: tbd
+    - name: aqc_fiscal_year__c
+      description: tbd
+    - name: aqc_fundraising_category__c
+      description: tbd
+    - name: aqc_graybarcategory__c
+      description: tbd
+    - name: vud_journal_coa__c
+      description: tbd
+    - name: vu_school_unit__c
+      description: tbd
+    - name: vu_fiscal_month_abbr_c__c
+      description: tbd
+    - name: aqb__partialwriteoff__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

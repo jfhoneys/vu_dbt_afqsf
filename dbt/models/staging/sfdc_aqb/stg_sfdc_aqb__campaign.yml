@@ -1,0 +1,180 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__campaign
+    description: "TBD"
+    columns:
+    - name: campaign_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: parentid
+      description: tbd
+    - name: type
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: status
+      description: tbd
+    - name: startdate
+      description: tbd
+    - name: enddate
+      description: tbd
+    - name: expectedrevenue
+      description: tbd
+    - name: budgetedcost
+      description: tbd
+    - name: actualcost
+      description: tbd
+    - name: expectedresponse
+      description: tbd
+    - name: numbersent
+      description: tbd
+    - name: isactive
+      description: tbd
+    - name: description
+      description: tbd
+    - name: numberofleads
+      description: tbd
+    - name: numberofconvertedleads
+      description: tbd
+    - name: numberofcontacts
+      description: tbd
+    - name: numberofresponses
+      description: tbd
+    - name: numberofopportunities
+      description: tbd
+    - name: numberofwonopportunities
+      description: tbd
+    - name: amountallopportunities
+      description: tbd
+    - name: amountwonopportunities
+      description: tbd
+    - name: hierarchynumberofleads
+      description: tbd
+    - name: hierarchynumberofconvertedleads
+      description: tbd
+    - name: hierarchynumberofcontacts
+      description: tbd
+    - name: hierarchynumberofresponses
+      description: tbd
+    - name: hierarchynumberofopportunities
+      description: tbd
+    - name: hierarchynumberofwonopportunities
+      description: tbd
+    - name: hierarchyamountallopportunities
+      description: tbd
+    - name: hierarchyamountwonopportunities
+      description: tbd
+    - name: hierarchynumbersent
+      description: tbd
+    - name: hierarchyexpectedrevenue
+      description: tbd
+    - name: hierarchybudgetedcost
+      description: tbd
+    - name: hierarchyactualcost
+      description: tbd
+    - name: ownerid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: campaignmemberrecordtypeid
+      description: tbd
+    - name: aqb__accountssolicited__c
+      description: tbd
+    - name: aqb__alert__c
+      description: tbd
+    - name: aqb__campaignappealbudget__c
+      description: tbd
+    - name: aqb__campaignexternalid__c
+      description: tbd
+    - name: aqb__campaignfund__c
+      description: tbd
+    - name: aqb__daysinprogress__c
+      description: tbd
+    - name: aqb__defaultdesignation__c
+      description: tbd
+    - name: aqb__donor_goal__c
+      description: tbd
+    - name: aqb__estimatedaccountssolicited__c
+      description: tbd
+    - name: aqb__event__c
+      description: tbd
+    - name: aqb__includeinannualfunddashboard__c
+      description: tbd
+    - name: aqb__institutionalunit__c
+      description: tbd
+    - name: aqb__kpichart1__c
+      description: tbd
+    - name: aqb__kpichart2__c
+      description: tbd
+    - name: aqb__kpichart3__c
+      description: tbd
+    - name: aqb__kpichart4__c
+      description: tbd
+    - name: aqb__kpichartsize__c
+      description: tbd
+    - name: aqb__lengthindays__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__percentcomplete__c
+      description: tbd
+    - name: aqb__percentofdayspast__c
+      description: tbd
+    - name: aqb__preferencelisttype__c
+      description: tbd
+    - name: aqb__responserategoal__c
+      description: tbd
+    - name: aqb__revg__c
+      description: tbd
+    - name: aqb__startdate__c
+      description: tbd
+    - name: aqb__stopdate__c
+      description: tbd
+    - name: aqb__targetlisttype__c
+      description: tbd
+    - name: aqb__totalopenopportunities__c
+      description: tbd
+    - name: aqb__countofaccountssolicited__c
+      description: tbd
+    - name: aqb__totalcampaignappealexpenses__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqc_campaign_appeal_code__c
+      description: tbd
+    - name: aqc_volunteer_contact_solicitor__c
+      description: tbd
+    - name: vu_campaign_project_manager__c
+      description: tbd
+    - name: display_on_preference_center__c
+      description: tbd
+    - name: sort_order__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

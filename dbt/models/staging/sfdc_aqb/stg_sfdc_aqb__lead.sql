@@ -1,0 +1,72 @@
+with lead as ( select * from {{ source('sfdc_aqb','lead') }}
+), 
+final 
+as ( select  
+ trim(id) as lead_id
+,isdeleted as isdeleted
+,trim(masterrecordid) as masterrecordid
+,trim(lastname) as lastname
+,trim(firstname) as firstname
+,trim(salutation) as salutation
+,trim(middlename) as middlename
+,trim(suffix) as suffix
+,trim(name) as name
+,trim(title) as title
+,trim(company) as company
+,trim(street) as street
+,trim(city) as city
+,trim(state) as state
+,trim(postalcode) as postalcode
+,trim(country) as country
+,latitude as latitude
+,longitude as longitude
+,trim(geocodeaccuracy) as geocodeaccuracy
+,trim(phone) as phone
+,trim(mobilephone) as mobilephone
+,trim(fax) as fax
+,trim(email) as email
+,trim(website) as website
+,trim(photourl) as photourl
+,trim(description) as description
+,trim(leadsource) as leadsource
+,trim(status) as status
+,trim(industry) as industry
+,trim(rating) as rating
+,annualrevenue as annualrevenue
+,numberofemployees as numberofemployees
+,trim(ownerid) as ownerid
+,hasoptedoutofemail as hasoptedoutofemail
+,isconverted as isconverted
+,converteddate as converteddate
+,trim(convertedaccountid) as convertedaccountid
+,trim(convertedcontactid) as convertedcontactid
+,trim(convertedopportunityid) as convertedopportunityid
+,isunreadbyowner as isunreadbyowner
+,createddate as createddate
+,trim(createdbyid) as createdbyid
+,lastmodifieddate as lastmodifieddate
+,trim(lastmodifiedbyid) as lastmodifiedbyid
+,systemmodstamp as systemmodstamp
+,lastactivitydate as lastactivitydate
+,donotcall as donotcall
+,hasoptedoutoffax as hasoptedoutoffax
+,lastvieweddate as lastvieweddate
+,lastreferenceddate as lastreferenceddate
+,lasttransferdate as lasttransferdate
+,trim(jigsaw) as jigsaw
+,trim(jigsawcontactid) as jigsawcontactid
+,trim(emailbouncedreason) as emailbouncedreason
+,emailbounceddate as emailbounceddate
+,trim(individualid) as individualid
+,trim(aqb__account__c) as aqb__account__c
+,trim(aqb__name__c) as aqb__name__c
+,trim(aqb__ownerunit__c) as aqb__ownerunit__c
+,trim(aqcv_conversionid__c) as aqcv_conversionid__c
+,et4ae5__hasoptedoutofmobile__c as et4ae5__hasoptedoutofmobile__c
+,trim(et4ae5__mobile_country_code__c) as et4ae5__mobile_country_code__c
+,matillion_batch_id as matillion_batch_id
+,matillion_updated_timestamp as matillion_updated_timestamp
+,'sfdc_aqb'  as source_name 
+  from lead
+) 
+select * from final 

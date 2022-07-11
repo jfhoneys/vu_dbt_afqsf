@@ -1,0 +1,64 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__screening__c
+    description: "TBD"
+    columns:
+    - name: aqb__screening__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: aqb__fundraisingcampaign__c
+      description: tbd
+    - name: aqb__opinionamount__c
+      description: tbd
+    - name: aqb__opiniondate__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__rating__c
+      description: tbd
+    - name: aqb__screenedaccount__c
+      description: tbd
+    - name: aqb__screenedcontact__c
+      description: tbd
+    - name: aqb__screener__c
+      description: tbd
+    - name: aqb__session__c
+      description: tbd
+    - name: aqb__userscreener__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: vu_event__c
+      description: tbd
+    - name: vu_notes__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

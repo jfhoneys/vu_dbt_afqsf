@@ -1,0 +1,118 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__event__c
+    description: "TBD"
+    columns:
+    - name: aqb__event__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__affiliatedorganizationsponsor__c
+      description: tbd
+    - name: aqb__city__c
+      description: tbd
+    - name: aqb__comment__c
+      description: tbd
+    - name: aqb__country__c
+      description: tbd
+    - name: aqb__date__c
+      description: tbd
+    - name: aqb__enddate__c
+      description: tbd
+    - name: aqb__eventexternalid__c
+      description: tbd
+    - name: aqb__eventlocality__c
+      description: tbd
+    - name: aqb__event_type__c
+      description: tbd
+    - name: aqb__hostingaccount__c
+      description: tbd
+    - name: aqb__note__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__startdateandtime__c
+      description: tbd
+    - name: aqb__state__c
+      description: tbd
+    - name: aqb__status__c
+      description: tbd
+    - name: aqb__stopdateandtime__c
+      description: tbd
+    - name: aqb__venuestreetaddresslinethree__c
+      description: tbd
+    - name: aqb__venuestreetaddressone__c
+      description: tbd
+    - name: aqb__venuestreetaddresstwo__c
+      description: tbd
+    - name: aqb__venue__c
+      description: tbd
+    - name: aqb__totalnumberofguests__c
+      description: tbd
+    - name: aqb__totalnumberofregistrants__c
+      description: tbd
+    - name: aqb__total_numberofguestsattended__c
+      description: tbd
+    - name: aqb__total_registration_revenue__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: vud_signature_event__c
+      description: tbd
+    - name: aqc_event_source__c
+      description: tbd
+    - name: aqc_chapter_code__c
+      description: tbd
+    - name: aqc_net_promoter_score__c
+      description: tbd
+    - name: institutional_unit__c
+      description: tbd
+    - name: vud_capacity_c__c
+      description: tbd
+    - name: vu_start_time__c
+      description: tbd
+    - name: vu_end_time__c
+      description: tbd
+    - name: vud_lpe_event_type_c__c
+      description: tbd
+    - name: vud_number_pending_c__c
+      description: tbd
+    - name: vud_number_invited_c__c
+      description: tbd
+    - name: vud_number_declined_c__c
+      description: tbd
+    - name: vud_number_attending_c__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 
