@@ -1,0 +1,80 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__eventguest__c
+    description: "TBD"
+    columns:
+    - name: aqb__eventguest__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: aqb__event_registration__c
+      description: tbd
+    - name: aqb__attendance__c
+      description: tbd
+    - name: aqb__attended_event__c
+      description: tbd
+    - name: aqb__comment__c
+      description: tbd
+    - name: aqb__contact__c
+      description: tbd
+    - name: aqb__eventenddate__c
+      description: tbd
+    - name: aqb__eventguestexternalid__c
+      description: tbd
+    - name: aqb__eventstartdateandtime__c
+      description: tbd
+    - name: aqb__eventstopdateandtime__c
+      description: tbd
+    - name: aqb__eventvenue__c
+      description: tbd
+    - name: aqb__event_date__c
+      description: tbd
+    - name: aqb__event_location__c
+      description: tbd
+    - name: aqb__event__c
+      description: tbd
+    - name: aqb__guestfirstname__c
+      description: tbd
+    - name: aqb__guestfullname__c
+      description: tbd
+    - name: aqb__guestlastname__c
+      description: tbd
+    - name: aqb__guesttitle__c
+      description: tbd
+    - name: aqb__lead__c
+      description: tbd
+    - name: aqb__registeredby__c
+      description: tbd
+    - name: aqb__suffix__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: vu_guest_type__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

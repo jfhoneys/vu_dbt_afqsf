@@ -1,0 +1,138 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__case
+    description: "TBD"
+    columns:
+    - name: case_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: masterrecordid
+      description: tbd
+    - name: casenumber
+      description: tbd
+    - name: contactid
+      description: tbd
+    - name: accountid
+      description: tbd
+    - name: parentid
+      description: tbd
+    - name: suppliedname
+      description: tbd
+    - name: suppliedemail
+      description: tbd
+    - name: suppliedphone
+      description: tbd
+    - name: suppliedcompany
+      description: tbd
+    - name: type
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: status
+      description: tbd
+    - name: reason
+      description: tbd
+    - name: origin
+      description: tbd
+    - name: subject
+      description: tbd
+    - name: priority
+      description: tbd
+    - name: description
+      description: tbd
+    - name: isclosed
+      description: tbd
+    - name: closeddate
+      description: tbd
+    - name: isescalated
+      description: tbd
+    - name: ownerid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: contactphone
+      description: tbd
+    - name: contactmobile
+      description: tbd
+    - name: contactemail
+      description: tbd
+    - name: contactfax
+      description: tbd
+    - name: comments
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: audience_for_request__c
+      description: tbd
+    - name: due_date_flexibility__c
+      description: tbd
+    - name: marital_status__c
+      description: tbd
+    - name: new_address__c
+      description: tbd
+    - name: new_employment__c
+      description: tbd
+    - name: new_name__c
+      description: tbd
+    - name: pm_assignment__c
+      description: tbd
+    - name: proposed_rating__c
+      description: tbd
+    - name: proposed_stage__c
+      description: tbd
+    - name: related_event__c
+      description: tbd
+    - name: related_gift_pledge__c
+      description: tbd
+    - name: report_exclusions__c
+      description: tbd
+    - name: report_output_format__c
+      description: tbd
+    - name: report_recipient__c
+      description: tbd
+    - name: report_recurrence__c
+      description: tbd
+    - name: request_source__c
+      description: tbd
+    - name: requested_due_date__c
+      description: tbd
+    - name: school_unit__c
+      description: tbd
+    - name: spouse_name__c
+      description: tbd
+    - name: vu_secondary_assigned_to__c
+      description: tbd
+    - name: user_created__c
+      description: tbd
+    - name: vu_requested_by__c
+      description: tbd
+    - name: vu_assigned_to__c
+      description: tbd
+    - name: vu_requested_for__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

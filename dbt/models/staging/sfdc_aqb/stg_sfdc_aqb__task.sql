@@ -1,0 +1,70 @@
+with task as ( select * from {{ source('sfdc_aqb','task') }}
+), 
+final 
+as ( select  
+ trim(id) as task_id
+,trim(whoid) as whoid
+,trim(whatid) as whatid
+,whocount as whocount
+,whatcount as whatcount
+,trim(subject) as subject
+,activitydate as activitydate
+,trim(status) as status
+,trim(priority) as priority
+,ishighpriority as ishighpriority
+,trim(ownerid) as ownerid
+,trim(description) as description
+,trim(type) as type
+,isdeleted as isdeleted
+,trim(accountid) as accountid
+,isclosed as isclosed
+,createddate as createddate
+,trim(createdbyid) as createdbyid
+,lastmodifieddate as lastmodifieddate
+,trim(lastmodifiedbyid) as lastmodifiedbyid
+,systemmodstamp as systemmodstamp
+,isarchived as isarchived
+,calldurationinseconds as calldurationinseconds
+,trim(calltype) as calltype
+,trim(calldisposition) as calldisposition
+,trim(callobject) as callobject
+,reminderdatetime as reminderdatetime
+,isreminderset as isreminderset
+,trim(recurrenceactivityid) as recurrenceactivityid
+,isrecurrence as isrecurrence
+,recurrencestartdateonly as recurrencestartdateonly
+,recurrenceenddateonly as recurrenceenddateonly
+,trim(recurrencetimezonesidkey) as recurrencetimezonesidkey
+,trim(recurrencetype) as recurrencetype
+,recurrenceinterval as recurrenceinterval
+,recurrencedayofweekmask as recurrencedayofweekmask
+,recurrencedayofmonth as recurrencedayofmonth
+,trim(recurrenceinstance) as recurrenceinstance
+,trim(recurrencemonthofyear) as recurrencemonthofyear
+,trim(recurrenceregeneratedtype) as recurrenceregeneratedtype
+,trim(tasksubtype) as tasksubtype
+,completeddatetime as completeddatetime
+,trim(aqb__account__c) as aqb__account__c
+,trim(aqb__activityreport__c) as aqb__activityreport__c
+,trim(aqb__activitysummary__c) as aqb__activitysummary__c
+,aqb__automatedchangedate__c as aqb__automatedchangedate__c
+,trim(aqb__completed__c) as aqb__completed__c
+,trim(aqb__confidentialcomment__c) as aqb__confidentialcomment__c
+,aqb__essentialmove__c as aqb__essentialmove__c
+,trim(aqb__followup__c) as aqb__followup__c
+,trim(aqb__opportunity__c) as aqb__opportunity__c
+,trim(aqb__ownerunit__c) as aqb__ownerunit__c
+,trim(aqb__stewardship__c) as aqb__stewardship__c
+,trim(aqb__tasktemplateid__c) as aqb__tasktemplateid__c
+,trim(aqb__engagementscorecategory__c) as aqb__engagementscorecategory__c
+,aqb__engagementscoreoverride__c as aqb__engagementscoreoverride__c
+,aqb__engagementscore__c as aqb__engagementscore__c
+,trim(aqb__objective__c) as aqb__objective__c
+,trim(aqb__purpose__c) as aqb__purpose__c
+,trim(aqb__reportstatus__c) as aqb__reportstatus__c
+,matillion_batch_id as matillion_batch_id
+,matillion_updated_timestamp as matillion_updated_timestamp
+,'sfdc_aqb'  as source_name 
+  from task
+) 
+select * from final 

@@ -1,0 +1,74 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__recurringgift__c
+    description: "TBD"
+    columns:
+    - name: aqb__recurringgift__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: aqb__accountid__c
+      description: tbd
+    - name: aqb__amount__c
+      description: tbd
+    - name: aqb__campaigntext__c
+      description: tbd
+    - name: aqb__campaign__c
+      description: tbd
+    - name: aqb__comments__c
+      description: tbd
+    - name: aqb__datecommitted__c
+      description: tbd
+    - name: aqb__dateended__c
+      description: tbd
+    - name: aqb__datestarted__c
+      description: tbd
+    - name: aqb__designation__c
+      description: tbd
+    - name: aqb__externalreferencenumber__c
+      description: tbd
+    - name: aqb__frequency__c
+      description: tbd
+    - name: aqb__fundraisingcampaigntext__c
+      description: tbd
+    - name: aqb__fundraisingcampaign__c
+      description: tbd
+    - name: aqb__method__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__pledgelink__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqb__type__c
+      description: tbd
+    - name: aqb__periodicamount__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

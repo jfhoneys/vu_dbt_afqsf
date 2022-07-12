@@ -1,0 +1,68 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__alert__c
+    description: "TBD"
+    columns:
+    - name: aqb__alert__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__activeflag__c
+      description: tbd
+    - name: aqb__alerttext__c
+      description: tbd
+    - name: aqb__color__c
+      description: tbd
+    - name: aqb__contact__c
+      description: tbd
+    - name: aqb__enddate__c
+      description: tbd
+    - name: aqb__opportunity__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__startdate__c
+      description: tbd
+    - name: aqb__withaccount__c
+      description: tbd
+    - name: aqb__withcontacts__c
+      description: tbd
+    - name: aqb__withopportunities__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqb__engagementscorecategory__c
+      description: tbd
+    - name: aqb__engagementscoreoverride__c
+      description: tbd
+    - name: aqb__engagementscore__c
+      description: tbd
+    - name: aqb__chartofaccount__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

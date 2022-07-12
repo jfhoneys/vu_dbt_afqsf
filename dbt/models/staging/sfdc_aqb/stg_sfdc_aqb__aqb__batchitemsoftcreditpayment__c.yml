@@ -1,0 +1,46 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__batchitemsoftcreditpayment__c
+    description: "TBD"
+    columns:
+    - name: aqb__batchitemsoftcreditpayment__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: aqb__batchitemsoftcredit__c
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__amount__c
+      description: tbd
+    - name: aqb__anonymous__c
+      description: tbd
+    - name: aqb__giftsareanonymous__c
+      description: tbd
+    - name: aqb__linktotransaction__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

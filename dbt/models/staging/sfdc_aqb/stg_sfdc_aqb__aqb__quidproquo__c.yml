@@ -1,0 +1,54 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__quidproquo__c
+    description: "TBD"
+    columns:
+    - name: aqb__quidproquo__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: aqb__giftlink__c
+      description: tbd
+    - name: aqb__accepted__c
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__comment__c
+      description: tbd
+    - name: aqb__datefullfilled__c
+      description: tbd
+    - name: aqb__item__c
+      description: tbd
+    - name: aqb__quidspecificationnumber__c
+      description: tbd
+    - name: aqb__value__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

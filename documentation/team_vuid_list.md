@@ -11,15 +11,17 @@ Honeysjf – Jeanette Honeysucker
 
 Neelypm – Phil Neely
 
-# DSA:
+## Daniel's Team
+baileydl - Donnie Bailey
 
-drydenne - Nathan Dryden
+smitjl13 - Jason Smith 
 
-smitjl13 - Jason Smith
+drydenne - Nathan Dryden 
+
+zlibutm - Matthew Zlibut
 
 yehquea - Alex Yeh-Quevedo
 
-zlibutm - Matthew Zlibut
 # North Labs:
 
 prussb - Bernie Pruss

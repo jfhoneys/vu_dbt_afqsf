@@ -1,0 +1,52 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__areaofstudy__c
+    description: "TBD"
+    columns:
+    - name: aqb__areaofstudy__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: aqb__education__c
+      description: tbd
+    - name: aqb__areaofstudy__c
+      description: tbd
+    - name: aqb__concentrationlevel__c
+      description: tbd
+    - name: aqb__contact__c
+      description: tbd
+    - name: aqb__degreeincludesthisconcentration__c
+      description: tbd
+    - name: aqb__endyear__c
+      description: tbd
+    - name: aqb__institution__c
+      description: tbd
+    - name: aqb__primaryareaofstudy__c
+      description: tbd
+    - name: aqb__startyear__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

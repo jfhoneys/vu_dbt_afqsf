@@ -1,0 +1,166 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__llchartofaccounts__c
+    description: "TBD"
+    columns:
+    - name: aqb__llchartofaccounts__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__account_sub_type__c
+      description: tbd
+    - name: aqb__account_type__c
+      description: tbd
+    - name: aqb__active__c
+      description: tbd
+    - name: aqb__alert__c
+      description: tbd
+    - name: aqb__athletics_points__c
+      description: tbd
+    - name: aqb__businessofficeglname__c
+      description: tbd
+    - name: aqb__campus__c
+      description: tbd
+    - name: aqb__category__c
+      description: tbd
+    - name: aqb__closeddate__c
+      description: tbd
+    - name: aqb__constituentfacingname__c
+      description: tbd
+    - name: aqb__counts_towards_points__c
+      description: tbd
+    - name: aqb__current_value__c
+      description: tbd
+    - name: aqb__dateofinception__c
+      description: tbd
+    - name: aqb__department__c
+      description: tbd
+    - name: aqb__description__c
+      description: tbd
+    - name: aqb__designationaccountnumbergroupeight__c
+      description: tbd
+    - name: aqb__designationaccountnumbergroupfive__c
+      description: tbd
+    - name: aqb__designationaccountnumbergroupfour__c
+      description: tbd
+    - name: aqb__designationaccountnumbergroupnine__c
+      description: tbd
+    - name: aqb__designationaccountnumbergroupone__c
+      description: tbd
+    - name: aqb__designationaccountnumbergroupseven__c
+      description: tbd
+    - name: aqb__designationaccountnumbergroupsix__c
+      description: tbd
+    - name: aqb__designationaccountnumbergroupten__c
+      description: tbd
+    - name: aqb__designationaccountnumbergroupthree__c
+      description: tbd
+    - name: aqb__designationaccountnumbergrouptwo__c
+      description: tbd
+    - name: aqb__designationaccountnumber__c
+      description: tbd
+    - name: aqb__detaileddescription__c
+      description: tbd
+    - name: aqb__fee1exception__c
+      description: tbd
+    - name: aqb__fee1exemptreason__c
+      description: tbd
+    - name: aqb__fee1exempt__c
+      description: tbd
+    - name: aqb__fee1sourceaccount__c
+      description: tbd
+    - name: aqb__fee1__c
+      description: tbd
+    - name: aqb__fee2exception__c
+      description: tbd
+    - name: aqb__fee2exemptreason__c
+      description: tbd
+    - name: aqb__fee2exempt__c
+      description: tbd
+    - name: aqb__fee2sourceaccount__c
+      description: tbd
+    - name: aqb__fee2__c
+      description: tbd
+    - name: aqb__financialdatalastmodifiedx__c
+      description: tbd
+    - name: aqb__goalcategory__c
+      description: tbd
+    - name: aqb__goal__c
+      description: tbd
+    - name: aqb__incomegeneratedlastfiscalyear__c
+      description: tbd
+    - name: aqb__institutionalunit__c
+      description: tbd
+    - name: aqb__inventoryitem__c
+      description: tbd
+    - name: aqb__marketvalueaboveprinciple__c
+      description: tbd
+    - name: aqb__marketvalue__c
+      description: tbd
+    - name: aqb__minimum_for_distribution__c
+      description: tbd
+    - name: aqb__notes__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__pretty_nmae__c
+      description: tbd
+    - name: aqb__primaryinternalcontact__c
+      description: tbd
+    - name: aqb__principlebalance__c
+      description: tbd
+    - name: aqb__restricted__c
+      description: tbd
+    - name: aqb__restrictions__c
+      description: tbd
+    - name: aqb__schoolunit__c
+      description: tbd
+    - name: aqb__spendingdepartment__c
+      description: tbd
+    - name: aqb__sub_department__c
+      description: tbd
+    - name: aqb__use_category__c
+      description: tbd
+    - name: aqb__use__c
+      description: tbd
+    - name: aqb__vseextramuralathletics__c
+      description: tbd
+    - name: aqb__vse_endowment_restrictions__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: vud_coa_external_id__c
+      description: tbd
+    - name: vu_net_asset_class__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

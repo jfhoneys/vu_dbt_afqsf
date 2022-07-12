@@ -1,0 +1,64 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__studentinterest__c
+    description: "TBD"
+    columns:
+    - name: aqb__studentinterest__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: aqb__contact__c
+      description: tbd
+    - name: aqb__educationid__c
+      description: tbd
+    - name: aqb__educationalinstitution__c
+      description: tbd
+    - name: aqb__interestgroup__c
+      description: tbd
+    - name: aqb__interesttype__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__position__c
+      description: tbd
+    - name: aqb__source__c
+      description: tbd
+    - name: aqb__startday__c
+      description: tbd
+    - name: aqb__startmonth__c
+      description: tbd
+    - name: aqb__startyear__c
+      description: tbd
+    - name: aqb__stopday__c
+      description: tbd
+    - name: aqb__stopmonth__c
+      description: tbd
+    - name: aqb__stopyear__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

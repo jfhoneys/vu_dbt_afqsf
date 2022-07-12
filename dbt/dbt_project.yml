@@ -34,7 +34,7 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   +query_tag: dbt-elt
   vu_dw:
-    # Config indicated by + and applies to all files under models/example/
+   # Config indicated by + and applies to all files under models/example/
     staging:
       +schema: stage
       +materialized: view

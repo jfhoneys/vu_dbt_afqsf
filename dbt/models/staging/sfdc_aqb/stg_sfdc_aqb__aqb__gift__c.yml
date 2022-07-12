@@ -1,0 +1,220 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__gift__c
+    description: "TBD"
+    columns:
+    - name: aqb__gift__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__accountid__c
+      description: tbd
+    - name: aqb__acknowledgement__c
+      description: tbd
+    - name: aqb__alert__c
+      description: tbd
+    - name: aqb__annualreceipt__c
+      description: tbd
+    - name: aqb__anonymitylevel__c
+      description: tbd
+    - name: aqb__anonymous__c
+      description: tbd
+    - name: aqb__approvereceipt__c
+      description: tbd
+    - name: aqb__bypassgiftrecognitionlogic__c
+      description: tbd
+    - name: aqb__campaigndifferent__c
+      description: tbd
+    - name: aqb__campaignfund__c
+      description: tbd
+    - name: aqb__category__c
+      description: tbd
+    - name: aqb__conditionalpledge__c
+      description: tbd
+    - name: aqb__creditedopportunity__c
+      description: tbd
+    - name: aqb__date__c
+      description: tbd
+    - name: aqb__doc_link__c
+      description: tbd
+    - name: aqb__donoraccount__c
+      description: tbd
+    - name: aqb__fundraisingcampaigntext__c
+      description: tbd
+    - name: aqb__giftdescription__c
+      description: tbd
+    - name: aqb__giftexternalid__c
+      description: tbd
+    - name: aqb__gift_count__c
+      description: tbd
+    - name: aqb__hard_credit_gift_recogntion__c
+      description: tbd
+    - name: aqb__includeconditionalpledgeintotal__c
+      description: tbd
+    - name: aqb__includematchdueintotal__c
+      description: tbd
+    - name: aqb__includematchpaidintotal__c
+      description: tbd
+    - name: aqb__includeunconditionalpledgeintotal__c
+      description: tbd
+    - name: aqb__initialnetpresentvalue__c
+      description: tbd
+    - name: aqb__initialnetpresentvalueofopportunity__c
+      description: tbd
+    - name: aqb__instrument__c
+      description: tbd
+    - name: aqb__ispaymentrolled__c
+      description: tbd
+    - name: aqb__matchlink__c
+      description: tbd
+    - name: aqb__matchedaccount__c
+      description: tbd
+    - name: aqb__matched__c
+      description: tbd
+    - name: aqb__matchinggiftpaymentsdue__c
+      description: tbd
+    - name: aqb__matchinggiftpaymentsmade__c
+      description: tbd
+    - name: aqb__maturitydate__c
+      description: tbd
+    - name: aqb__noreceipt__c
+      description: tbd
+    - name: aqb__numberofpayments__c
+      description: tbd
+    - name: aqb__originatinggiftstatus__c
+      description: tbd
+    - name: aqb__originatinggift__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__payments__c
+      description: tbd
+    - name: aqb__pledgebalanceconditional__c
+      description: tbd
+    - name: aqb__pledgebalancetotal__c
+      description: tbd
+    - name: aqb__pledgebalanceunconditional__c
+      description: tbd
+    - name: aqb__pledgeenddate__c
+      description: tbd
+    - name: aqb__pledgefrequency__c
+      description: tbd
+    - name: aqb__pledgeinterval__c
+      description: tbd
+    - name: aqb__pledgescheduletype__c
+      description: tbd
+    - name: aqb__pledgestartdate__c
+      description: tbd
+    - name: aqb__proportionalgiftcredit__c
+      description: tbd
+    - name: aqb__receiptcount__c
+      description: tbd
+    - name: aqb__recurringgiftlink__c
+      description: tbd
+    - name: aqb__restrictedtotal__c
+      description: tbd
+    - name: aqb__revocable__c
+      description: tbd
+    - name: aqb__rolluppledgebalancetotal__c
+      description: tbd
+    - name: aqb__samecampaign__c
+      description: tbd
+    - name: aqb__setup__c
+      description: tbd
+    - name: aqb__softcredit__c
+      description: tbd
+    - name: aqb__statusabbr__c
+      description: tbd
+    - name: aqb__status__c
+      description: tbd
+    - name: aqb__taxamount__c
+      description: tbd
+    - name: aqb__testamentary__c
+      description: tbd
+    - name: aqb__totalassetamount__c
+      description: tbd
+    - name: aqb__totalgift__c
+      description: tbd
+    - name: aqb__type__c
+      description: tbd
+    - name: aqb__unrestrictedtotal__c
+      description: tbd
+    - name: aqb__dateoflastpledgepayment__c
+      description: tbd
+    - name: aqb__nextpledgeduedate__c
+      description: tbd
+    - name: aqb__numberofopentransactions__c
+      description: tbd
+    - name: aqb__originalpledgedamount__c
+      description: tbd
+    - name: aqb__rollupmatchinggiftpaymentsdue__c
+      description: tbd
+    - name: aqb__rollupmatchinggiftpaymentsmade__c
+      description: tbd
+    - name: aqb__rolluppayments__c
+      description: tbd
+    - name: aqb__rolluppledgebalanceconditional__c
+      description: tbd
+    - name: aqb__rolluppledgebalanceunconditional__c
+      description: tbd
+    - name: aqb__rolluprestrictedtotal__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqc_annual_fund__c
+      description: tbd
+    - name: aqb__additionalnewgift__c
+      description: tbd
+    - name: aqb__originalamountpledged__c
+      description: tbd
+    - name: aqb__relatedpledge__c
+      description: tbd
+    - name: aqb__pledgewriteofftotal__c
+      description: tbd
+    - name: school_unit__c
+      description: tbd
+    - name: vu_fiscal_year__c
+      description: tbd
+    - name: aqc_originalpledgeamount__c
+      description: tbd
+    - name: vu_fiscal_month_abbr_c__c
+      description: tbd
+    - name: aqc_originalpledgeamountfrm__c
+      description: tbd
+    - name: aqb__designationtext__c
+      description: tbd
+    - name: vud_total_c__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

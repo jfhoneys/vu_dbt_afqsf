@@ -1,0 +1,90 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__namedefinitionsaccounts__c
+    description: "TBD"
+    columns:
+    - name: aqb__namedefinitionsaccounts__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__enclosenickname__c
+      description: tbd
+    - name: aqb__institutionalsuffixdelimiter__c
+      description: tbd
+    - name: aqb__lastnamefirst__c
+      description: tbd
+    - name: aqb__listadditionalcontacts__c
+      description: tbd
+    - name: aqb__mailingnametwolines__c
+      description: tbd
+    - name: aqb__notes__c
+      description: tbd
+    - name: aqb__omitdeceased__c
+      description: tbd
+    - name: aqb__omitdonotcontact__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__primarycontactfirst__c
+      description: tbd
+    - name: aqb__usefirst__c
+      description: tbd
+    - name: aqb__useforaccountname__c
+      description: tbd
+    - name: aqb__usehonorfornameorder__c
+      description: tbd
+    - name: aqb__useinstitutional__c
+      description: tbd
+    - name: aqb__uselastonce__c
+      description: tbd
+    - name: aqb__uselast__c
+      description: tbd
+    - name: aqb__usemalefirstonly__c
+      description: tbd
+    - name: aqb__usemalemiddleonly__c
+      description: tbd
+    - name: aqb__usemiddle__c
+      description: tbd
+    - name: aqb__usenickname__c
+      description: tbd
+    - name: aqb__usesalutation__c
+      description: tbd
+    - name: aqb__usesuffix__c
+      description: tbd
+    - name: aqb__useforaccountgreeting__c
+      description: tbd
+    - name: aqb__useforalternatename__c
+      description: tbd
+    - name: aqb__useformailingname__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

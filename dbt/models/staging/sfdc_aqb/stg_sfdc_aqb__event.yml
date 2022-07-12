@@ -1,0 +1,154 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__event
+    description: "TBD"
+    columns:
+    - name: event_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: whoid
+      description: tbd
+    - name: whatid
+      description: tbd
+    - name: whocount
+      description: tbd
+    - name: whatcount
+      description: tbd
+    - name: subject
+      description: tbd
+    - name: location
+      description: tbd
+    - name: isalldayevent
+      description: tbd
+    - name: activitydatetime
+      description: tbd
+    - name: activitydate
+      description: tbd
+    - name: durationinminutes
+      description: tbd
+    - name: startdatetime
+      description: tbd
+    - name: enddatetime
+      description: tbd
+    - name: enddate
+      description: tbd
+    - name: description
+      description: tbd
+    - name: accountid
+      description: tbd
+    - name: ownerid
+      description: tbd
+    - name: type
+      description: tbd
+    - name: isprivate
+      description: tbd
+    - name: showas
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: ischild
+      description: tbd
+    - name: isgroupevent
+      description: tbd
+    - name: groupeventtype
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: isarchived
+      description: tbd
+    - name: recurrenceactivityid
+      description: tbd
+    - name: isrecurrence
+      description: tbd
+    - name: recurrencestartdatetime
+      description: tbd
+    - name: recurrenceenddateonly
+      description: tbd
+    - name: recurrencetimezonesidkey
+      description: tbd
+    - name: recurrencetype
+      description: tbd
+    - name: recurrenceinterval
+      description: tbd
+    - name: recurrencedayofweekmask
+      description: tbd
+    - name: recurrencedayofmonth
+      description: tbd
+    - name: recurrenceinstance
+      description: tbd
+    - name: recurrencemonthofyear
+      description: tbd
+    - name: reminderdatetime
+      description: tbd
+    - name: isreminderset
+      description: tbd
+    - name: eventsubtype
+      description: tbd
+    - name: isrecurrence2exclusion
+      description: tbd
+    - name: recurrence2patterntext
+      description: tbd
+    - name: recurrence2patternversion
+      description: tbd
+    - name: isrecurrence2
+      description: tbd
+    - name: isrecurrence2exception
+      description: tbd
+    - name: recurrence2patternstartdate
+      description: tbd
+    - name: recurrence2patterntimezone
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__activityreport__c
+      description: tbd
+    - name: aqb__activitysummary__c
+      description: tbd
+    - name: aqb__automatedchangedate__c
+      description: tbd
+    - name: aqb__completed__c
+      description: tbd
+    - name: aqb__confidentialcomment__c
+      description: tbd
+    - name: aqb__essentialmove__c
+      description: tbd
+    - name: aqb__followup__c
+      description: tbd
+    - name: aqb__opportunity__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__stewardship__c
+      description: tbd
+    - name: aqb__tasktemplateid__c
+      description: tbd
+    - name: aqb__engagementscorecategory__c
+      description: tbd
+    - name: aqb__engagementscoreoverride__c
+      description: tbd
+    - name: aqb__engagementscore__c
+      description: tbd
+    - name: aqb__objective__c
+      description: tbd
+    - name: aqb__purpose__c
+      description: tbd
+    - name: aqb__reportstatus__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

@@ -1,0 +1,140 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__lead
+    description: "TBD"
+    columns:
+    - name: lead_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: masterrecordid
+      description: tbd
+    - name: lastname
+      description: tbd
+    - name: firstname
+      description: tbd
+    - name: salutation
+      description: tbd
+    - name: middlename
+      description: tbd
+    - name: suffix
+      description: tbd
+    - name: name
+      description: tbd
+    - name: title
+      description: tbd
+    - name: company
+      description: tbd
+    - name: street
+      description: tbd
+    - name: city
+      description: tbd
+    - name: state
+      description: tbd
+    - name: postalcode
+      description: tbd
+    - name: country
+      description: tbd
+    - name: latitude
+      description: tbd
+    - name: longitude
+      description: tbd
+    - name: geocodeaccuracy
+      description: tbd
+    - name: phone
+      description: tbd
+    - name: mobilephone
+      description: tbd
+    - name: fax
+      description: tbd
+    - name: email
+      description: tbd
+    - name: website
+      description: tbd
+    - name: photourl
+      description: tbd
+    - name: description
+      description: tbd
+    - name: leadsource
+      description: tbd
+    - name: status
+      description: tbd
+    - name: industry
+      description: tbd
+    - name: rating
+      description: tbd
+    - name: annualrevenue
+      description: tbd
+    - name: numberofemployees
+      description: tbd
+    - name: ownerid
+      description: tbd
+    - name: hasoptedoutofemail
+      description: tbd
+    - name: isconverted
+      description: tbd
+    - name: converteddate
+      description: tbd
+    - name: convertedaccountid
+      description: tbd
+    - name: convertedcontactid
+      description: tbd
+    - name: convertedopportunityid
+      description: tbd
+    - name: isunreadbyowner
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: donotcall
+      description: tbd
+    - name: hasoptedoutoffax
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: lasttransferdate
+      description: tbd
+    - name: jigsaw
+      description: tbd
+    - name: jigsawcontactid
+      description: tbd
+    - name: emailbouncedreason
+      description: tbd
+    - name: emailbounceddate
+      description: tbd
+    - name: individualid
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__name__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: et4ae5__hasoptedoutofmobile__c
+      description: tbd
+    - name: et4ae5__mobile_country_code__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

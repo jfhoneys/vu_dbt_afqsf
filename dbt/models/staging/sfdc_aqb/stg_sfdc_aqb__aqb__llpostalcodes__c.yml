@@ -1,0 +1,52 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__llpostalcodes__c
+    description: "TBD"
+    columns:
+    - name: aqb__llpostalcodes__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__district__c
+      description: tbd
+    - name: aqb__institutionalarea1__c
+      description: tbd
+    - name: aqb__institutionalarea2__c
+      description: tbd
+    - name: aqb__institutionalarea3__c
+      description: tbd
+    - name: aqb__institutionalarea4__c
+      description: tbd
+    - name: aqb__region__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

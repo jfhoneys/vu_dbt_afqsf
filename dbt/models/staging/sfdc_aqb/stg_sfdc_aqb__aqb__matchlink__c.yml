@@ -1,0 +1,54 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__matchlink__c
+    description: "TBD"
+    columns:
+    - name: aqb__matchlink__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: aqb__matchedgift__c
+      description: tbd
+    - name: aqb__counter__c
+      description: tbd
+    - name: aqb__matchpaymentsdue__c
+      description: tbd
+    - name: aqb__matchpaymentsmade__c
+      description: tbd
+    - name: aqb__matchinggift__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqb__dateofmatch__c
+      description: tbd
+    - name: aqb__designationofmatch__c
+      description: tbd
+    - name: aqb__matchedaccount__c
+      description: tbd
+    - name: aqb__matchingaccount__c
+      description: tbd
+    - name: aqb__matchingtransaction__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

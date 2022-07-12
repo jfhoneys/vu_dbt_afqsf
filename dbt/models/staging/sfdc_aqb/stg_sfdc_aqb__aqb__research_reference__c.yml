@@ -1,0 +1,72 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__research_reference__c
+    description: "TBD"
+    columns:
+    - name: aqb__research_reference__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__contact__c
+      description: tbd
+    - name: aqb__date_of_research__c
+      description: tbd
+    - name: aqb__issue__c
+      description: tbd
+    - name: aqb__notes__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__page__c
+      description: tbd
+    - name: aqb__requestedby__c
+      description: tbd
+    - name: aqb__requesteddate__c
+      description: tbd
+    - name: aqb__researcher__c
+      description: tbd
+    - name: aqb__resourcedate__c
+      description: tbd
+    - name: aqb__resource__c
+      description: tbd
+    - name: aqb__status__c
+      description: tbd
+    - name: aqb__volume__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqb__engagementscorecategory__c
+      description: tbd
+    - name: aqb__engagementscoreoverride__c
+      description: tbd
+    - name: aqb__engagementscore__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

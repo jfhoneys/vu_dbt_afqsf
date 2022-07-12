@@ -1,0 +1,86 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__registration__c
+    description: "TBD"
+    columns:
+    - name: aqb__registration__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: aqb__event__c
+      description: tbd
+    - name: aqb__campaign__c
+      description: tbd
+    - name: aqb__chartofaccounts__c
+      description: tbd
+    - name: aqb__comment__c
+      description: tbd
+    - name: aqb__contact__c
+      description: tbd
+    - name: aqb__date_of_registration__c
+      description: tbd
+    - name: aqb__eventdate__c
+      description: tbd
+    - name: aqb__eventenddate__c
+      description: tbd
+    - name: aqb__eventlocality__c
+      description: tbd
+    - name: aqb__eventstartdateandtime__c
+      description: tbd
+    - name: aqb__eventstopdateandtime__c
+      description: tbd
+    - name: aqb__event_venue__c
+      description: tbd
+    - name: aqb__lead__c
+      description: tbd
+    - name: aqb__registrationexternalid__c
+      description: tbd
+    - name: aqb__registrationfullname__c
+      description: tbd
+    - name: aqb__total_registration_amount__c
+      description: tbd
+    - name: aqb__numberofguestsattended__c
+      description: tbd
+    - name: aqb__numberofguests__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqc_host__c
+      description: tbd
+    - name: tickets_sent__c
+      description: tbd
+    - name: vud_pending_guests_c__c
+      description: tbd
+    - name: ivud_nvited_guests_c__c
+      description: tbd
+    - name: vud_declined_guests_c__c
+      description: tbd
+    - name: vud_attending_guests_c__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

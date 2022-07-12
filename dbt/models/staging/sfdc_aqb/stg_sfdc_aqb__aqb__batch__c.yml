@@ -1,0 +1,160 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__batch__c
+    description: "TBD"
+    columns:
+    - name: aqb__batch__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: lastvieweddate
+      description: tbd
+    - name: lastreferenceddate
+      description: tbd
+    - name: aqb__acknowledgementexportdate__c
+      description: tbd
+    - name: aqb__bank_date__c
+      description: tbd
+    - name: aqb__batchdate__c
+      description: tbd
+    - name: aqb__batchisclosing__c
+      description: tbd
+    - name: aqb__batchitemrecurringgiftprocessing__c
+      description: tbd
+    - name: aqb__batchtype__c
+      description: tbd
+    - name: aqb__batch_item_opportunity_processing__c
+      description: tbd
+    - name: aqb__batch_item_pledge_payment_processing__c
+      description: tbd
+    - name: aqb__closedate__c
+      description: tbd
+    - name: aqb__conditionalpledgecontrolamount__c
+      description: tbd
+    - name: aqb__defaultacknowledgement__c
+      description: tbd
+    - name: aqb__defaultamount__c
+      description: tbd
+    - name: aqb__defaultcampaignappeal__c
+      description: tbd
+    - name: aqb__defaultcampaignfund__c
+      description: tbd
+    - name: aqb__defaultchartofaccounts__c
+      description: tbd
+    - name: aqb__defaultcontacttohonor__c
+      description: tbd
+    - name: aqb__defaultcontacttonotify__c
+      description: tbd
+    - name: aqb__defaultcurrency__c
+      description: tbd
+    - name: aqb__defaultdescription__c
+      description: tbd
+    - name: aqb__defaultentrytype__c
+      description: tbd
+    - name: aqb__defaulthonoreename__c
+      description: tbd
+    - name: aqb__defaultmethod__c
+      description: tbd
+    - name: aqb__defaultnotificationaddressline1__c
+      description: tbd
+    - name: aqb__defaultnotificationaddressline2__c
+      description: tbd
+    - name: aqb__defaultnotificationaddressline3__c
+      description: tbd
+    - name: aqb__defaultnotificationcity__c
+      description: tbd
+    - name: aqb__defaultnotificationcountry__c
+      description: tbd
+    - name: aqb__defaultnotificationgreeting__c
+      description: tbd
+    - name: aqb__defaultnotificationstateprovince__c
+      description: tbd
+    - name: aqb__defaultnotificationzippostalcode__c
+      description: tbd
+    - name: aqb__defaultnotifyeename__c
+      description: tbd
+    - name: aqb__defaulttributedescription__c
+      description: tbd
+    - name: aqb__defaulttributetype__c
+      description: tbd
+    - name: aqb__exportdate__c
+      description: tbd
+    - name: aqb__externalid__c
+      description: tbd
+    - name: aqb__giftcredityear__c
+      description: tbd
+    - name: aqb__giftdate__c
+      description: tbd
+    - name: aqb__note__c
+      description: tbd
+    - name: aqb__openrecurringgiftindicator__c
+      description: tbd
+    - name: aqb__open_opportunity_indicator__c
+      description: tbd
+    - name: aqb__outstanding_pledge_indicator__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__paymentcontrolamount__c
+      description: tbd
+    - name: aqb__pledgecontrolamount__c
+      description: tbd
+    - name: aqb__recordtypedevelopername__c
+      description: tbd
+    - name: aqb__sourceofdata__c
+      description: tbd
+    - name: aqb__status__c
+      description: tbd
+    - name: aqb__usercontrol__c
+      description: tbd
+    - name: aqb__userresponsibleforacknowledgements__c
+      description: tbd
+    - name: aqb__user__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqc_gift_batch_folder_name__c
+      description: tbd
+    - name: aqc_approved__c
+      description: tbd
+    - name: vud_exclude_from_finance__c
+      description: tbd
+    - name: aqc_submitted_for_approval__c
+      description: tbd
+    - name: aqb__promptopportunitylink__c
+      description: tbd
+    - name: aqc_do_not_push_to_finance__c
+      description: tbd
+    - name: internal_note__c
+      description: tbd
+    - name: aqc_closed_yesterday__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

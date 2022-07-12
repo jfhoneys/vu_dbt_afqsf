@@ -1,0 +1,42 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__recordtype
+    description: "TBD"
+    columns:
+    - name: recordtype_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: name
+      description: tbd
+    - name: developername
+      description: tbd
+    - name: namespaceprefix
+      description: tbd
+    - name: description
+      description: tbd
+    - name: businessprocessid
+      description: tbd
+    - name: sobjecttype
+      description: tbd
+    - name: isactive
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

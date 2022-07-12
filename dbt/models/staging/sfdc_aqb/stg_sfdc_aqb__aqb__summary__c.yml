@@ -1,0 +1,76 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__summary__c
+    description: "TBD"
+    columns:
+    - name: aqb__summary__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: recordtypeid
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: aqb__account__c
+      description: tbd
+    - name: aqb__comment__c
+      description: tbd
+    - name: aqb__contact__c
+      description: tbd
+    - name: aqb__count__c
+      description: tbd
+    - name: aqb__currency__c
+      description: tbd
+    - name: aqb__date__c
+      description: tbd
+    - name: aqb__giftrecognitioncredit__c
+      description: tbd
+    - name: aqb__gift__c
+      description: tbd
+    - name: aqb__givinglevel__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__summaries_definition__c
+      description: tbd
+    - name: aqb__transaction__c
+      description: tbd
+    - name: aqb__year__c
+      description: tbd
+    - name: aqb__enddate__c
+      description: tbd
+    - name: aqb__startdate__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqb__displayyear__c
+      description: tbd
+    - name: aqb__engagementscorecategory__c
+      description: tbd
+    - name: aqb__engagementscoreoverride__c
+      description: tbd
+    - name: aqb__engagementscore__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 

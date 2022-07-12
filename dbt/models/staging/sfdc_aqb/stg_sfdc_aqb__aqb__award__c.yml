@@ -1,0 +1,60 @@
+version: 2
+
+# reminder: Replact TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: stg_sfdc_aqb__aqb__award__c
+    description: "TBD"
+    columns:
+    - name: aqb__award__c_id
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: ownerid
+      description: tbd
+    - name: isdeleted
+      description: tbd
+    - name: name
+      description: tbd
+    - name: createddate
+      description: tbd
+    - name: createdbyid
+      description: tbd
+    - name: lastmodifieddate
+      description: tbd
+    - name: lastmodifiedbyid
+      description: tbd
+    - name: systemmodstamp
+      description: tbd
+    - name: lastactivitydate
+      description: tbd
+    - name: aqb__awardterms__c
+      description: tbd
+    - name: aqb__awardtype__c
+      description: tbd
+    - name: aqb__awardedby__c
+      description: tbd
+    - name: aqb__dateoffirstaward__c
+      description: tbd
+    - name: aqb__dateoflastaward__c
+      description: tbd
+    - name: aqb__description__c
+      description: tbd
+    - name: aqb__llchartofaccountsid__c
+      description: tbd
+    - name: aqb__ownerunit__c
+      description: tbd
+    - name: aqb__termofaward__c
+      description: tbd
+    - name: aqb__totalamountawarded__c
+      description: tbd
+    - name: aqcv_conversionid__c
+      description: tbd
+    - name: aqc_project_code__c
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd 
