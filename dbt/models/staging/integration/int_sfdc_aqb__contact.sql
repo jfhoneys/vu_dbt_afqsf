@@ -1,5 +1,4 @@
 
-
 with contact as (select * from {{ ref ('stg_sfdc_aqb__contact')}} where not isdeleted ), 
 owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
@@ -9,7 +8,7 @@ all_cols as
     contact.contact_id
     -- , contact.isdeleted
     -- , contact.masterrecordid
-    , contact.accountid as contact_acountid 
+    , contact.accountid as contact_acount_id 
     , contact.lastname as contact_last_name 
     , contact.firstname as contact_first_name 
     , contact.salutation as contact_salution
@@ -49,10 +48,10 @@ all_cols as
     , contact.hasoptedoutofemail as contact_opted_out_email 
     -- , contact.hasoptedoutoffax
     , contact.donotcall as contact_do_not_call 
-    , contact.systemmodstamp as contact_systemmodstamp 
+    , contact.systemmodstamp as contact_system_modstamp 
     , contact.lastactivitydate as contact_lastactivity_date 
-    , contact.lastcurequestdate as contact_lastcurequestdate
-    , contact.lastcuupdatedate as contact_lastcuupdatedate
+    , contact.lastcurequestdate as contact_last_cu_request_date
+    , contact.lastcuupdatedate as contact_last_cu_update_date
 --    , contact.lastvieweddate
     -- , contact.lastreferenceddate
     -- , contact.emailbouncedreason
@@ -83,7 +82,7 @@ all_cols as
     -- , contact.aqb__addresschangeflags__c
     -- , contact.aqb__addressinusetext__c
     -- , contact.aqb__addressinusetype__c
-    , contact.aqb__age__c as contact_account_age
+    , contact.aqb__age__c as contact_account_age  -- Is this correct? 
     -- , contact.aqb__alert__c
     -- , contact.aqb__automatedalternatename__c
     -- , contact.aqb__automatedcommunityname__c
@@ -96,15 +95,15 @@ all_cols as
     , contact.aqb__businessaddresscountry__c as contact_business_address_country
     -- , contact.aqb__businessaddresslocality__c
     -- , contact.aqb__businessaddressnote__c
-    , contact.aqb__businessaddresspostalcode__c
-    , contact.aqb__businessaddressstatepro__c
+    , contact.aqb__businessaddresspostalcode__c as contact_business_address_postal_code 
+    , contact.aqb__businessaddressstatepro__c as contact_business_address_state_pro
     -- , contact.aqb__businessaddressstatus__c
-    , contact.aqb__businessaddressstreet__c
+    , contact.aqb__businessaddressstreet__c as contact_buiness_address_street 
     -- , contact.aqb__businessaddresstype__c
     , contact.aqb__businessaddress__c as contact_business_address 
     -- , contact.aqb__businessemail__c
-    , contact.aqb__businessphone__c
-    , contact.aqb__caecategory__c
+    , contact.aqb__businessphone__c as contact_business_phone
+    , contact.aqb__caecategory__c as contact_cae_category
     -- , contact.aqb__cnlink__c
     -- , contact.aqb__cname__c
     -- , contact.aqb__carrierroute__c
@@ -118,7 +117,7 @@ all_cols as
     -- , contact.aqb__communitypassword__c
     -- , contact.aqb__contactanonymousoption__c
     -- , contact.aqb__contactcount__c
-    , contact.aqb__contactexternalid__c
+    , contact.aqb__contactexternalid__c as contact_external_id
     -- , contact.aqb__contactgrouping__c
     -- , contact.aqb__contactmailingaddressstreetlineone__c
     -- , contact.aqb__contactmailingaddressstreetlinethre__c
