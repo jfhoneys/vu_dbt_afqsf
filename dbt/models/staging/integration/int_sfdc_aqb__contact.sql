@@ -197,7 +197,7 @@ all_cols as
     -- , contact.aqb__involvementrating__c
     -- , contact.aqb__involvementscore__c
     , contact.aqb__isprimarycontact__c as contact_is_primary_contact 
-    , contact.aqb__issecondarycontact__c as constact_is_secondary_contact
+    , contact.aqb__issecondarycontact__c as contact_is_secondary_contact
     -- , contact.aqb__languages__c
     -- , contact.aqb__lastactivitydate__c
     -- , contact.aqb__latitude__c
