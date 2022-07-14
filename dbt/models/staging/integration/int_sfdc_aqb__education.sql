@@ -7,7 +7,7 @@ edu_transform as (
     select education.aqb__education__c_id as edu_education_id
          , education.ownerid as edu_owner_id
 --         , isdeleted
-         , "NAME" as edu_name /*<<field identification need*/
+         , education.name as edu_name /*<<field identification need*/
          , education.recordtypeid as edu_record_type_id
          , education.createddate as edu_created_date
          , education.createdbyid as edu_created_by_id
