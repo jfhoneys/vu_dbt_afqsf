@@ -1,7 +1,7 @@
 with all_columns as ( /*base data set*/
     select *
 --   count(*) /*record count 416026*/
-    from stg_sfdc_aqb__aqb__education__c
+    from  {{ ref ('stg_sfdc_aqb__aqb__education__c ')}}
     where not isdeleted
 )
    , owner as ( /*record owner user info*/
@@ -15,8 +15,8 @@ with all_columns as ( /*base data set*/
          , title as owner_title
          , userroleid as owner_roleid
          , usertype as _owner_user_type
-    from stg_sfdc_aqb__user
-    where isactive
+    from {{ref ('stg_sfdc_aqb__user')}}
+    
 )
    , created_by as ( /*record creator user info*/
     select user_id as creator_userid
@@ -29,8 +29,8 @@ with all_columns as ( /*base data set*/
          , title as creator_title
          , userroleid as creator_roleid
          , usertype as _creator_user_type
-    from stg_sfdc_aqb__user
-    where isactive
+    from {{ref ('stg_sfdc_aqb__user')}}
+  
 )
    , last_update_by as ( /*record last touched user info*/
     select user_id as lastupd_userid
@@ -43,8 +43,8 @@ with all_columns as ( /*base data set*/
          , title as lastupd_title
          , userroleid as lastupd_roleid
          , usertype as _lastupd_user_type
-    from stg_sfdc_aqb__user
-    where isactive
+    from {{ref ('stg_sfdc_aqb__user')}}
+
 )
    , edu as (
     select all_columns.aqb__education__c_id as education_key
