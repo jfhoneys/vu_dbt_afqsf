@@ -1,4 +1,4 @@
-with education as (select * from  {{ ref ('stg_sfdc_aqb__aqb__education__c')}} where not isdeleted),
+with education as (select * from  {{ ref ('stg_sfdc_aqb__aqb__education__c')}} where not isdeleted)
 owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
