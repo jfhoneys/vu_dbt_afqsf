@@ -3,7 +3,7 @@ owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
-trans as (
+edu_transform as (
     select education.aqb__education__c_id as edu_education_id
          , education.ownerid as edu_owner_id
 --         , isdeleted
@@ -56,16 +56,16 @@ trans as (
     from education
     ),
 
-joins as (select -- select count(1) as cnt from trans
-             trans.*
+final as (select -- select count(1) as cnt from trans
+             edu_transform.*
              , owner.name as edu_owner_name
              , created_by.name as edu_creator_name
              , last_modified_by.name as edu_last_modified_by_name
-        from trans
-             join owner on trans.edu_owner_id = owner.user_id
-             join created_by on trans.edu_created_by_id = created_by.user_id
-             join last_modified_by on trans.edu_last_modified_by_id = last_modified_by.user_id
+        from edu_transform
+             join owner on edu_transform.edu_owner_id = owner.user_id
+             join created_by on edu_transform.edu_created_by_id = created_by.user_id
+             join last_modified_by on edu_transform.edu_last_modified_by_id = last_modified_by.user_id
 )
 
 /*clean select*/
-select * from joins
+select * from final
