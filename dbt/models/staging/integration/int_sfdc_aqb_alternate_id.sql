@@ -33,6 +33,9 @@ from
 final as (
 	select
 		alt_id_transform.*
+		, owner.name as alt_id_owner_name
+        , created_by.name as alt_id_creator_name
+        , last_modified_by.name as alt_id_last_modified_by_name
 	FROM	
 		alt_id_transform
 			join owner on alt_id_transform.alt_id_owner_id = owner.user_id
