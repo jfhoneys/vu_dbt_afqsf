@@ -1,7 +1,7 @@
 with all_columns as ( /*base data set*/
     select *
 --   count(*) /*record count 416026*/
-    from  {{ ref ('stg_sfdc_aqb__aqb__education__c ')}}
+    from  {{ ref ('stg_sfdc_aqb__aqb__education__c')}}
     where not isdeleted
 )
    , owner as ( /*record owner user info*/
