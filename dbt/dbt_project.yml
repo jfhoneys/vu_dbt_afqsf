@@ -38,6 +38,9 @@ models:
     staging:
       +schema: stage
       +materialized: view
+    intermediate:
+      +schema: stage
+      +materialized: view
     marts:
       alumni:
         +schema: alumni
