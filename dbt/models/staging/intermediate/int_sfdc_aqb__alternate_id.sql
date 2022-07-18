@@ -5,7 +5,7 @@ last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 alt_id_transform as (
 select 
-	alt_id.AQB__ALTERNATEID__C_ID as alt_id_id
+	alt_id.aqb__alternateid__c_id as alt_id_id
 	, alt_id.ownerid as alt_id_owner_id
 	, alt_id.isdeleted as alt_id_is_deleted
 	, alt_id.name as alt_id_name
@@ -23,9 +23,9 @@ select
 	--, aqb__ownerunit__c
 	--, aqb__type__c
 	--, aqcv_conversionid__c
-	--, matillion_batch_id
-	--, matillion_updated_timestamp
-	--, source_name
+	, matillion_batch_id
+	, matillion_updated_timestamp
+	, source_name
 from 
 	alt_id
 ),
