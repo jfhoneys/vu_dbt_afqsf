@@ -2,6 +2,6 @@ packages:
   - package: dbt-labs/dbt_utils
     version: 0.8.6
 # the following line is how to referecne a local directory as a package 
-#  - local: ../../cdc_dbt_utils
+  - local: ../../cdc_dbt_utils
 # the following line is how to reference a git repo as a package 
 #  - git: "https://github.com/clouddataconsulting/cd_dbt_utils"

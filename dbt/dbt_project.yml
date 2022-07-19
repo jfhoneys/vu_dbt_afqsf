@@ -45,10 +45,10 @@ models:
       alumni:
         +schema: alumni
         +materialized: table 
-#  cdc_dbt_utils:
-#    dw_util:
-#      +materialized: view
-#      +schema: dw_util
+  cdc_dbt_utils:
+    dw_util:
+      +materialized: view
+      +schema: dw_util
 
 seeds: 
   schema: seed_data
