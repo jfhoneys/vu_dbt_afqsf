@@ -5,21 +5,21 @@ last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 alternateid_transform as (
     select aalternateid.id as alternateid_id
-, alternateid.ownerid as alternateid_ownerid
+-- , alternateid.ownerid as alternateid_ownerid
 , alternateid.isdeleted as alternateid_isdeleted
 , alternateid.name as alternateid_name
-, alternateid.createddate as alternateid_createddate
-, alternateid.createdbyid as alternateid_createdbyid
-, alternateid.lastmodifieddate as alternateid_lastmodifieddate
-, alternateid.lastmodifiedbyid as alternateid_lastmodifiedbyid
-, alternateid.systemmodstamp as alternateid_systemmodstamp
+-- , alternateid.createddate as alternateid_createddate
+-- , alternateid.createdbyid as alternateid_createdbyid
+-- , alternateid.lastmodifieddate as alternateid_lastmodifieddate
+-- , alternateid.lastmodifiedbyid as alternateid_lastmodifiedbyid
+-- , alternateid.systemmodstamp as alternateid_systemmodstamp
 , alternateid.lastvieweddate as alternateid_lastvieweddate
 , alternateid.lastreferenceddate as alternateid_lastreferenceddate
 , alternateid.aqb__accountreferenced__c as alternateid_ccountreferenced
-, alternateid.aqb__aalternateid__c as alternateid_alternateid
+-- , alternateid.aqb__aalternateid__c as alternateid_alternateid
 , alternateid.aqb__contactreferenced__c as alternateid_contactreferenced
 , alternateid.aqb__nonuniqueaalternateid__c as alternateid_nonuniqueaalternateid
-, alternateid.aqb__ownerunit__c as alternateid_ownerunit
+-- , alternateid.aqb__ownerunit__c as alternateid_ownerunit
 , alternateid.aqb__type__c as alternateid_type
 , alternateid.aqcv_conversionid__c as alternateid_cv_conversionid
 , alternateid.matillion_batch_id as alternateid_matillion_batch_id
