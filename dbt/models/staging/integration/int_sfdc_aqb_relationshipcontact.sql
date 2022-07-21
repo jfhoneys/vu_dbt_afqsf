@@ -6,12 +6,12 @@ last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 relationshipcontact_transform as 
 (select 
 relationshipcontact.aqb__relationshipcontact__c_id as relationshipcontact_relationshipcontact_id
---, relationshipcontact.ownerid as relationshipcontact_ownerid
+, relationshipcontact.ownerid as relationshipcontact_ownerid
 --, relationshipcontact.isdeleted as relationshipcontact_isdeleted
 , relationshipcontact.name as relationshipcontact_name
 , relationshipcontact.recordtypeid as relationshipcontact_recordtypeid
 --, relationshipcontact.createddate as relationshipcontact_createddate
---, relationshipcontact.createdbyid as relationshipcontact_createdbyid
+, relationshipcontact.createdbyid as relationshipcontact_createdbyid
 --, relationshipcontact.lastmodifieddate as relationshipcontact_lastmodifieddate
 --, relationshipcontact.lastmodifiedbyid as relationshipcontact_lastmodifiedbyid
 --, relationshipcontact.systemmodstamp as relationshipcontact_systemmodstamp
