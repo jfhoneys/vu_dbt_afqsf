@@ -5,37 +5,36 @@ last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 relationshipcontact_transform as 
 (select 
-relationshipcontact.aqb__relationshipcontact__c_id as relationshipcontact_id
---, relationshipcontact.ownerid as relationshipcontact_ownerid
---, relationshipcontact.isdeleted as relationshipcontact_isdeleted
-, relationshipcontact.name as relationshipcontact_name
-, relationshipcontact.recordtypeid as relationshipcontact_recordtypeid
---, relationshipcontact.createddate as relationshipcontact_createddate
---, relationshipcontact.createdbyid as relationshipcontact_createdbyid
---, relationshipcontact.lastmodifieddate as relationshipcontact_lastmodifieddate
---, relationshipcontact.lastmodifiedbyid as relationshipcontact_lastmodifiedbyid
---, relationshipcontact.systemmodstamp as relationshipcontact_systemmodstamp
-, relationshipcontact.aqb__contactid__c as relationshipcontact_contactid
---, relationshipcontact.aqb__contactrolegroup__c as relationshipcontact_contactrolegroup
---, relationshipcontact.aqb__contactrole__c as relationshipcontact_contactrole
---, relationshipcontact.aqb__enddate__c as relationshipcontact_enddate
---, relationshipcontact.aqb__ended__c as relationshipcontact_ended
---, relationshipcontact.aqb__ownerunit__c as relationshipcontact_ownerunit
-, relationshipcontact.aqb__relatedcontactrole__c as relationshipcontact_relatedcontactrole
-, relationshipcontact.aqb__relatedname__c as relationshipcontact_relatedname
-, relationshipcontact.aqb__relatedto__c as relationshipcontact_relatedto
---, relationshipcontact.aqb__relationshippair__c as relationshipcontact_relationshippair
-, relationshipcontact.aqb__relationship_type__c as relationshipcontact_relationship_type
-, relationshipcontact.aqb__relationship__c as relationshipcontact_relationship
-, relationshipcontact.aqb__reverserelationship__c as relationshipcontact_reverserelationship
---, relationshipcontact.aqb__source__c as relationshipcontact_source
---, relationshipcontact.aqb__startdate__c as relationshipcontact_startdate
---, relationshipcontact.aqb__started__c as relationshipcontact_started
-, relationshipcontact.aqb__relatedcontact__c as relationshipcontact_relatedcontact
---, relationshipcontact.aqcv_conversionid__c as relationshipcontact_cv_conversionid
---, relationshipcontact.aqc_non_constituent_birthday__c as relationshipcontact_c_non_constituent_birthday
-, relationshipcontact.matillion_batch_id as relationshipcontact_matillion_batch_id
-, relationshipcontact.matillion_updated_timestamp as relationshipcontact_matillion_updated_timestamp
+relationshipaccount.aqb__relationshipaccount__c_id as relationshipaccount_relationshipaccount_id
+--, relationshipaccount.ownerid as relationshipaccount_ownerid
+--, relationshipaccount.isdeleted as relationshipaccount_isdeleted
+, relationshipaccount.name as relationshipaccount_name
+, relationshipaccount.recordtypeid as relationshipaccount_recordtypeid
+--, relationshipaccount.createddate as relationshipaccount_createddate
+--, relationshipaccount.createdbyid as relationshipaccount_createdbyid
+--, relationshipaccount.lastmodifieddate as relationshipaccount_lastmodifieddate
+--, relationshipaccount.lastmodifiedbyid as relationshipaccount_lastmodifiedbyid
+--, relationshipaccount.systemmodstamp as relationshipaccount_systemmodstamp
+, relationshipaccount.aqb__accountid__c as relationshipaccount_accountid
+, relationshipaccount.aqb__accountrolegroup__c as relationshipaccount_accountrolegroup
+, relationshipaccount.aqb__accountrole__c as relationshipaccount_accountrole
+, relationshipaccount.aqb__awardsoftcredit__c as relationshipaccount_awardsoftcredit
+--, relationshipaccount.aqb__enddate__c as relationshipaccount_enddate
+--, relationshipaccount.aqb__ended__c as relationshipaccount_ended
+--, relationshipaccount.aqb__givesoftcredit__c as relationshipaccount_givesoftcredit
+--, relationshipaccount.aqb__linkedrelationship__c as relationshipaccount_linkedrelationship
+--, relationshipaccount.aqb__ownerunit__c as relationshipaccount_ownerunit
+, relationshipaccount.aqb__relatedaccountrole__c as relationshipaccount_relatedaccountrole
+, relationshipaccount.aqb__relatedaccount__c as relationshipaccount_relatedaccount
+, relationshipaccount.aqb__relatedto__c as relationshipaccount_relatedto
+, relationshipaccount.aqb__relationshippair__c as relationshipaccount_relationshippair
+, relationshipaccount.aqb__source__c as relationshipaccount_source
+, relationshipaccount.aqb__startdate__c as relationshipaccount_startdate
+, relationshipaccount.aqb__started__c as relationshipaccount_started
+, relationshipaccount.aqcv_conversionid__c as relationshipaccount_aqcv_conversionid
+, relationshipaccount.matillion_batch_id as relationshipaccount_matillion_batch_id
+, relationshipaccount.matillion_updated_timestamp as relationshipaccount_matillion_updated_timestamp
+, relationshipaccount.source_name as relationshipaccount_source_name
     from relationshipcontact
     ),
 
