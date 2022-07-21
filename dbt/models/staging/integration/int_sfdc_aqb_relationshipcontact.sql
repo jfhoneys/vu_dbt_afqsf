@@ -13,7 +13,7 @@ relationshipcontact.aqb__relationshipcontact__c_id as relationshipcontact_relati
 --, relationshipcontact.createddate as relationshipcontact_createddate
 , relationshipcontact.createdbyid as relationshipcontact_createdbyid
 --, relationshipcontact.lastmodifieddate as relationshipcontact_lastmodifieddate
---, relationshipcontact.lastmodifiedbyid as relationshipcontact_lastmodifiedbyid
+, relationshipcontact.lastmodifiedbyid as relationshipcontact_lastmodifiedbyid
 --, relationshipcontact.systemmodstamp as relationshipcontact_systemmodstamp
 , relationshipcontact.aqb__contactid__c as relationshipcontact_contactid
 --, relationshipcontact.aqb__contactrolegroup__c as relationshipcontact_contactrolegroup
@@ -46,9 +46,9 @@ final as (select -- select count(1) as cnt from trans
              , created_by.name as relationshipcontact_creator_name
              , last_modified_by.name as relationshipcontact_last_modified_by_name
         from relationshipcontact_transform
-           --  join owner on relationshipcontact_transform.relationshipcontact_owner_id = owner.user_id
-             join created_by on relationshipcontact_transform.relationshipcontact_created_by_id = created_by.user_id
-             join last_modified_by on relationshipcontact_transform.relationshipcontact_last_modified_by_id = last_modified_by.user_id
+             join owner on relationshipcontact_transform.relationshipcontact_ownerid = owner.user_id
+             join created_by on relationshipcontact_transform.relationshipcontact_createdbyid = created_by.user_id
+             join last_modified_by on relationshipcontact_transform.relationshipcontact_lastmodifiedbyid = last_modified_by.user_id
 )
 
 /*clean select*/
