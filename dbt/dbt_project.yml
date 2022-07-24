@@ -45,7 +45,7 @@ models:
       alumni:
         +schema: alumni
         +materialized: table 
-  cdc_dbt_utils:
+  cdc_codegen:
     dw_util:
       +materialized: view
       +schema: dw_util
