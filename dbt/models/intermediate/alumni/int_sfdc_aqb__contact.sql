@@ -8,7 +8,8 @@ all_cols as
     contact.contact_id
     -- , contact.isdeleted
     -- , contact.masterrecordid
-    , contact.accountid as contact_acount_id 
+    , contact.accountid as contact_account_id 
+    , contact.accountid as contact_account_key 
     , contact.lastname as contact_last_name 
     , contact.firstname as contact_first_name 
     , contact.salutation as contact_salution
