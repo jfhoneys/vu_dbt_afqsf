@@ -7,14 +7,14 @@ last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 alternateid_transform as
 (select
-, alternateid.aqb__alternateid__c_id as alternateid_alternateid_id
---, alternateid.ownerid as alternateid_ownerid
+alternateid.aqb__alternateid__c_id as alternateid_alternateid_id
+, alternateid.ownerid as alternateid_ownerid
 , alternateid.isdeleted as alternateid_isdeleted
 , alternateid.name as alternateid_name
 --, alternateid.createddate as alternateid_createddate
---, alternateid.createdbyid as alternateid_createdbyid
+, alternateid.createdbyid as alternateid_createdbyid
 --, alternateid.lastmodifieddate as alternateid_lastmodifieddate
---, alternateid.lastmodifiedbyid as alternateid_lastmodifiedbyid
+, alternateid.lastmodifiedbyid as alternateid_lastmodifiedbyid
 --, alternateid.systemmodstamp as alternateid_systemmodstamp
 , alternateid.lastvieweddate as alternateid_lastvieweddate
 , alternateid.lastreferenceddate as alternateid_lastreferenceddate
