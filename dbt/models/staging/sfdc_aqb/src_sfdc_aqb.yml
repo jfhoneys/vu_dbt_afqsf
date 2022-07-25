@@ -81,6 +81,8 @@ sources:
         description: tbd 
       - name: aqb__campaignfund__c
         description: tbd 
+      - name: aqb__classnote__c
+        description: tbd
       - name: aqb__education__c
         description: tbd 
       - name: aqb__employment__c

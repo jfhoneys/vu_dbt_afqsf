@@ -1,0 +1,193 @@
+version: 2
+
+# reminder: Replace TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: int_sfdc_aqb__contact
+    description: "tbd"
+    columns:
+    - name: contact_id
+      description: tbd
+    - name: contact_account_id
+      description: tbd
+    - name: contact_account_key
+      description: tbd
+    - name: contact_last_name
+      description: tbd
+    - name: contact_first_name
+      description: tbd
+    - name: contact_salution
+      description: tbd
+    - name: contact_middle_name
+      description: tbd
+    - name: contact_suffix
+      description: tbd
+    - name: contact_name
+      description: tbd
+    - name: contact_mailing_street
+      description: tbd
+    - name: contact_mailing_city
+      description: tbd
+    - name: contact_mailing_state
+      description: tbd
+    - name: contact_mailing_postal_code
+      description: tbd
+    - name: contact_mailing_country
+      description: tbd
+    - name: contact_mailing_latitude
+      description: tbd
+    - name: contact_mailing_longitude
+      description: tbd
+    - name: contact_phone
+      description: tbd
+    - name: contact_mobile_phone
+      description: tbd
+    - name: contact_home_phone
+      description: tbd
+    - name: contact_email
+      description: tbd
+    - name: contact_title
+      description: tbd
+    - name: contact_birthdate
+      description: tbd
+    - name: contact_opted_out_email
+      description: tbd
+    - name: contact_do_not_call
+      description: tbd
+    - name: contact_system_modstamp
+      description: tbd
+    - name: contact_lastactivity_date
+      description: tbd
+    - name: contact_last_cu_request_date
+      description: tbd
+    - name: contact_last_cu_update_date
+      description: tbd
+    - name: contact_account_capacity
+      description: tbd
+    - name: contact_account_mailing_status
+      description: tbd
+    - name: contact_account_phone
+      description: tbd
+    - name: contact_account_age
+      description: tbd
+    - name: contact_business_address_city
+      description: tbd
+    - name: contact_business_address_country
+      description: tbd
+    - name: contact_business_address_postal_code
+      description: tbd
+    - name: contact_business_address_state_pro
+      description: tbd
+    - name: contact_buiness_address_street
+      description: tbd
+    - name: contact_business_address
+      description: tbd
+    - name: contact_business_phone
+      description: tbd
+    - name: contact_cae_category
+      description: tbd
+    - name: contact_external_id
+      description: tbd
+    - name: contact_mailing_address
+      description: tbd
+    - name: contact_date_of_death
+      description: tbd
+    - name: contact_deceased
+      description: tbd
+    - name: contact_degree_year
+      description: tbd
+    - name: contact_degree_level
+      description: tbd
+    - name: contact_degree
+      description: tbd
+    - name: contact_district
+      description: tbd
+    - name: contact_do_not_contact
+      description: tbd
+    - name: contact_do_not_solicit
+      description: tbd
+    - name: contact_education_link
+      description: tbd
+    - name: contact_employer_name
+      description: tbd
+    - name: contact_full_name_first_last
+      description: tbd
+    - name: contact_full_name_last_first
+      description: tbd
+    - name: contact_gender
+      description: tbd
+    - name: contact_greeting
+      description: tbd
+    - name: contact_institutional_area_1
+      description: tbd
+    - name: contact_institutional_area_2
+      description: tbd
+    - name: contact_institutional_area_3
+      description: tbd
+    - name: contact_institutional_area_4
+      description: tbd
+    - name: contact_is_primary_contact
+      description: tbd
+    - name: contact_is_secondary_contact
+      description: tbd
+    - name: contact_mailing_address_type
+      description: tbd
+    - name: contact_marital_status
+      description: tbd
+    - name: contact_nickname
+      description: tbd
+    - name: contact_other_email
+      description: tbd
+    - name: contact_personal_email
+      description: tbd
+    - name: contact_phone_preference
+      description: tbd
+    - name: contact_preferred_year
+      description: tbd
+    - name: contact_relationship
+      description: tbd
+    - name: contact_school_email
+      description: tbd
+    - name: contact_school
+      description: tbd
+    - name: contact_secondary_type
+      description: tbd
+    - name: contact_total_account_open_opportunities
+      description: tbd
+    - name: contact_total_number_of_event_registrations
+      description: tbd
+    - name: contact_type
+      description: tbd
+    - name: contact_multiple_ethnicity
+      description: tbd
+    - name: contact_contact_id_text
+      description: tbd
+    - name: contact_vud_sort_name
+      description: tbd
+    - name: contact_vud_contact_external_id
+      description: tbd
+    - name: contact_id_full_characters
+      description: tbd
+    - name: contact_created_date
+      description: tbd
+    - name: contact_created_by_id
+      description: tbd
+    - name: contact_last_modified_date
+      description: tbd
+    - name: contact_last_modifiedby_id
+      description: tbd
+    - name: contact_matillion_batch_id
+      description: tbd
+    - name: contact_matillion_updated_timestamp
+      description: tbd
+    - name: contact_source_name
+      description: tbd
+    - name: contact_owner_id
+      description: tbd
+    - name: contact_owner_name
+      description: tbd
+    - name: contact_created_by_name
+      description: tbd
+    - name: contact_last_modified_by_name
+      description: tbd 

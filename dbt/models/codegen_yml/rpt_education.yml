@@ -1,0 +1,63 @@
+version: 2
+
+# reminder: Replace TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: rpt_education
+    description: "tbd"
+    columns:
+    - name: edu_education_id
+      description: tbd
+    - name: edu_owner_id
+      description: tbd
+    - name: edu_name
+      description: tbd
+    - name: edu_record_type_id
+      description: tbd
+    - name: edu_created_date
+      description: tbd
+    - name: edu_created_by_id
+      description: tbd
+    - name: edu_last_modified_date
+      description: tbd
+    - name: edu_last_modified_by_id
+      description: tbd
+    - name: edu_area_of_study
+      description: tbd
+    - name: edu_contact_id
+      description: tbd
+    - name: edu_degree_date
+      description: tbd
+    - name: edu_degree_diploma
+      description: tbd
+    - name: edu_degree_level
+      description: tbd
+    - name: edu_graduation_year
+      description: tbd
+    - name: edu_graduation_month
+      description: tbd
+    - name: edu_granting_school
+      description: tbd
+    - name: edu_honorary_degree
+      description: tbd
+    - name: edu_institution
+      description: tbd
+    - name: edu_is_primary_degree
+      description: tbd
+    - name: edu_preferred_year
+      description: tbd
+    - name: edu_school
+      description: tbd
+    - name: edu_matillion_batch_id
+      description: tbd
+    - name: edu_matillion_updated_timestamp
+      description: tbd
+    - name: edu_source_name
+      description: tbd
+    - name: edu_owner_name
+      description: tbd
+    - name: edu_creator_name
+      description: tbd
+    - name: edu_last_modified_by_name
+      description: tbd 

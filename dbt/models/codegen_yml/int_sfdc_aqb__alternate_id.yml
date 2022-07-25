@@ -1,0 +1,49 @@
+version: 2
+
+# reminder: Replace TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: int_sfdc_aqb__alternate_id
+    description: "tbd"
+    columns:
+    - name: alt_id_id
+      description: tbd
+    - name: alt_id_owner_id
+      description: tbd
+    - name: alt_id_is_deleted
+      description: tbd
+    - name: alt_id_name
+      description: tbd
+    - name: alt_id_created_date
+      description: tbd
+    - name: alt_id_created_by_id
+      description: tbd
+    - name: alt_id_last_modified_date
+      description: tbd
+    - name: alt_id_last_modified_id
+      description: tbd
+    - name: alt_id_last_viewed_date
+      description: tbd
+    - name: alt_id_last_referenced_date
+      description: tbd
+    - name: alt_id_account_referenced
+      description: tbd
+    - name: alt_id_alternate_id
+      description: tbd
+    - name: alt_id_contact_referenced
+      description: tbd
+    - name: alt_id_non_unique_alternate_id
+      description: tbd
+    - name: matillion_batch_id
+      description: tbd
+    - name: matillion_updated_timestamp
+      description: tbd
+    - name: source_name
+      description: tbd
+    - name: alt_id_owner_name
+      description: tbd
+    - name: alt_id_creator_name
+      description: tbd
+    - name: alt_id_last_modified_by_name
+      description: tbd 

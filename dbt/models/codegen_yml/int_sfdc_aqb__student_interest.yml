@@ -1,0 +1,45 @@
+version: 2
+
+# reminder: Replace TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: int_sfdc_aqb__student_interest
+    description: "tbd"
+    columns:
+    - name: student_interest_id
+      description: tbd
+    - name: student_interest_ownerid
+      description: tbd
+    - name: student_interest_isdeleted
+      description: tbd
+    - name: student_interest_name
+      description: tbd
+    - name: student_interest_createddate
+      description: tbd
+    - name: student_interest_createdbyid
+      description: tbd
+    - name: student_interest_lastmodifieddate
+      description: tbd
+    - name: student_interest_lastmodifiedbyid
+      description: tbd
+    - name: student_interest_educationid
+      description: tbd
+    - name: student_interest_interestgroup
+      description: tbd
+    - name: student_interest_interesttype
+      description: tbd
+    - name: student_interest_position
+      description: tbd
+    - name: student_interest_matillion_batch_id
+      description: tbd
+    - name: student_interest_matillion_updated_timestamp
+      description: tbd
+    - name: student_interest_source_name
+      description: tbd
+    - name: student_interest_owner_name
+      description: tbd
+    - name: student_interest_creator_name
+      description: tbd
+    - name: student_interest_last_modified_by_name
+      description: tbd 
