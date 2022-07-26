@@ -5,14 +5,14 @@ last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 employment_transform as (
     select employment.AQB__EMPLOYMENT__C_ID as employment_id
--- , employment.ownerid as employment_ownerid
+     , employment.ownerid as employment_ownerid
 , employment.isdeleted as employment_is_deleted
 , employment.name as employment_name
 , employment.recordtypeid as employment_record_type_id
 -- , employment.createddate as employment_createddate
--- , employment.createdbyid as employment_createdbyid
+ , employment.createdbyid as employment_created_by_id
 -- , employment.lastmodifieddate as employment_lastmodifieddate
--- , employment.lastmodifiedbyid as employment_lastmodifiedbyid
+ , employment.lastmodifiedbyid as employment_last_modified_by_id
 -- , employment.systemmodstamp as employment_systemmodstamp
 -- , employment.aqb__assistant_s_email__c as employment_ssistant_s_email
 -- , employment.aqb__assistant_s_name__c as employment_ssistant_s_name
