@@ -4,7 +4,7 @@ created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 event_transform as (
-    select event.aqb__event__c_id as event_event_id
+    select event.aqb__event__c_id as event__id
 , event.ownerid as event_owner_id
 , event.isdeleted as event_isdeleted
 , event.name as event_name
@@ -23,9 +23,9 @@ event_transform as (
 -- , event.aqb__country__c as event_country
 , event.aqb__date__c as event_date
 , event.aqb__enddate__c as event_enddate
--- , event.aqb__eventexternalid__c as event_eventexternalid
--- , event.aqb__eventlocality__c as event_eventlocality
-, event.aqb__event_type__c as event_event_type
+-- , event.aqb__eventexternalid__c as event_externalid
+-- , event.aqb__eventlocality__c as event_locality
+, event.aqb__event_type__c as event__type
 -- , event.aqb__hostingaccount__c as event_hostingaccount
 , event.aqb__note__c as event_note
 -- , event.aqb__ownerunit__c as event_ownerunit

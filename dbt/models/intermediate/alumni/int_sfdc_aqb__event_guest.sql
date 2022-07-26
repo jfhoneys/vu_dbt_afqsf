@@ -4,7 +4,7 @@ created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 event_guest_transform as (
-    select event_guest.aqb__eventguest__c_id as event_guest_event_guest_id
+    select event_guest.aqb__eventguest__c_id as event_guest_id
 -- , event_guest.ownerid as event_guest_owner_id
 , event_guest.isdeleted as event_guest_isdeleted
 , event_guest.name as event_guest_name

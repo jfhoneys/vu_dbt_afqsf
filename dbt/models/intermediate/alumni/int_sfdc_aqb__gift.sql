@@ -4,7 +4,7 @@ created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 gift_transform as (
-    select gift.aqb__gift__c_id as gift_gift_id
+    select gift.aqb__gift__c_id as gift_id
 -- , gift.isdeleted as gift_isdeleted
 , gift.name as gift_name
 , gift.recordtypeid as gift_record_type_id
@@ -36,7 +36,7 @@ gift_transform as (
 -- , gift.aqb__fundraisingcampaigntext__c as gift_fundraisingcampaigntext
 -- , gift.aqb__giftdescription__c as gift_giftdescription
 -- , gift.aqb__giftexternalid__c as gift_giftexternalid
-, gift.aqb__gift_count__c as gift_gift_count
+, gift.aqb__gift_count__c as gift_count
 -- , gift.aqb__hard_credit_gift_recogntion__c as gift_hard_credit_gift_recogntion
 -- , gift.aqb__includeconditionalpledgeintotal__c as gift_includeconditionalpledgeintotal
 -- , gift.aqb__includematchdueintotal__c as gift_includematchdueintotal

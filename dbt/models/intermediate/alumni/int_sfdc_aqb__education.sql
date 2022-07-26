@@ -4,7 +4,7 @@ created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 education_transform as (
-    select education.aqb__education__c_id as education_education_id
+    select education.aqb__education__c_id as education_id
          , education.ownerid as education_owner_id
 --         , isdeleted
          , education.name as education_name /*<<field identification need*/

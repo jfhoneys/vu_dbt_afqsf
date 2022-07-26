@@ -282,7 +282,7 @@ all_cols as
     -- , contact.aqb__engagementscoreoverride__c
     -- , contact.aqb__engagementscore__c
     -- , contact.aqb__professionalsuffix__c
-    , contact.aqc_contact_id_text__c as contact_contact_id_text
+    , contact.aqc_contact_id_text__c as contact_id_text
     -- , contact.aqc_power_of_one__c
     , contact.vud_sort_name__c as contact_vud_sort_name 
     , contact.vud_contact_external_id__c as contact_vud_contact_external_id
