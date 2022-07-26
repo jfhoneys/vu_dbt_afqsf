@@ -79,3 +79,36 @@ References:
 https://www.markdownguide.org/cheat-sheet/
 
 https://code.visualstudio.com/docs/languages/markdown
+
+
+
+
+Tuesday 07/12/2022 
+* review prior lessons
+    * clone repo - git clone https://devops.app.vanderbilt.edu/bitbucket/scm/do/dbt-snowflake002.git
+
+    * cd to dbt 
+    * dbt deps
+    * dbt seed 
+    * dbt run 
+    * dbt test 
+    * Product Files: 
+        * dbt_project.yml 
+        * packages.yml
+    * Directory Organization f
+        * Models
+            * staging 
+            * models
+            * Marts
+                * alumni
+    * Staging layer 
+        * src_source_name.yml
+            * maps the raw database and schema to a short name. 
+            *lists all the tables in raw layer
+        * sql - light transformation - trim, rename_id, source column, dedupe logic. 
+        * yml - List of columns and basics tests 
+
+* Today's Lesson
+    * Modeling 101 
+    * CTE - Common Table Expressions
+    
