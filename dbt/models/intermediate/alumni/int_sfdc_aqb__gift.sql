@@ -114,11 +114,11 @@ gift_transform as (
 
 final as (select -- select count(1) as cnt from trans
              gift_transform.*
-             , owner.name as gift_owner_name
+            -- , owner.name as gift_owner_name
              , created_by.name as gift_creator_name
              , last_modified_by.name as gift_last_modified_by_name
         from gift_transform
-             join owner on gift_transform.gift_owner_id = owner.user_id
+          --   join owner on gift_transform.gift_owner_id = owner.user_id
              join created_by on gift_transform.gift_created_by_id = created_by.user_id
              join last_modified_by on gift_transform.gift_last_modified_by_id = last_modified_by.user_id
 )

@@ -4,7 +4,7 @@ created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 relationship_contact_transform as (
-    select relationship_contact.aqb__relationship_contact__c_id as relationship_contact_relationship_contact_id
+    select relationship_contact.aqb__relationshipcontact__c_id as relationship_contact_relationship_contact_id
 , relationship_contact.ownerid as relationship_contact_owner_id
 -- , relationship_contact.isdeleted as relationship_contact_isdeleted
 , relationship_contact.name as relationship_contact_name
