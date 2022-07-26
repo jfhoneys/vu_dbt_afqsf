@@ -4,28 +4,28 @@ created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 event_transform as (
-    select event.aqb__event__c_id as event_event_id
-, event.ownerid as event_ownerid
+    select event.aqb__event__c_id as event__id
+, event.ownerid as event_owner_id
 , event.isdeleted as event_isdeleted
 , event.name as event_name
-, event.recordtypeid as event_recordtypeid
+, event.recordtypeid as event_record_type_id
 -- , event.createddate as event_createddate
-, event.createdbyid as event_createdbyid
+, event.createdbyid as event_created_by_id
 -- , event.lastmodifieddate as event_lastmodifieddate
-, event.lastmodifiedbyid as event_lastmodifiedbyid
+, event.lastmodifiedbyid as event_last_modified_by_id
 -- , event.systemmodstamp as event_systemmodstamp
 -- , event.lastactivitydate as event_lastactivitydate
 -- , event.lastvieweddate as event_lastvieweddate
 -- , event.lastreferenceddate as event_lastreferenceddate
--- , event.aqb__affiliatedorganizationsponsor__c as event_affiliatedorganizationsponsor
+-- , event.aqb__affiliatedorganizationsponsor__c as event_affiliated_organizationsponsor
 , event.aqb__city__c as event_city
 -- , event.aqb__comment__c as event_comment
 -- , event.aqb__country__c as event_country
 , event.aqb__date__c as event_date
 , event.aqb__enddate__c as event_enddate
--- , event.aqb__eventexternalid__c as event_eventexternalid
--- , event.aqb__eventlocality__c as event_eventlocality
-, event.aqb__event_type__c as event_event_type
+-- , event.aqb__eventexternalid__c as event_externalid
+-- , event.aqb__eventlocality__c as event_locality
+, event.aqb__event_type__c as event__type
 -- , event.aqb__hostingaccount__c as event_hostingaccount
 , event.aqb__note__c as event_note
 -- , event.aqb__ownerunit__c as event_ownerunit
@@ -63,7 +63,7 @@ event_transform as (
 
 final as (select -- select count(1) as cnt from trans
              event_transform.*
-             , owner.name as event_owner_name
+--             , owner.name as event_owner_name
              , created_by.name as event_creator_name
              , last_modified_by.name as event_last_modified_by_name
         from event_transform

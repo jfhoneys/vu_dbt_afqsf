@@ -24,8 +24,8 @@ employment_transform as (
 -- , employment.aqb__earnings__c as employment_earnings
 , employment.aqb__employernamedisplay__c as employment_employer_name_display
 -- , employment.aqb__employername__c as employment_employername
-, employment.aqb__employmentcomment__c as employment_employment_comment
-, employment.aqb__employmentexternalid__c as employment_employment_external_id
+, employment.aqb__employmentcomment__c as employment__comment
+, employment.aqb__employmentexternalid__c as employment__external_id
 , employment.aqb__enddate__c as employment_end_date
 , employment.aqb__ended__c as employment_ended
 -- , employment.aqb__fax_number__c as employment_fax_number

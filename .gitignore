@@ -1,2 +1,4 @@
 .DS_Store
 logs/
+data_models/dim_contact.sql
+data_models/rpt_education.sql
