@@ -1,4 +1,4 @@
-with activity_report as (select * from  {{ ref ('stg_sfdc_aqb__aqb__activity_report__c')}} where not isdeleted),
+with activity_report as (select * from  {{ ref ('stg_sfdc_aqb__aqb__activityreport__c')}} where not isdeleted),
 owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
