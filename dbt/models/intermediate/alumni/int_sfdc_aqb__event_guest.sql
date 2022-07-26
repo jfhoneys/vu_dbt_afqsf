@@ -12,7 +12,7 @@ event_guest_transform as (
 -- , event_guest.createddate as event_guest_createddate
 , event_guest.createdbyid as event_guest_created_by_id
 -- , event_guest.lastmodifieddate as event_guest_last_modified_date
-, event_guest.lastmodifiedbyid as event_guest_lastmodified_by_id
+, event_guest.lastmodifiedbyid as event_guest_last_modified_by_id
 -- , event_guest.systemmodstamp as event_guest_systemmodstamp
 -- , event_guest.lastactivitydate as event_guest_lastactivitydate
 , event_guest.aqb__event_registration__c as event_guest_event_registration
