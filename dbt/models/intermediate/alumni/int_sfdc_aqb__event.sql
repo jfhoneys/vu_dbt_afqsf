@@ -5,7 +5,7 @@ last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 event_transform as (
     select event.aqb__event__c_id as event_event_id
-, event.ownerid as event_ownerid
+, event.ownerid as event_owner_id
 , event.isdeleted as event_isdeleted
 , event.name as event_name
 , event.recordtypeid as event_recordtypeid
