@@ -22,7 +22,7 @@ activity_report_participant.aqb__activity_report_participant__c_id as activity_r
 , activity_report_participant.matillion_batch_id as activity_report_participant_matillion_batch_id
 , activity_report_participant.matillion_updated_timestamp as activity_report_participant_matillion_updated_timestamp
 , activity_report_participant.source_name as activity_report_participant_source_name
-    from activity_report
+    from activity_report_participant
     ),
 
 final as (select -- select count(1) as cnt from trans
