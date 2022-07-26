@@ -8,11 +8,11 @@ event_transform as (
 , event.ownerid as event_owner_id
 , event.isdeleted as event_isdeleted
 , event.name as event_name
-, event.recordtypeid as event_recordtypeid
+, event.recordtypeid as event_record_type_id
 -- , event.createddate as event_createddate
-, event.createdbyid as event_createdbyid
+, event.createdbyid as event_created_by_id
 -- , event.lastmodifieddate as event_lastmodifieddate
-, event.lastmodifiedbyid as event_lastmodifiedbyid
+, event.lastmodifiedbyid as event_last_modified_by_id
 -- , event.systemmodstamp as event_systemmodstamp
 -- , event.lastactivitydate as event_lastactivitydate
 -- , event.lastvieweddate as event_lastvieweddate
@@ -63,7 +63,7 @@ event_transform as (
 
 final as (select -- select count(1) as cnt from trans
              event_transform.*
-             , owner.name as event_owner_name
+--             , owner.name as event_owner_name
              , created_by.name as event_creator_name
              , last_modified_by.name as event_last_modified_by_name
         from event_transform
