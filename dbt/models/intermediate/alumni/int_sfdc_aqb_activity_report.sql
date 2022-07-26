@@ -7,7 +7,7 @@ last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 activity_report_transform as
 (select
-activity_report.aqb__activity_report__c_id as activity_report_id
+activity_report.aqb__activityreport__c_id as activity_report_id
 , activity_report.ownerid as activity_report_ownerid
 -- , activity_report.isdeleted as activity_report_isdeleted
 , activity_report.name as activity_report_name
