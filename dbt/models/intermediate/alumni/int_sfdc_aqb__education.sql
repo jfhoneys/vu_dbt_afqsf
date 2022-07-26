@@ -9,9 +9,9 @@ education_transform as (
 --         , isdeleted
          , education.name as education_name /*<<field identification need*/
          , education.recordtypeid as education_record_type_id
-         , education.createddate as education_created_date
+--          , education.createddate as education_created_date
          , education.createdbyid as education_created_by_id
-         , education.lastmodifieddate as education_last_modified_date
+--          , education.lastmodifieddate as education_last_modified_date
          , education.lastmodifiedbyid as education_last_modified_by_id
 --         , all_columns.systemmodstamp
 --         , all_columns.lastvieweddate
@@ -22,7 +22,7 @@ education_transform as (
 --    , aqb__certification__c
 --    , aqb__conferringentity__c
          , education.aqb__contactid__c as education_contact_id
-         , education.aqb__dateissued__c as education_degree_date
+--          , education.aqb__dateissued__c as education_degree_date
          , education.aqb__degreediploma__c as education_degree_diploma
          , education.aqb__degreelevel__c as education_degree_level
 --         , aqb__department__c
