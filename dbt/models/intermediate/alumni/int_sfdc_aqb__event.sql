@@ -17,7 +17,7 @@ event_transform as (
 -- , event.lastactivitydate as event_lastactivitydate
 -- , event.lastvieweddate as event_lastvieweddate
 -- , event.lastreferenceddate as event_lastreferenceddate
--- , event.aqb__affiliatedorganizationsponsor__c as event_affiliatedorganizationsponsor
+-- , event.aqb__affiliatedorganizationsponsor__c as event_affiliated_organizationsponsor
 , event.aqb__city__c as event_city
 -- , event.aqb__comment__c as event_comment
 -- , event.aqb__country__c as event_country
