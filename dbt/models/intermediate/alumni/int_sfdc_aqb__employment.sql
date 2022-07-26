@@ -4,7 +4,7 @@ created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 employment_transform as (
-    select employment.id as employment_id
+    select employment.AQB__EMPLOYMENT__C_ID as employment_id
 -- , employment.ownerid as employment_ownerid
 , employment.isdeleted as employment_is_deleted
 , employment.name as employment_name
