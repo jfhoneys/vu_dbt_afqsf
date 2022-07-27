@@ -27,11 +27,11 @@ activity_report_participant.aqb__activityreportparticipant__c_id as activity_rep
 
 final as (select -- select count(1) as cnt from trans
              activity_report_participant_transform.*
-             , owner.name as activity_report_participant_owner_name
+ --            , owner.name as activity_report_participant_owner_name
              , created_by.name as activity_report_participant_creator_name
              , last_modified_by.name as activity_report_participant_last_modified_by_name
         from activity_report_participant_transform
-             join owner on activity_report_participant_transform.activity_report_participant_ownerid = owner.user_id
+ --            join owner on activity_report_participant_transform.activity_report_participant_ownerid = owner.user_id
              join created_by on activity_report_participant_transform.activity_report_participant_createdbyid = created_by.user_id
              join last_modified_by on activity_report_participant_transform.activity_report_participant_lastmodifiedbyid = last_modified_by.user_id
 )
