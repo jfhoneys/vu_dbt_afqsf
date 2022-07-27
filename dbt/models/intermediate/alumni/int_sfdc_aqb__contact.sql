@@ -44,13 +44,13 @@ all_cols as
     -- , contact.department
     -- , contact.assistantname
     -- , contact.leadsource
-    , contact.birthdate as contact_birthdate -- phi? 
+    , contact.birthdate as contact_birthdate  
     -- , contact.description
     , contact.hasoptedoutofemail as contact_opted_out_email 
     -- , contact.hasoptedoutoffax
     , contact.donotcall as contact_do_not_call 
-    , contact.systemmodstamp as contact_system_modstamp 
-    , contact.lastactivitydate as contact_lastactivity_date 
+    , contact.systemmodstamp as contact_system_mod_stamp 
+    , contact.lastactivitydate as contact_last_activity_date 
     , contact.lastcurequestdate as contact_last_cu_request_date
     , contact.lastcuupdatedate as contact_last_cu_update_date
 --    , contact.lastvieweddate
@@ -83,7 +83,7 @@ all_cols as
     -- , contact.aqb__addresschangeflags__c
     -- , contact.aqb__addressinusetext__c
     -- , contact.aqb__addressinusetype__c
-    , contact.aqb__age__c as contact_account_age  -- Is this correct? 
+    , contact.aqb__age__c as contact_age 
     -- , contact.aqb__alert__c
     -- , contact.aqb__automatedalternatename__c
     -- , contact.aqb__automatedcommunityname__c
@@ -283,7 +283,7 @@ all_cols as
     -- , contact.aqb__engagementscoreoverride__c
     -- , contact.aqb__engagementscore__c
     -- , contact.aqb__professionalsuffix__c
-    , contact.aqc_contact_id_text__c as contact_contact_id_text
+    , contact.aqc_contact_id_text__c as contact_id_text
     -- , contact.aqc_power_of_one__c
     , contact.vud_sort_name__c as contact_vud_sort_name 
     , contact.vud_contact_external_id__c as contact_vud_contact_external_id
