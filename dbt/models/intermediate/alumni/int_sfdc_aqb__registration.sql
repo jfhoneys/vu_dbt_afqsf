@@ -4,16 +4,15 @@ created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 registration_transform as
-(select 
-  registration.aqb__registration__c_id as registration_id,
-  registration.isdeleted as registration_is_deleted
+(select
+  registration.aqb__registration__c_id as registration_id
+, registration.isdeleted as registration_is_deleted
 , registration.name as registration_name
 , registration.recordtypeid as registration_record_type_id
 , registration.createddate as registration_created_date
 , registration.createdbyid as registration_created_by_id
-, registration.lastmodifieddate as registration_last_modified_date
-, registration.lastmodifiedbyid as registration_last_modified_by_id
-, registration.systemmodstamp as registration_system_modstamp
+, registration.lastmodifieddate as registration_last_modified_by_id
+, registration.systemmodstamp as registration_system_mod_stamp
 , registration.lastactivitydate as registration_last_activity_date
 , registration.aqb__event__c as registration_event
 , registration.aqb__campaign__c as registration_campaign
@@ -28,8 +27,8 @@ registration_transform as
 , registration.aqb__eventstopdateandtime__c as registration_event_stop_date_and_time
 , registration.aqb__event_venue__c as registration_event_venue
 , registration.aqb__lead__c as registration_lead
-, registration.aqb__registrationexternalid__c as registration_external_id
-, registration.aqb__registrationfullname__c as registration_fullname
+, registration.aqb__registrationexternalid__c as registration_registration_external_id
+, registration.aqb__registrationfullname__c as registration_registration_full_name
 , registration.aqb__total_registration_amount__c as registration_total_registration_amount
 , registration.aqb__numberofguestsattended__c as registration_number_of_guests_attended
 , registration.aqb__numberofguests__c as registration_number_of_guests
@@ -43,17 +42,18 @@ registration_transform as
 , registration.matillion_batch_id as registration_matillion_batch_id
 , registration.matillion_updated_timestamp as registration_matillion_updated_timestamp
 , registration.source_name as registration_source_name
-   ), 
+   from registration
+ ), 
 
 final as (select -- select count(1) as cnt from trans
              registration_transform.*
-             , owner.name as registration_owner_name
+          --   , owner.name as registration_owner_name
              , created_by.name as registration_creator_name
              , last_modified_by.name as registration_last_modified_by_name
         from registration_transform
-             join owner on registration_transform.registration_ownerid = owner.user_id
-             join created_by on registration_transform.registration_createdbyid = created_by.user_id
-             join last_modified_by on registration_transform.registration_lastmodifiedbyid = last_modified_by.user_id
+           --  join owner on registration_transform.registration_ownerid = owner.user_id
+             join created_by on registration_transform.registration_created_by_id = created_by.user_id
+             join last_modified_by on registration_transform.registration_last_modified_by_id = last_modified_by.user_id
 )
 
 /*clean select*/
