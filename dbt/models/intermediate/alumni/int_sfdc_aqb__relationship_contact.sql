@@ -51,8 +51,4 @@ final as (select -- select count(1) as cnt from trans
 )
 
 /*clean select*/
-<<<<<<< HEAD
 select * from final
-=======
-select * from final
->>>>>>> 5fa2da35bf2038e17e80b33d71b063cc5b558d4a
