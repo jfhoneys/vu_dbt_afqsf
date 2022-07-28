@@ -4,10 +4,10 @@ version: 2
 # reminder: Add tests  
  
 models:
-  - name: rpt_education
-    description: "tbd"
+  - name: brg_education
+    description: "This is a bridge table and is used to find contacts that could have 0 or more education records in this table. "
     columns:
-    - name: edu_education_id
+    - name: edu_education_key
       description: tbd
       tests:
         - unique
