@@ -1,3 +1,7 @@
+{{  config(  materialized='view', 
+   ) 
+ }}
+
 with registration as (select * from  {{ ref ('stg_sfdc_aqb__aqb__registration__c')}} where not isdeleted),
 owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),

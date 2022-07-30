@@ -1,3 +1,8 @@
+{{  config(  materialized='view', 
+   ) 
+ }}
+
+
 with relationship_account as (select * from  {{ ref ('stg_sfdc_aqb__aqb__relationshipaccount__c')}} where not isdeleted),
 owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
