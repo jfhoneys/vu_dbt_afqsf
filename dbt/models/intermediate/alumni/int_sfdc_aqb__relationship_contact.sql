@@ -9,9 +9,6 @@ relationship_contact_transform as (
 -- , relationship_contact.isdeleted as relationship_contact_isdeleted
 , relationship_contact.name as relationship_contact_name
 , relationship_contact.recordtypeid as relationship_contact_record_type_id
--- , relationship_contact.createddate as relationship_contact_createddate
--- , relationship_contact.lastmodifieddate as relationship_contact_lastmodifieddate
--- , relationship_contact.systemmodstamp as relationship_contact_systemmodstamp
 , relationship_contact.aqb__contactid__c as relationship_contact_contact_id
 -- , relationship_contact.aqb__contactrolegroup__c as relationship_contact_contactrolegroup
 -- , relationship_contact.aqb__contactrole__c as relationship_contact_contactrole
@@ -36,9 +33,12 @@ relationship_contact_transform as (
 
 -- , relationship_contact.aqcv_conversionid__c as relationship_contact_aqcv_conversionid
 -- , relationship_contact.aqc_non_constituent_birthday__c as relationship_contact_aqc_non_constituent_birthday
+, relationship_contact.createddate as relationship_contact_created_date
+, relationship_contact.lastmodifieddate as relationship_contact_last_modified_date
+, relationship_contact.systemmodstamp as relationship_contact_system_modstamp
+, relationship_contact.createdbyid as relationship_contact_created_by_id
 , relationship_contact.lastmodifiedbyid as relationship_contact_last_modified_by_id
 , relationship_contact.ownerid as relationship_contact_owner_id
-, relationship_contact.createdbyid as relationship_contact_created_by_id
 , relationship_contact.matillion_batch_id as relationship_contact_matillion_batch_id
 , relationship_contact.matillion_updated_timestamp as relationship_contact_matillion_updated_timestamp
 , relationship_contact.source_name as relationship_contact_source_name

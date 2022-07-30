@@ -49,7 +49,6 @@ all_cols as
     , contact.hasoptedoutofemail as contact_opted_out_email 
     -- , contact.hasoptedoutoffax
     , contact.donotcall as contact_do_not_call 
-    , contact.systemmodstamp as contact_system_mod_stamp 
     , contact.lastactivitydate as contact_last_activity_date 
     , contact.lastcurequestdate as contact_last_cu_request_date
     , contact.lastcuupdatedate as contact_last_cu_update_date
@@ -295,13 +294,14 @@ all_cols as
     -- , contact.test_email_groups__c
     , contact.id_full_characters__c as contact_id_full_characters
     , contact.createddate as contact_created_date 
-    , contact.createdbyid as contact_created_by_id
     , contact.lastmodifieddate as contact_last_modified_date
-    , contact.lastmodifiedbyid as contact_last_modifiedby_id 
+    , contact.systemmodstamp as contact_system_mod_stamp     
+    , contact.createdbyid as contact_created_by_id    
+    , contact.lastmodifiedbyid as contact_last_modified_by_id 
+    , contact.ownerid as contact_owner_id 
     , contact.matillion_batch_id as contact_matillion_batch_id 
     , contact.matillion_updated_timestamp as contact_matillion_updated_timestamp
     , contact.source_name as contact_source_name
-    , contact.ownerid as contact_owner_id 
 from contact ),
 joins as (
   -- select count(1) as cnt  from all_cols -- 557545
