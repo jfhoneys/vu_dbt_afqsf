@@ -6,6 +6,9 @@ version: 2
 models:
   - name: dim_contact
     description: "tbd"
+    tests:
+      - dbt_utils.equal_rowcount:
+          compare_model: ref('stg_sfdc_aqb__contact')
     columns:
     - name: contact_key
       description: tbd
