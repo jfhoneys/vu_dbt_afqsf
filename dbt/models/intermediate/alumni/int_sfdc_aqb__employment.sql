@@ -1,31 +1,29 @@
 with employment as (select * from  {{ ref ('stg_sfdc_aqb__aqb__employment__c')}} where not isdeleted),
+recordtype as (select * from {{ref('stg_sfdc_aqb__recordtype')}}), 
 owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
 employment_transform as (
-    select employment.AQB__EMPLOYMENT__C_ID as employment_id
-     , employment.ownerid as employment_owner_id
-, employment.isdeleted as employment_is_deleted
+    select employment.aqb__employment__c_id as employment_id
 , employment.name as employment_name
 , employment.recordtypeid as employment_record_type_id
--- , employment.createddate as employment_createddate
- , employment.createdbyid as employment_created_by_id
--- , employment.lastmodifieddate as employment_lastmodifieddate
- , employment.lastmodifiedbyid as employment_last_modified_by_id
--- , employment.systemmodstamp as employment_systemmodstamp
+, recordtype.name as employment_record_type_name
 -- , employment.aqb__assistant_s_email__c as employment_ssistant_s_email
 -- , employment.aqb__assistant_s_name__c as employment_ssistant_s_name
 -- , employment.aqb__assistant_s_phone__c as employment_ssistant_s_phone
 , employment.aqb__businessphone__c as employment_business_phone
 , employment.aqb__contactid__c as employment_contact_id
 -- , employment.aqb__corporate_phone__c as employment_corporate_phone
-, employment.aqb__donotarchive__c as employment_donotarchive
+, employment.aqb__donotarchive__c as employment_do_not_archive
+, employment.aqb__status__c as employment_status
+, employment.aqb__title__c as employment_title
+
 -- , employment.aqb__earnings__c as employment_earnings
 , employment.aqb__employernamedisplay__c as employment_employer_name_display
 -- , employment.aqb__employername__c as employment_employername
-, employment.aqb__employmentcomment__c as employment__comment
-, employment.aqb__employmentexternalid__c as employment__external_id
+, employment.aqb__employmentcomment__c as employment_comment
+, employment.aqb__employmentexternalid__c as employment_external_id
 , employment.aqb__enddate__c as employment_end_date
 , employment.aqb__ended__c as employment_ended
 -- , employment.aqb__fax_number__c as employment_fax_number
@@ -40,16 +38,22 @@ employment_transform as (
 -- , employment.aqb__source__c as employment_source
 , employment.aqb__startdate__c as employment_start_date
 -- , employment.aqb__started__c as employment_started
-, employment.aqb__status__c as employment_status
-, employment.aqb__title__c as employment_title
 -- , employment.aqcv_conversionid__c as employment_cv_conversionid
 -- , employment.aqb__engagementscorecategory__c as employment_engagementscorecategory
 -- , employment.aqb__engagementscoreoverride__c as employment_engagementscoreoverride
 -- , employment.aqb__engagementscore__c as employment_engagementscore
--- , employment.matillion_batch_id as employment_matillion_batch_id
--- , employment.matillion_updated_timestamp as employment_matillion_updated_timestamp
---          , employment.source_name as employment_source_name
+ , employment.isdeleted as employment_is_deleted
+ , employment.createddate as employment_created_date
+ , employment.lastmodifieddate as employment_last_modified_date
+ , employment.systemmodstamp as employment_system_modstamp
+ , employment.createdbyid as employment_created_by_id
+ , employment.lastmodifiedbyid as employment_last_modified_by_id
+ , employment.ownerid as employment_owner_id
+ , employment.matillion_batch_id as employment_matillion_batch_id
+ , employment.matillion_updated_timestamp as employment_matillion_updated_timestamp
+          , employment.source_name as employment_source_name
     from employment
+    inner join recordtype on employment.recordtypeid = recordtype.recordtype_id
     ),
 
 final as (select -- select count(1) as cnt from trans
