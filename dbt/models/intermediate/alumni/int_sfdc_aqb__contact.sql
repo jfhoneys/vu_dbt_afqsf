@@ -3,7 +3,7 @@ with contact as (select * from {{ ref ('stg_sfdc_aqb__contact')}} where not isde
 owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
-all_cols as 
+contact_transform as 
 (select
     contact.contact_id
     -- , contact.isdeleted
@@ -307,13 +307,13 @@ joins as (
   -- select count(1) as cnt  from all_cols -- 557545
   -- select ownerid, count(1) cnt from all_cols
   -- group by ownerid 
-  select all_cols.*
+  select contact_transform.*
    , owner.name as contact_owner_name 
    , created_by.name as contact_created_by_name 
    , last_modified_by.name as contact_last_modified_by_name
-  from all_cols
-  inner join owner on all_cols.contact_owner_id = owner.user_id
-  inner join created_by on all_cols.contact_created_by_id = created_by.user_id
-  inner join last_modified_by on all_cols.contact_last_modifiedby_id = last_modified_by.user_id
+  from contact_transform
+  inner join owner on contact_transform.contact_owner_id = owner.user_id
+  inner join created_by on contact_transform.contact_created_by_id = created_by.user_id
+  inner join last_modified_by on contact_transform.contact_last_modified_by_id = last_modified_by.user_id
     )
 select * from joins
