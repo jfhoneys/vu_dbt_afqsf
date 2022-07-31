@@ -50,6 +50,9 @@ models:
       +materialized: view
       +schema: dw_util
 
+snapshots:
+    transient: false
+
 seeds: 
   schema: seed_data
   quote_columns: false
