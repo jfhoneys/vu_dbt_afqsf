@@ -14,6 +14,7 @@ employment_transform as (
 -- , employment.aqb__assistant_s_phone__c as employment_ssistant_s_phone
 , employment.aqb__businessphone__c as employment_business_phone
 , employment.aqb__contactid__c as employment_contact_id
+, employment.aqb__contactid__c as employment_contact_key
 -- , employment.aqb__corporate_phone__c as employment_corporate_phone
 , employment.aqb__donotarchive__c as employment_do_not_archive
 , employment.aqb__status__c as employment_status
