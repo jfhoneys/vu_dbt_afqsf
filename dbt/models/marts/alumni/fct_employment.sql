@@ -1,8 +1,8 @@
 {{  config(  materialized='table',
- post_hook="alter table {{ this }} add primary key (education_key)",  ) 
+ post_hook="alter table {{ this }} add primary key (employment_key)",  ) 
  }}
 
-with education as (select * from {{ref ('int_sfdc_aqb__education')}}), 
+with employment as (select * from {{ref ('int_sfdc_aqb__employment')}}), 
 final as 
-(select education.education_id as education_key, education.*  from education  )
+(select employment.empoyment_id as education_key, education.*  from employment  )
 select * from final 
