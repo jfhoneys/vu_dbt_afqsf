@@ -1,0 +1,68 @@
+version: 2
+
+# reminder: Replace TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: fct_education
+    description: "tbd"
+    columns:
+    - name: education_key
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: education_contact_id
+      description: tbd
+    - name: education_name
+      description: tbd
+    - name: education_record_type_name
+      description: tbd
+    - name: education_area_of_study
+      description: tbd
+    - name: education_degree_diploma
+      description: tbd
+    - name: education_degree_level
+      description: tbd
+    - name: education_graduation_year
+      description: tbd
+    - name: education_graduation_month
+      description: tbd
+    - name: education_granting_school
+      description: tbd
+    - name: education_honorary_degree
+      description: tbd
+    - name: education_institution
+      description: tbd
+    - name: education_institution_name
+      description: tbd
+    - name: education_is_primary_degree
+      description: tbd
+    - name: education_preferred_year
+      description: tbd
+    - name: education_school
+      description: tbd
+    - name: education_created_date
+      description: tbd
+    - name: education_created_by_id
+      description: tbd
+    - name: education_last_modified_date
+      description: tbd
+    - name: education_last_modified_by_id
+      description: tbd
+    - name: education_owner_id
+      description: tbd
+    - name: education_matillion_batch_id
+      description: tbd
+    - name: education_matillion_updated_timestamp
+      description: tbd
+    - name: education_source_name
+      description: tbd
+    - name: education_owner_name
+      description: tbd
+    - name: education_creator_name
+      description: tbd
+    - name: education_last_modified_by_name
+      description: tbd
+      tests:
+        - not_null
