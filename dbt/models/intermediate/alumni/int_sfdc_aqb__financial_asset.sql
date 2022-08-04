@@ -3,8 +3,6 @@ owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
-
-
 financial_asset_transform as
 (select
  financial_asset.aqb__financial_asset__c_id as financial_asset_id
@@ -37,7 +35,7 @@ financial_asset_transform as
     from financial_asset
     ),
 
-final as (select -- select count(1) as cnt from trans
+final as (select
              financial_asset_transform.*
              , owner.name as financial_asset_owner_name
              , created_by.name as financial_asset_creator_name
@@ -47,6 +45,4 @@ final as (select -- select count(1) as cnt from trans
              join created_by on financial_asset_transform.financial_asset_createdbyid = created_by.user_id
              join last_modified_by on financial_asset_transform.financial_asset_lastmodifiedbyid = last_modified_by.user_id
 )
-
-/*clean select*/
 select * from final

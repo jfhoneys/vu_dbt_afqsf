@@ -3,8 +3,6 @@ owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
-
-
 opportunity_team_member_transform as
 (select
  opportunity_team_member.opportunityteammember_id as opportunity_team_member_id
@@ -33,7 +31,7 @@ opportunity_team_member_transform as
     from opportunity_team_member
     ),
 
-final as (select -- select count(1) as cnt from trans
+final as (select 
              opportunity_team_member_transform.*
 --             , owner.name as opportunity_team_member_owner_name
              , created_by.name as opportunity_team_member_creator_name
@@ -43,6 +41,4 @@ final as (select -- select count(1) as cnt from trans
              join created_by on opportunity_team_member_transform.opportunity_team_member_createdbyid = created_by.user_id
              join last_modified_by on opportunity_team_member_transform.opportunity_team_member_lastmodifiedbyid = last_modified_by.user_id
 )
-
-/*clean select*/
 select * from final

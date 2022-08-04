@@ -63,7 +63,7 @@ education_transform as (
     left outer join institution on education_institution = institution.aqb__lleducationalinstitution__c_id
     inner join recordtype on education.recordtypeid = recordtype.recordtype_id
     ),
-final as (select -- select count(1) as cnt from trans
+final as (select
              education_transform.*
              , owner.name as education_owner_name
              , created_by.name as education_creator_name
@@ -74,5 +74,4 @@ final as (select -- select count(1) as cnt from trans
              inner join last_modified_by on education_transform.education_last_modified_by_id = last_modified_by.user_id
 )
 
-/*clean select*/
 select * from final

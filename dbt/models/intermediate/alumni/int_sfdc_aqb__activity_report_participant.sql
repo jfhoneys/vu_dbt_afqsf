@@ -3,8 +3,6 @@ owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
-
-
 activity_report_participant_transform as
 (select
 activity_report_participant.aqb__activityreportparticipant__c_id as activity_report_participant_id
@@ -25,7 +23,7 @@ activity_report_participant.aqb__activityreportparticipant__c_id as activity_rep
     from activity_report_participant
     ),
 
-final as (select -- select count(1) as cnt from trans
+final as (select
              activity_report_participant_transform.*
  --            , owner.name as activity_report_participant_owner_name
              , created_by.name as activity_report_participant_creator_name
@@ -35,6 +33,4 @@ final as (select -- select count(1) as cnt from trans
              join created_by on activity_report_participant_transform.activity_report_participant_createdbyid = created_by.user_id
              join last_modified_by on activity_report_participant_transform.activity_report_participant_lastmodifiedbyid = last_modified_by.user_id
 )
-
-/*clean select*/
 select * from final

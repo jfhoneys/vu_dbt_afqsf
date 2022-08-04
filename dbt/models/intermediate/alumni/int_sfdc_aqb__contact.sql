@@ -1,4 +1,3 @@
-
 with contact as (select * from {{ ref ('stg_sfdc_aqb__contact')}} where not isdeleted ), 
 owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
@@ -304,9 +303,6 @@ contact_transform as
     , contact.source_name as contact_source_name
 from contact ),
 joins as (
-  -- select count(1) as cnt  from all_cols -- 557545
-  -- select ownerid, count(1) cnt from all_cols
-  -- group by ownerid 
   select contact_transform.*
    , owner.name as contact_owner_name 
    , created_by.name as contact_created_by_name 

@@ -3,8 +3,6 @@ owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 
-
-
 alternate_id_transform as
 (select
 alternate_id.aqb__alternateid__c_id as alternate_id_id
@@ -31,7 +29,7 @@ alternate_id.aqb__alternateid__c_id as alternate_id_id
     from alternate_id
     ),
 
-final as (select -- select count(1) as cnt from trans
+final as (select
              alternate_id_transform.*
              , owner.name as alternate_id_owner_name
              , created_by.name as alternate_id_creator_name
@@ -41,6 +39,4 @@ final as (select -- select count(1) as cnt from trans
              join created_by on alternate_id_transform.alternate_id_createdbyid = created_by.user_id
              join last_modified_by on alternate_id_transform.alternate_id_lastmodifiedbyid = last_modified_by.user_id
 )
-
-/*clean select*/
 select * from final

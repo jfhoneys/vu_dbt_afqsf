@@ -58,7 +58,7 @@ employment_transform as (
     inner join recordtype on employment.recordtypeid = recordtype.recordtype_id
     ),
 
-final as (select -- select count(1) as cnt from trans
+final as (select
              employment_transform.*
              , owner.name as employment_owner_name
              , created_by.name as employment_creator_name
@@ -68,6 +68,4 @@ final as (select -- select count(1) as cnt from trans
              join created_by on employment_transform.employment_created_by_id = created_by.user_id
              join last_modified_by on employment_transform.employment_last_modified_by_id = last_modified_by.user_id
 )
-
-/*clean select*/
 select * from final

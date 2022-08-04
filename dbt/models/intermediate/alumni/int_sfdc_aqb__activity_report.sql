@@ -58,7 +58,7 @@ activity_report.aqb__activityreport__c_id as activity_report_id
     from activity_report
     ),
 
-final as (select -- select count(1) as cnt from trans
+final as (select
              activity_report_transform.*
              , owner.name as activity_report_owner_name
              , created_by.name as activity_report_creator_name
@@ -69,5 +69,4 @@ final as (select -- select count(1) as cnt from trans
              join last_modified_by on activity_report_transform.activity_report_lastmodifiedbyid = last_modified_by.user_id
 )
 
-/*clean select*/
 select * from final

@@ -39,7 +39,7 @@ relationship_account_transform as
    from relationship_account
    ), 
 
-final as (select -- select count(1) as cnt from trans
+final as (select 
              relationship_account_transform.*
              , owner.name as relationship_account_owner_name
              , created_by.name as relationship_account_creator_name
@@ -49,6 +49,4 @@ final as (select -- select count(1) as cnt from trans
              join created_by on relationship_account_transform.relationship_account_created_by_id = created_by.user_id
              join last_modified_by on relationship_account_transform.relationship_account_last_modified_by_id = last_modified_by.user_id
 )
-
-/*clean select*/
 select * from final
