@@ -12,8 +12,15 @@ models:
       tests:
         - unique
         - not_null
-    - name: education_contact_id
+    - name: education_id
       description: tbd
+    - name: contact_key
+      description: tbd
+      tests:
+          - relationships:
+              to: ref('dim_contact')
+              field: contact_key
+          - not_null
     - name: education_name
       description: tbd
     - name: education_record_type_name
@@ -64,5 +71,3 @@ models:
       description: tbd
     - name: education_last_modified_by_name
       description: tbd
-      tests:
-        - not_null

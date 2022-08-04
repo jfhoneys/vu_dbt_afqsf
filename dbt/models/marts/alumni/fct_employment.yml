@@ -11,18 +11,23 @@ models:
       description: tbd
       tests:
         - unique
-        - not_null 
+        - not_null
+    - name: contact_key
+      description: tbd
+      tests:
+          - relationships:
+              to: ref('dim_contact')
+              field: contact_key
+          - not_null
     - name: employment_id
       description: tbd
     - name: employment_name
-      description: tbd
-    - name: employment_record_type_id
       description: tbd
     - name: employment_record_type_name
       description: tbd
     - name: employment_business_phone
       description: tbd
-    - name: employment_contact_id
+    - name: employment_primary_employment
       description: tbd
     - name: employment_do_not_archive
       description: tbd
@@ -48,13 +53,15 @@ models:
       description: tbd
     - name: employment_occupation
       description: tbd
-    - name: employment_primary_employment
+    - name: employment_contact_id
       description: tbd
     - name: employment_start_date
       description: tbd
     - name: employment_is_deleted
       description: tbd
     - name: employment_created_date
+      description: tbd
+    - name: employment_record_type_id
       description: tbd
     - name: employment_last_modified_date
       description: tbd

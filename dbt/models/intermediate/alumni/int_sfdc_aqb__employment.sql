@@ -1,4 +1,5 @@
-with employment as (select * from  {{ ref ('stg_sfdc_aqb__aqb__employment__c')}} where not isdeleted),
+with employment as (select * from  {{ ref ('stg_sfdc_aqb__aqb__employment__c')}} where not isdeleted
+                                                                                 and aqb__contactid__c is not null ),
 recordtype as (select * from {{ref('stg_sfdc_aqb__recordtype')}}), 
 owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),

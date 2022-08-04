@@ -1,4 +1,5 @@
-with education as (select * from  {{ ref ('stg_sfdc_aqb__aqb__education__c')}} where not isdeleted),
+with education as (select * from  {{ ref ('stg_sfdc_aqb__aqb__education__c')}} where not isdeleted 
+                                                                    and aqb__contactid__c is not null ),
 institution as (select * from {{ref('stg_sfdc_aqb__aqb__lleducationalinstitution__c')}} ),
 recordtype as (select * from {{ref('stg_sfdc_aqb__recordtype')}}), 
 owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
