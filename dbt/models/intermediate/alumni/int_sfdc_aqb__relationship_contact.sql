@@ -46,7 +46,7 @@ relationship_contact_transform as (
     left outer join related_to_contact on relationship_contact.aqb__relatedcontact__c = related_to_contact.contact_id 
     ),
 
-final as (select -- select count(1) as cnt from trans
+final as (select 
              relationship_contact_transform.*
              , owner.name as relationship_contact_owner_name
              , created_by.name as relationship_contact_creator_name

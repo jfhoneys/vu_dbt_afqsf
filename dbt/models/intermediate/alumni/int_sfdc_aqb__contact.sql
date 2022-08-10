@@ -163,11 +163,11 @@ contact_transform as
     -- , contact.aqb__emailnotes__c
     -- , contact.aqb__emailpreference__c
     , contact.aqb__employername__c as contact_employer_name 
-    -- , contact.aqb__engagementscoreexperiential__c
-    -- , contact.aqb__engagementscorephilanthropic__c
-    -- , contact.aqb__engagementscorevolunteer__c
-    -- , contact.aqb__engagmentscorecommunication__c
-    -- , contact.aqb__ethnicity__c
+    , contact.aqb__engagementscoreexperiential__c as contact_engagement_score_experiential
+    , contact.aqb__engagementscorephilanthropic__c as contact_engagement_score_philanthropic
+    , contact.aqb__engagementscorevolunteer__c as contact_engagement_score_volunteer
+    , contact.aqb__engagmentscorecommunication__c as contact_engagment_score_communication
+    , contact.aqb__ethnicity__c as contact_ethnicity
     -- , contact.aqb__fipsstatecode__c
     -- , contact.aqb__fnlink__c
     , contact.aqb__fname__c as contact_full_name_first_last 
