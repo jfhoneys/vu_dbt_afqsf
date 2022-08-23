@@ -40,7 +40,7 @@ models:
       +materialized: view
     intermediate:
       +schema: stage
-      +materialized: view
+      +materialized: table
     marts:
       alumni:
         +schema: alumni
