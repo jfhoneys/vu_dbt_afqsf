@@ -43,7 +43,7 @@ event_guest_transform as (
     from event_guest
     ),
 
-final as (select -- select count(1) as cnt from trans
+final as (select
              event_guest_transform.*
 --             , owner.name as event_guest_owner_name
              , created_by.name as event_guest_creator_name
@@ -54,5 +54,4 @@ final as (select -- select count(1) as cnt from trans
              join last_modified_by on event_guest_transform.event_guest_last_modified_by_id = last_modified_by.user_id
 )
 
-/*clean select*/
 select * from final

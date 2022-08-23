@@ -1,3 +1,4 @@
+
 with registration as (select * from  {{ ref ('stg_sfdc_aqb__aqb__registration__c')}} where not isdeleted),
 owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
@@ -11,7 +12,8 @@ registration_transform as
 , registration.recordtypeid as registration_record_type_id
 , registration.createddate as registration_created_date
 , registration.createdbyid as registration_created_by_id
-, registration.lastmodifieddate as registration_last_modified_by_id
+, registration.lastmodifiedbyid as registration_last_modified_by_id
+, registration.lastmodifieddate as registration_last_modified_date 
 , registration.systemmodstamp as registration_system_mod_stamp
 , registration.lastactivitydate as registration_last_activity_date
 , registration.aqb__event__c as registration_event
@@ -45,7 +47,7 @@ registration_transform as
    from registration
  ), 
 
-final as (select -- select count(1) as cnt from trans
+final as (select
              registration_transform.*
           --   , owner.name as registration_owner_name
              , created_by.name as registration_creator_name
@@ -55,6 +57,4 @@ final as (select -- select count(1) as cnt from trans
              join created_by on registration_transform.registration_created_by_id = created_by.user_id
              join last_modified_by on registration_transform.registration_last_modified_by_id = last_modified_by.user_id
 )
-
-/*clean select*/
 select * from final

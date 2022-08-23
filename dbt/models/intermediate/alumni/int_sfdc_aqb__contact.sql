@@ -1,14 +1,14 @@
-
 with contact as (select * from {{ ref ('stg_sfdc_aqb__contact')}} where not isdeleted ), 
 owner as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 created_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
 last_modified_by as (select * from {{ref ('stg_sfdc_aqb__user')}}),
-all_cols as 
+contact_transform as 
 (select
     contact.contact_id
     -- , contact.isdeleted
     -- , contact.masterrecordid
-    , contact.accountid as contact_acount_id 
+    , contact.accountid as contact_account_id 
+    , contact.accountid as contact_account_key 
     , contact.lastname as contact_last_name 
     , contact.firstname as contact_first_name 
     , contact.salutation as contact_salution
@@ -48,7 +48,6 @@ all_cols as
     , contact.hasoptedoutofemail as contact_opted_out_email 
     -- , contact.hasoptedoutoffax
     , contact.donotcall as contact_do_not_call 
-    , contact.systemmodstamp as contact_system_mod_stamp 
     , contact.lastactivitydate as contact_last_activity_date 
     , contact.lastcurequestdate as contact_last_cu_request_date
     , contact.lastcuupdatedate as contact_last_cu_update_date
@@ -164,11 +163,11 @@ all_cols as
     -- , contact.aqb__emailnotes__c
     -- , contact.aqb__emailpreference__c
     , contact.aqb__employername__c as contact_employer_name 
-    -- , contact.aqb__engagementscoreexperiential__c
-    -- , contact.aqb__engagementscorephilanthropic__c
-    -- , contact.aqb__engagementscorevolunteer__c
-    -- , contact.aqb__engagmentscorecommunication__c
-    -- , contact.aqb__ethnicity__c
+    , contact.aqb__engagementscoreexperiential__c as contact_engagement_score_experiential
+    , contact.aqb__engagementscorephilanthropic__c as contact_engagement_score_philanthropic
+    , contact.aqb__engagementscorevolunteer__c as contact_engagement_score_volunteer
+    , contact.aqb__engagmentscorecommunication__c as contact_engagment_score_communication
+    , contact.aqb__ethnicity__c as contact_ethnicity
     -- , contact.aqb__fipsstatecode__c
     -- , contact.aqb__fnlink__c
     , contact.aqb__fname__c as contact_full_name_first_last 
@@ -294,25 +293,23 @@ all_cols as
     -- , contact.test_email_groups__c
     , contact.id_full_characters__c as contact_id_full_characters
     , contact.createddate as contact_created_date 
-    , contact.createdbyid as contact_created_by_id
     , contact.lastmodifieddate as contact_last_modified_date
-    , contact.lastmodifiedbyid as contact_last_modifiedby_id 
+    , contact.systemmodstamp as contact_system_mod_stamp     
+    , contact.createdbyid as contact_created_by_id    
+    , contact.lastmodifiedbyid as contact_last_modified_by_id 
+    , contact.ownerid as contact_owner_id 
     , contact.matillion_batch_id as contact_matillion_batch_id 
     , contact.matillion_updated_timestamp as contact_matillion_updated_timestamp
     , contact.source_name as contact_source_name
-    , contact.ownerid as contact_owner_id 
 from contact ),
 joins as (
-  -- select count(1) as cnt  from all_cols -- 557545
-  -- select ownerid, count(1) cnt from all_cols
-  -- group by ownerid 
-  select all_cols.*
+  select contact_transform.*
    , owner.name as contact_owner_name 
    , created_by.name as contact_created_by_name 
    , last_modified_by.name as contact_last_modified_by_name
-  from all_cols
-  inner join owner on all_cols.contact_owner_id = owner.user_id
-  inner join created_by on all_cols.contact_created_by_id = created_by.user_id
-  inner join last_modified_by on all_cols.contact_last_modifiedby_id = last_modified_by.user_id
+  from contact_transform
+  inner join owner on contact_transform.contact_owner_id = owner.user_id
+  inner join created_by on contact_transform.contact_created_by_id = created_by.user_id
+  inner join last_modified_by on contact_transform.contact_last_modified_by_id = last_modified_by.user_id
     )
 select * from joins
