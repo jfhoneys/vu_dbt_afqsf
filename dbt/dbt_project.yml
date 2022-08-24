@@ -34,17 +34,24 @@ clean-targets:         # directories to be removed by `dbt clean`
 models:
   +query_tag: dbt-elt
   vu_dw:
+   # Config indicated by + and applies to all files under models/example/
     staging:
+      +schema: stage
+      +materialized: view
+    intermediate:
       +schema: stage
       +materialized: view
     marts:
       alumni:
         +schema: alumni
         +materialized: table 
-#  cdc_dbt_utils:
-#    dw_util:
-#      +materialized: view
-#      +schema: dw_util
+  cdc_codegen:
+    dw_util:
+      +materialized: view
+      +schema: dw_util
+
+snapshots:
+    transient: false
 
 seeds: 
   schema: seed_data

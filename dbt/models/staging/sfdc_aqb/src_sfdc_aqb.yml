@@ -18,10 +18,24 @@ sources:
       - name: account
         description: tbd 
       - name: aqb__accolade__c
+        freshness:
+          warn_after:
+            count: 12
+            period: hour 
+          error_after:
+            count: 24
+            period: hour
         description: tbd 
       - name: aqb__accountnames__c
         description: tbd 
       - name: aqb__acknowledgement__c
+        freshness:
+          warn_after:
+            count: 75
+            period: day 
+          error_after:
+            count: 100
+            period: day
         description: tbd 
       - name: aqb__activityreport__c
         description: tbd 

@@ -1,0 +1,87 @@
+version: 2
+
+# reminder: Replace TBD descriptions with proper descriptions
+# reminder: Add tests  
+ 
+models:
+  - name: fct_employment
+    description: "tbd"
+    columns:
+    - name: employment_key
+      description: tbd
+      tests:
+        - unique
+        - not_null
+    - name: contact_key
+      description: tbd
+      tests:
+          - relationships:
+              to: ref('dim_contact')
+              field: contact_key
+          - not_null
+    - name: employment_id
+      description: tbd
+    - name: employment_name
+      description: tbd
+    - name: employment_record_type_name
+      description: tbd
+    - name: employment_business_phone
+      description: tbd
+    - name: employment_primary_employment
+      description: tbd
+    - name: employment_do_not_archive
+      description: tbd
+    - name: employment_status
+      description: tbd
+    - name: employment_title
+      description: tbd
+    - name: employment_employer_name_display
+      description: tbd
+    - name: employment_comment
+      description: tbd
+    - name: employment_external_id
+      description: tbd
+    - name: employment_end_date
+      description: tbd
+    - name: employment_ended
+      description: tbd
+    - name: employment_is_primary_employer
+      description: tbd
+    - name: employment_level
+      description: tbd
+    - name: employment_linked_employer
+      description: tbd
+    - name: employment_occupation
+      description: tbd
+    - name: employment_contact_id
+      description: tbd
+    - name: employment_start_date
+      description: tbd
+    - name: employment_is_deleted
+      description: tbd
+    - name: employment_created_date
+      description: tbd
+    - name: employment_record_type_id
+      description: tbd
+    - name: employment_last_modified_date
+      description: tbd
+    - name: employment_system_modstamp
+      description: tbd
+    - name: employment_created_by_id
+      description: tbd
+    - name: employment_last_modified_by_id
+      description: tbd
+    - name: employment_owner_id
+      description: tbd
+    - name: employment_matillion_batch_id
+      description: tbd
+    - name: employment_matillion_updated_timestamp
+      description: tbd
+    - name: employment_source_name
+      description: tbd
+    - name: employment_owner_name
+      description: tbd
+    - name: employment_creator_name
+      description: tbd
+    - name: employment_last_modified_by_name
+      description: tbd

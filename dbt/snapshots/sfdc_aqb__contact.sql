@@ -1,4 +1,4 @@
-{% snapshot sfdc_acq__contact %}
+{% snapshot sfdc_aqb__contact %}
 
 {{
     config(
@@ -7,10 +7,10 @@
       unique_key='contact_id',
 
       strategy='timestamp',
-      updated_at='matillion_updated_timestamp',
+      updated_at='contact_matillion_updated_timestamp',
     )
 }}
 
-select * from {{ ref('stg_sfdc_aqb__contact') }}
+select * from {{ ref('int_sfdc_aqb__contact') }}
 
 {% endsnapshot %}
